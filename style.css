@@ -403,3 +403,30 @@ footer {
     border-bottom-left-radius: 50px;
   }
 }
+
+.item {
+  height: 363px;
+  width: 561px;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+#testominals {
+  scroll-behavior: smooth;
+}
+
+#scrollContainer {
+  background: #1175c9;
+  height: 603px;
+}
+
+#leftMove,
+#rightMove {
+  outline: none;
+  border-radius: 50%;
+}
+
+.blockQuate-img {
+  width: 43px;
+  height: 39px;
+}
