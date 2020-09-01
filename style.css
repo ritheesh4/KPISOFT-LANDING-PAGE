@@ -14,13 +14,14 @@
   box-sizing: border-box;
 }
 
-section {
-  height: 100vh;
-}
-
 body {
   font-family: 'Nunito Sans', sans-serif;
   line-height: 1.5;
+}
+
+section {
+  padding: 1rem;
+  min-height: 99vh;
 }
 
 a {
@@ -89,10 +90,77 @@ h6 {
 }
 
 /* Section : Hero */
+
+section#hero {
+  padding: 0rem;
+}
+
 #hero .container-fluid {
   padding: 0;
 }
 
 #hero .col-md-6:last-child {
   background: var(--secondary-color);
+}
+
+/* Section : Client */
+.client img {
+  width: 80%;
+}
+
+/* Section : Purpose */
+.purpose {
+  background: var(--primary-color);
+}
+
+.purpose .container-fluid {
+  padding: 5rem 2rem;
+}
+
+.purpose h1,
+.purpose h3 {
+  color: var(--light-color);
+}
+
+.purpose h1 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+.purpose h3 {
+  font-weight: medium;
+  font-size: 3.2rem;
+}
+
+.purpose p {
+  color: var(--lighter-color);
+  font-size: 1.2rem;
+}
+
+.purpose .container {
+  padding-top: 7rem;
+}
+
+.p-desc img {
+  height: 20%;
+  width: 20%;
+}
+
+.p-desc a {
+  background: var(--secondary-color);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  width: 50%;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.p-desc a:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.p-desc .d-flex > * {
+  margin-bottom: 1.7rem;
 }
