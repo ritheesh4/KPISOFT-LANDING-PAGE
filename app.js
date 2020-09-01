@@ -10,6 +10,7 @@ window.onscroll = function() {
   }
 };
 
+
 document.getElementById("leftMove").addEventListener("click", () => {
   scrollItems("left");
 });
@@ -21,9 +22,17 @@ document.getElementById("rightMove").addEventListener("click", () => {
 const scrollItems = direction => {
   let element = document.getElementById("testominals");
   let width = element.clientWidth;
+  let widthMax = element.scrollWidth - element.clientWidth;
+
   if (direction === "left") {
     element.scrollLeft -= width;
+    if (element.style.marginRight) {
+      element.style = "margin-right:0";
+    }
   } else {
     element.scrollLeft += width;
+    if (element.scrollLeft === widthMax) {
+      element.style = "margin-right :2rem";
+    }
   }
 };
