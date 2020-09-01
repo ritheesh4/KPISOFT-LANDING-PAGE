@@ -283,6 +283,7 @@ footer {
 }
 
 .p-performance {
+  position: relative;
   z-index: 1;
 }
 
@@ -356,6 +357,7 @@ footer {
 }
 
 .i-performance {
+  position: relative;
   z-index: 1;
 }
 
@@ -451,19 +453,19 @@ footer {
 
 .container-structured{
 width: 100%;
-padding: 6rem 0;
+padding: 5.33vh 0;
 }
 
 .item {
-  height: 363px;
-  width: 561px;
+  height: 40.33vh;
+  width: 35.05vw;
   border-radius: 8px;
   background: #ffffff;
   margin: auto;
 }
 
 .item:nth-child(1){
-  margin-left: 10rem !important;
+  margin-left: 10vw !important;
 }
 
 #testominals {
@@ -473,7 +475,7 @@ padding: 6rem 0;
 
 #scrollContainer {
   background: #1175c9;
-  height: 603px;
+  height: 67vh;
 }
 
 #leftMove,
@@ -483,32 +485,60 @@ padding: 6rem 0;
 }
 
 #leftMove {
-  margin-left: 10rem;
+  margin-left: 10vw;
 }
 
 .profile-img-container{
-  width: 44px;
-  height: 44px;
+  width: 2.75vw;
+  height: 5.88vh;
   border-radius: 50%;
   border: 1px solid #1175C9;
   overflow: hidden;
 }
 
 .profile-img {
-  width: 45px;
-  height: 45px;
+  width: 2.75vw;
+  height: 5.88vh;
 }
 
 .person-name{
-  font-size: 1.34rem !important;
+  font-size: 1.5vw !important;
+}
+
+.designation{
+  font-size: 1vw !important;
 }
 
 .blockQuate-img {
-  width: 77px;
-  height: 24px;
+  width: 2.685vw;
+  height: 4.37vh;
 }
 
 .item p {
-  padding: 0 1rem;
-  font-size: 1rem;
+  padding: 0 1vw;
+  font-size: 1.25vw;
+}
+
+.sqare-watermark{
+position: absolute;
+top: 8rem;
+left: 22rem;
+height: 18rem;
+width: 18rem;
+}
+
+.round-watermark{
+  position: absolute;
+  top: 6rem;
+  left: 0rem;
+  width: 17.06rem;
+  height: 17.06rem;
+}
+
+.sqareEdge-watermark{
+  position: absolute;
+  top: 15rem;
+  left: 20rem;
+  width: 19.375rem;
+  height: 18.625rem;
 }
