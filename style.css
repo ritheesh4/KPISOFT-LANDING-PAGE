@@ -467,17 +467,21 @@ padding: 5.33vh 0;
 }
 
 .person-name{
-  font-size: 1.34vw !important;
+  font-size: 1.5vw !important;
+}
+
+.designation{
+  font-size: 1vw !important;
 }
 
 .blockQuate-img {
-  width: 4.81vw;
-  height: 2.66vh;
+  width: 2.685vw;
+  height: 4.37vh;
 }
 
 .item p {
   padding: 0 1vw;
-  font-size: 1vw;
+  font-size: 1.25vw;
 }
 
 .sqare-watermark{
