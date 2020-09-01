@@ -98,6 +98,13 @@ h6 {
 }
 
 
+.testominals-container{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container-structured{
 width: 100%;
 padding: 6rem 0;
