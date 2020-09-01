@@ -30,23 +30,34 @@ ul {
   padding: 3rem 0;
 }
 
-h1,
+/* h1,
 h2 {
   padding: 2rem 0;
-}
+} */
 
 /* Client section */
 .client h1 {
-  font-size: 52px;
+  font-size: 3.25vw;
+  font-weight: 400;
+  overflow: hidden;
+  padding: 2px;
+
 }
 
 .client h2 {
-  font-size: 30px;
+  font-size: 1.875vw;
+  font-weight: 400;
+  overflow: hidden;
 }
 
 /* Banner section */
 .banner {
   background: #feda31;
+}
+
+.kpisfot-logo{
+  width: 11.875vw;
+  height: 4.77vh;
 }
 
 .banner h2 {
@@ -118,7 +129,7 @@ footer {
 
 /* Navbar */
 .main-nav {
-  padding: 1.2rem 2rem;
+  padding: 2.55vh 5vw;
 }
 
 .active {
@@ -129,9 +140,10 @@ footer {
 .nav-get-started {
   background: #1175c9;
   color: #fff;
-  padding: 0.7rem;
+  padding: 1vh 1.25vw;
   font-weight: 500;
-  border-radius: 8px;
+  border-radius: 0.5vw;
+  font-size: 1vw;
 }
 
 .nav-get-started:hover {
@@ -141,8 +153,9 @@ footer {
 
 /* Hero section */
 .hero small {
-  padding: 10px 0;
-  font-size: 15px;
+  padding: 0.625vw 0;
+  font-size: 0.937vw;
+  padding-left: 1.5vw;
 }
 .hero .col-md-6 {
   padding-top: 7rem;
@@ -163,9 +176,11 @@ footer {
 
 .hero-square {
   background: #e5e5e5;
-  border-bottom-left-radius: 100px;
+  /* border-bottom-left-radius: 100px;
   width: 50%;
-  height: 50%;
+  height: 50%; */
+  width:22.625vw;
+  height: 35.77vh;
   position: absolute;
   top: 0;
   right: 0;
@@ -176,13 +191,18 @@ footer {
   z-index: 10;
 }
 
+.hero-ph {
+  width:37.812vw;
+  height: 54.vh;
+}
+
 .container {
   padding-right: 10px;
   padding-left: 10px;
 }
 
 .hero-container {
-  max-width: 600px;
+  max-width: 37.5vw;
   margin: auto;
   padding: 10px;
 }
@@ -193,20 +213,22 @@ footer {
 
 .hero h1 {
   padding-bottom: 0.5rem;
-  font-size: 62px;
+  font-size: 3.875vw;
+  background-color: #f0f0f0;
 }
 
 .hero p {
-  font-size: 24px;
+  font-size: 1.5vw !important;
   color: #40464e;
-  font-size: 24px;
 }
 
 .hero input:first-child {
-  padding: 20px;
-  border: 3px solid #1175c9;
+  /* padding: 20px; */
+  border: 0.22vh solid #1175c9;
+  width: 22.5vw;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  height:7.11vh ;
 }
 
 .hero textarea:focus,
@@ -222,7 +244,20 @@ footer {
   background: #1175c9;
   color: #fff;
   border: 1px solid #1175c9;
-  font-size: 18px;
+  font-size: 1.125vw;
+  height:7.11vh ;
+}
+
+.get-started{
+  padding: 0;
+  font-size: 1.125vw;
+  padding:1.33vh 3vw;
+}
+
+.input-email{
+  height: 5.11vh;
+  width:22.5vw ;
+  padding: 2.59vh;
 }
 
 /* PIG section */
@@ -381,7 +416,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+/* @media (min-width: 768px) and (max-width: 991.98px) {
   .hero h1 {
     padding-bottom: 0.5rem;
     font-size: 40px;
@@ -402,7 +437,7 @@ footer {
     width: 20%;
     border-bottom-left-radius: 50px;
   }
-}
+} */
 
 /* section testominals */
 
