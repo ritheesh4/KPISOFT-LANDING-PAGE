@@ -32,7 +32,7 @@ const scrollItems = direction => {
   } else {
     element.scrollLeft += width;
     if (element.scrollLeft === widthMax) {
-      element.style = "margin-right :2rem";
+      element.style = "margin-right :2vw";
     }
   }
 };
