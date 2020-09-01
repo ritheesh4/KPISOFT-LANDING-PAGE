@@ -248,6 +248,7 @@ footer {
 }
 
 .p-performance {
+  position: relative;
   z-index: 1;
 }
 
@@ -321,6 +322,7 @@ footer {
 }
 
 .i-performance {
+  position: relative;
   z-index: 1;
 }
 
@@ -476,4 +478,28 @@ padding: 6rem 0;
 .item p {
   padding: 0 1rem;
   font-size: 1rem;
+}
+
+.sqare-watermark{
+position: absolute;
+top: 8rem;
+left: 22rem;
+height: 18rem;
+width: 18rem;
+}
+
+.round-watermark{
+  position: absolute;
+  top: 6rem;
+  left: 0rem;
+  width: 17.06rem;
+  height: 17.06rem;
+}
+
+.sqareEdge-watermark{
+  position: absolute;
+  top: 15rem;
+  left: 20rem;
+  width: 19.375rem;
+  height: 18.625rem;
 }
