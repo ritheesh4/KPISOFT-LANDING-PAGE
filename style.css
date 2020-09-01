@@ -423,9 +423,9 @@ padding: 5.33vh 0;
 
 .item {
   height: 40.33vh;
-  width: 35.05vw;
+  width: 35.06vw;
   border-radius: 8px;
-  background: #ffffff;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
   margin: auto;
 }
 
@@ -468,6 +468,9 @@ padding: 5.33vh 0;
 
 .person-name{
   font-size: 1.5vw !important;
+  color: #0F1921;
+  letter-spacing: 0.0237vw;
+  text-align: left;
 }
 
 .designation{
@@ -475,8 +478,8 @@ padding: 5.33vh 0;
 }
 
 .blockQuate-img {
-  width: 2.685vw;
-  height: 4.37vh;
+  width: 4.6875vw;
+  height: 4.333vh;
 }
 
 .item p {
