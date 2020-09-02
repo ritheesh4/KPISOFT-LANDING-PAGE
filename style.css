@@ -37,6 +37,11 @@ h2 {
 } */
 
 /* Client section */
+.client {
+  width: 100%;
+  display: flex;
+}
+
 .client h1 {
   font-size: 3.25vw;
   font-weight: 400;
@@ -94,7 +99,7 @@ h2 {
   padding: 1.24vh 1vw;
   border: none;
   cursor: pointer;
-  width:12.875vw;
+  width: 12.875vw;
   margin-bottom: 9.44vh;
 }
 
@@ -204,6 +209,12 @@ footer {
 .container {
   padding-right: 10px;
   padding-left: 10px;
+}
+
+.container h2 {
+  text-align: center;
+  margin-top: 11.44vh;
+  margin-bottom: 2.66vh;
 }
 
 .hero-container {
@@ -471,11 +482,12 @@ footer {
   justify-content: center;
 }
 
-.testimonial-title{
+.testimonial-title {
   font-size: 3.25vw;
   width: 18.645vw;
   margin: auto;
   padding: 7.88vh 0;
+  font-weight: 400;
 }
 
 .container-structured {
@@ -680,5 +692,12 @@ footer {
   .item p {
     padding: 0 1vw;
     font-size: 3.88vw;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container{
+    max-width: 64.375vw !important;
   }
 }
