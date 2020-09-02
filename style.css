@@ -14,8 +14,7 @@ body {
 }
 
 img {
-  width: 15vw;
-  height: 16vh;
+  width: 100%;
 }
 
 a {
@@ -314,7 +313,7 @@ footer {
 .p-main-heading img {
   width: 5.7vw;
   height: 10.1vh;
-  display: inline-block;
+  /* display: inline-block; */
 }
 
 .p-main span {
@@ -704,11 +703,51 @@ footer {
     padding: 0 1vw;
     font-size: 3.88vw;
   }
+
+  /* Pig sections mobile */
+  .p-main span,
+  .i-main span {
+    font-size: 7.7vw;
+  }
+
+  .p-main h1,
+  .i-main h1 {
+    font-size: 6.8vw;
+  }
+
+  .p-main p,
+  .i-main p {
+    font-size: 3.9vw;
+  }
+
+  .p-main-heading img,
+  .i-main-heading img {
+    width: 12.8vw;
+    height: 6vh;
+  }
+
+  .p-learnmore,
+  .i-learnmore {
+    font-size: 3.7vw;
+    width: 53vw;
+    text-align: center;
+    display: block;
+    margin: auto;
+  }
+
+  .p-main,
+  .i-main {
+    text-align: center;
+  }
+
+  .p-main-heading,
+  .i-main-heading {
+    justify-content: center;
+  }
 }
 
-
 @media (min-width: 1200px) {
-  .container{
+  .container {
     max-width: 64.375vw !important;
   }
 }
