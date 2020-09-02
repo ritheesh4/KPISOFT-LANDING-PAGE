@@ -581,8 +581,8 @@ footer {
   height: 18.625rem;
 }
 
-/* @media (max-width: 576px) {
-  /* section testominals 
+@media (max-width: 576px) {
+  /* section testominals */
   .testominals-container {
     min-height: 20vh;
     background: #fdfdfd;
@@ -681,4 +681,4 @@ footer {
     padding: 0 1vw;
     font-size: 3.88vw;
   }
-} */
+}
