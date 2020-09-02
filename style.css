@@ -14,7 +14,8 @@ body {
 }
 
 img {
-  width: 100%;
+  width: 15vw;
+  height: 16vh;
 }
 
 a {
@@ -94,6 +95,7 @@ h2 {
   border: none;
   cursor: pointer;
   width:12.875vw;
+  margin-bottom: 9.44vh;
 }
 
 textarea:focus,
@@ -208,6 +210,7 @@ footer {
   max-width: 37.5vw;
   margin: auto;
   padding: 10px;
+  margin-top: 22.55vh;
 }
 
 .hero-container input:first-child {
@@ -231,6 +234,7 @@ footer {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   height: 7.11vh;
+  font-size: 1.25vw;
 }
 
 .hero textarea:focus,
@@ -467,6 +471,13 @@ footer {
   justify-content: center;
 }
 
+.testimonial-title{
+  font-size: 3.25vw;
+  width: 18.645vw;
+  margin: auto;
+  padding: 7.88vh 0;
+}
+
 .container-structured {
   width: 100%;
   padding: 5.33vh 0;
@@ -570,8 +581,8 @@ footer {
   height: 18.625rem;
 }
 
-@media (max-width: 576px) {
-  /* section testominals */
+/* @media (max-width: 576px) {
+  /* section testominals 
   .testominals-container {
     min-height: 20vh;
     background: #fdfdfd;
@@ -670,4 +681,4 @@ footer {
     padding: 0 1vw;
     font-size: 3.88vw;
   }
-}
+} */
