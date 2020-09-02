@@ -543,8 +543,7 @@ footer {
 .quotes-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
 }
 
 .blockQuate-img {
@@ -601,8 +600,13 @@ footer {
     width: 90vw;
     border-radius: 8px;
     background: #ffffff;
-    margin: 0 10vw !important;
+    margin: 0 11.65vw 0 11.95vw !important;
   }
+
+
+.item:nth-child(1) {
+  margin-left: 11.65vw !important;
+}
 
   #testominals {
     scroll-behavior: smooth;
