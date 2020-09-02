@@ -499,16 +499,19 @@ footer {
   width: 35.05vw;
   border-radius: 8px;
   background: #ffffff;
-  margin: auto;
+  display: inline-block;
+  margin: 0 5vh;
 }
 
-.item:nth-child(1) {
+.item:nth-child(1){
   margin-left: 10vw !important;
 }
 
 #testominals {
   scroll-behavior: smooth;
-  overflow: hidden;
+  border-spacing: 30px 0;
+  width: 100%;
+  white-space: nowrap;
 }
 
 #scrollContainer {
@@ -520,6 +523,7 @@ footer {
 #rightMove {
   outline: none;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 #leftMove {
@@ -565,6 +569,7 @@ footer {
 .item p {
   padding: 0 1vw;
   font-size: 1.25vw;
+  white-space: normal;
 }
 
 .sqare-watermark {
@@ -596,9 +601,6 @@ footer {
   .testominals-container {
     min-height: 20vh;
     background: #fdfdfd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .container-structured {
@@ -608,22 +610,16 @@ footer {
 
   .item {
     height: 55.74vh;
-    width: 90vw;
+    width: 80.58vw;
     border-radius: 8px;
     background: #ffffff;
-    margin: 0 11.65vw 0 11.95vw !important;
+    margin: 0 9vw !important;
   }
 
-
-.item:nth-child(1) {
-  margin-left: 11.65vw !important;
-}
 
   #testominals {
     scroll-behavior: smooth;
     overflow: hidden;
-    justify-content: space-between;
-    margin: 0 !important;
   }
 
   #scrollContainer {
