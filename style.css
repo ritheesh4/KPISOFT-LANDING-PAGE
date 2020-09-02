@@ -440,6 +440,11 @@ footer {
   margin-top: 5.5vh;
 }
 
+.pig-heading {
+  font-size: 3.2vw;
+  margin-top: 2rem;
+}
+
 /* Mobile css */
 @media (max-width: 576px) {
   .nav-get-started {
@@ -571,7 +576,7 @@ footer {
   position: absolute;
   top: 8rem;
   left: 22rem;
-  height: 18rem;
+  height: 18.5vw;
   width: 18rem;
 }
 
@@ -592,6 +597,16 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .kpisfot-logo {
+    width: 35.8vw;
+    height: 3.8vh;
+  }
+
+  .pig-heading {
+  font-size: 6.8vw !important;
+ 
+}
+
   /* section testominals */
   .testominals-container {
     min-height: 20vh;
@@ -614,10 +629,9 @@ footer {
     margin: 0 11.65vw 0 11.95vw !important;
   }
 
-
-.item:nth-child(1) {
-  margin-left: 11.65vw !important;
-}
+  .item:nth-child(1) {
+    margin-left: 11.65vw !important;
+  }
 
   #testominals {
     scroll-behavior: smooth;
