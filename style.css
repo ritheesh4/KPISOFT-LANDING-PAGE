@@ -284,6 +284,12 @@ footer {
 }
 
 /* Purpose section */
+
+.purpose-title{
+  margin-top: 10.22vh;
+  margin-bottom: 10.22vh;
+}
+
 .p-elements {
   position: relative;
 }
