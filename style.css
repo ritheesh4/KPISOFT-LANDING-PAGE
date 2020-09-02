@@ -14,7 +14,8 @@ body {
 }
 
 img {
-  width: 100%;
+  width: 15vw;
+  height: 16vh;
 }
 
 a {
@@ -36,6 +37,11 @@ h2 {
 } */
 
 /* Client section */
+.client {
+  width: 100%;
+  display: flex;
+}
+
 .client h1 {
   font-size: 3.25vw;
   font-weight: 400;
@@ -60,8 +66,10 @@ h2 {
 }
 
 .banner h2 {
+  margin-top: 9.11vh;
+  margin-bottom: 7.88vh;
   color: #1175c9;
-  font-size: 48px;
+  font-size: 3vw;
 }
 
 .banner form {
@@ -72,24 +80,27 @@ h2 {
 }
 
 .banner form input:first-child {
-  padding: 0.7rem;
+  padding: 1.24vh;
   border: none;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  font-size: 18px;
+  border-top-left-radius: 0.88vh;
+  border-bottom-left-radius: 0.88vh;
+  font-size: 1.125vw;
+  width: 22.5vw;
 }
 
 #submitbutton {
   background-color: #1175c9;
-  border-radius: 0px 8px 8px 0px;
+  border-radius: 0px 0.88vh 0.5vw 0px;
   color: #fff;
   font-weight: 600;
   position: relative;
-  right: 5px;
-  font-size: 18px;
-  padding: 0.7rem 1rem;
+  right: 0.3125vw;
+  font-size: 1.125vw;
+  padding: 1.24vh 1vw;
   border: none;
   cursor: pointer;
+  width: 12.875vw;
+  margin-bottom: 9.44vh;
 }
 
 textarea:focus,
@@ -99,18 +110,18 @@ input:focus {
 
 /* Address section */
 .address p span {
-  font-size: 14px;
+  font-size: 0.875vw;
   color: #40464e;
 }
 
 .address p span:first-child {
-  font-size: 16px;
+  font-size: 1vw;
   font-weight: 700;
   color: #283037;
 }
 
 .address .col-md {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .address .row > * {
@@ -120,9 +131,9 @@ input:focus {
 /* Footer section */
 footer {
   background: #1175c9;
-  padding: 15px 0;
+  padding: 1.66vh 0;
   color: #fff;
-  font-size: 15px;
+  font-size: 0.9375vw;
   font-weight: 400;
 }
 
@@ -200,10 +211,17 @@ footer {
   padding-left: 10px;
 }
 
+.container h2 {
+  text-align: center;
+  margin-top: 11.44vh;
+  margin-bottom: 2.66vh;
+}
+
 .hero-container {
   max-width: 37.5vw;
   margin: auto;
   padding: 10px;
+  margin-top: 22.55vh;
 }
 
 .hero-container input:first-child {
@@ -227,6 +245,7 @@ footer {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   height: 7.11vh;
+  font-size: 1.25vw;
 }
 
 .hero textarea:focus,
@@ -461,6 +480,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.testimonial-title {
+  font-size: 3.25vw;
+  width: 18.645vw;
+  margin: auto;
+  padding: 7.88vh 0;
+  font-weight: 400;
 }
 
 .container-structured {
@@ -706,5 +733,12 @@ footer {
   .p-main-heading,
   .i-main-heading {
     justify-content: center;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container{
+    max-width: 64.375vw !important;
   }
 }
