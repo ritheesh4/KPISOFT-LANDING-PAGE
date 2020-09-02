@@ -14,8 +14,7 @@ body {
 }
 
 img {
-  width: 15vw;
-  height: 16vh;
+  width: 100%;
 }
 
 a {
@@ -736,9 +735,8 @@ footer {
   }
 }
 
-
 @media (min-width: 1200px) {
-  .container{
+  .container {
     max-width: 64.375vw !important;
   }
 }
