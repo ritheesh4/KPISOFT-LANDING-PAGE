@@ -500,17 +500,21 @@ footer {
   margin-left: 10vw;
 }
 
+.profile-container {
+  display: flex;
+}
+
 .profile-img-container {
-  width: 2.75vw;
-  height: 5.88vh;
+  width: 5.58vw;
+  height: 11.33vh;
   border-radius: 50%;
-  border: 1px solid #1175c9;
+  border: 2px solid #1175c9;
   overflow: hidden;
 }
 
 .profile-img {
-  width: 2.75vw;
-  height: 5.88vh;
+  width: 5.58vw;
+  height: 11.33vh;
 }
 
 .person-name {
@@ -521,8 +525,15 @@ footer {
   font-size: 1vw !important;
 }
 
+.quotes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .blockQuate-img {
-  width: 2.685vw;
+  width: 4.685vw;
   height: 4.37vh;
 }
 
@@ -553,4 +564,106 @@ footer {
   left: 20rem;
   width: 19.375rem;
   height: 18.625rem;
+}
+
+@media (max-width: 576px) {
+  /* section testominals */
+  .testominals-container {
+    min-height: 20vh;
+    background: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-structured {
+    width: 100%;
+    padding: 5.33vh 0;
+  }
+
+  .item {
+    height: 55.74vh;
+    width: 90vw;
+    border-radius: 8px;
+    background: #ffffff;
+    margin: 0 10vw !important;
+  }
+
+  #testominals {
+    scroll-behavior: smooth;
+    overflow: hidden;
+    justify-content: space-between;
+    margin: 0 !important;
+  }
+
+  #scrollContainer {
+    background: #1175c9;
+    height: 79.08vh;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .button-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #leftMove,
+  #rightMove {
+    outline: none;
+    border-radius: 50%;
+  }
+
+  #leftMove {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    margin: auto 0 !important;
+  }
+
+  .profile-img-container {
+    width: 17.47vw;
+    height: 8.16vh;
+    border-radius: 50%;
+    border: 1px solid #1175c9;
+    overflow: hidden;
+  }
+
+  .profile-img {
+    width: 17.47vw;
+    height: 8.16vh;
+  }
+
+  .person-name {
+    font-size: 4.12vw !important;
+  }
+
+  .designation {
+    font-size: 2.91vw !important;
+  }
+
+  .quotes-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .blockQuate-img {
+    width: 7.76vw;
+    height: 3.67vh;
+  }
+
+  .item p {
+    padding: 0 1vw;
+    font-size: 3.88vw;
+  }
 }
