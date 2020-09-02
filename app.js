@@ -21,18 +21,20 @@ document.getElementById("rightMove").addEventListener("click", () => {
 
 const scrollItems = direction => {
   let element = document.getElementById("testominals");
-  let width = element.clientWidth;
+  let width = element.clientWidth
   let widthMax = element.scrollWidth - element.clientWidth;
-
   if (direction === "left") {
-    element.scrollLeft -= width;
     if (element.style.marginRight) {
       element.style = "margin-right:0";
+      if(element.clientWidth < 768) { element.style="margin-right:11.95vw !important"};
     }
+    element.scrollLeft -= width;
+   
   } else {
-    element.scrollLeft += width;
     if (element.scrollLeft === widthMax) {
       element.style = "margin-right :2vw !important";
+      if(element.clientWidth < 768) { element.style="margin-right:11.95vw !important"};
     }
+    element.scrollLeft += width;
   }
 };
