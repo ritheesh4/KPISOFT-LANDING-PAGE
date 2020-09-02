@@ -47,6 +47,7 @@ h2 {
   font-weight: 400;
   overflow: hidden;
   padding: 2px;
+  padding:0.77vh;
 }
 
 .client h2 {
