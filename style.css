@@ -431,15 +431,43 @@ footer {
     font-weight: 600;
   }
 
+  /* Purpose section */
+  .yellow-square {
+    left: 60%;
+    bottom: 65%;
+    width: 40%;
+    height: 35%;
+    transform: rotate(180deg);
+    border-top-right-radius: 100px;
+  }
+  
+  .sqare-watermark{
+    position: absolute;
+    top: 4rem;
+    left: -29vw;
+    height: 32.5vw;
+    width: 29rem;
+  }
+
+  .purpose-group{
+    width: 12%;
+  }
+
+  .sqareEdge-watermark{
+    position: absolute;
+  }
+
   /* section testominals */
   .testominals-container {
     min-height: 20vh;
     background: #fdfdfd;
   }
+
   .container-structured {
     width: 100%;
     padding: 5.33vh 0;
   }
+
   .item {
     height: 55.74vh;
     width: 80.58vw;
@@ -447,16 +475,19 @@ footer {
     background: #ffffff;
     margin: 0 9vw !important;
   }
+
   #testominals {
     scroll-behavior: smooth;
     overflow: hidden;
   }
+
   #scrollContainer {
     background: #1175c9;
     height: 79.08vh;
     display: flex;
     flex-direction: column-reverse;
   }
+
   .button-container {
     width: 100vw;
     display: flex;
@@ -464,15 +495,18 @@ footer {
     justify-content: center;
     align-items: center;
   }
+
   #leftMove,
   #rightMove {
     outline: none;
     border-radius: 50%;
   }
+
   #leftMove {
     margin-left: 0;
     margin-right: 10px;
   }
+
   .profile-container {
     flex-direction: column;
     justify-content: center;
@@ -480,6 +514,7 @@ footer {
     padding: 0 !important;
     margin: auto 0 !important;
   }
+
   .profile-img-container {
     width: 17.47vw;
     height: 8.16vh;
@@ -487,25 +522,31 @@ footer {
     border: 1px solid #1175c9;
     overflow: hidden;
   }
+
   .profile-img {
     width: 17.47vw;
     height: 8.16vh;
   }
+
   .person-name {
     font-size: 4.12vw !important;
   }
+
   .designation {
     font-size: 2.91vw !important;
   }
+
   .quotes-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .blockQuate-img {
     width: 7.76vw;
     height: 3.67vh;
   }
+
   .item p {
     padding: 0 1vw;
     font-size: 3.88vw;
