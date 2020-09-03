@@ -10,7 +10,6 @@ window.onscroll = function() {
   }
 };
 
-
 document.getElementById("leftMove").addEventListener("click", () => {
   scrollItems("left");
 });
