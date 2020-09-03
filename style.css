@@ -208,6 +208,11 @@ footer {
   color: #fff;
 }
 
+.symbol-img{
+width: 5.62vw;
+height: 10vh;
+}
+
 .yellow-square {
   background: #feda31;
   border-top-right-radius: 250px;
