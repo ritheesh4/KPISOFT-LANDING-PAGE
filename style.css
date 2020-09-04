@@ -131,7 +131,7 @@ a {
   width: 100%;
 }
 
-.form-control {
+.banner .form-control {
   width: 20vw !important;
   margin-left: 5vw;
   border: 1px solid #1175c9;
@@ -394,7 +394,7 @@ footer {
   z-index: 3;
 }
 
-.p-performance {
+.performance-img {
   position: relative;
   z-index: 1;
 }
@@ -750,7 +750,7 @@ footer {
     height: 35%;
   }
 
-  .p-performance {
+  .performance-img {
     top: 8%;
   }
 
@@ -865,7 +865,7 @@ footer {
   .item {
     height: 55.74vh;
     width: 80.58vw;
-    border-radius: 8px;
+    border-radius: 0.5vw;
     background: #ffffff;
     margin: 0 9vw !important;
   }
