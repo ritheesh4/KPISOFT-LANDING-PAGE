@@ -237,9 +237,16 @@ a {
   margin: auto;
 }
 
+.client-title{
+  font-size: 1.875vw;
+  text-align: center;
+}
+
+
 /* PIG Sections */
 .pig-heading {
   margin-top: 4rem;
+  font-size: 3.25vw;
 }
 
 .custom-mt {
@@ -701,10 +708,15 @@ footer {
     margin-right: 10vw;
   }
   /* Clients */
-  .clients h2 {
+  .client h2 {
     font-size: 6.78vw;
     font-weight: 400;
     line-height: 1.8;
+  }
+
+  .client-title{
+    font-size: inherit;
+    font-size: 6.796vw;
   }
 
   .clients {
