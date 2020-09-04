@@ -118,6 +118,10 @@ a {
   color: #fff;
 }
 
+.mob-mail-description {
+  display: none;
+}
+
 /* Clients Section */
 
 /* Adjust the client section margintop here */
@@ -409,6 +413,10 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .navbar-brand img {
+    width: 35vw !important;
+  }
+
   .address .row > * {
     padding: 2rem 0.4rem;
   }
@@ -445,7 +453,7 @@ footer {
     order: 2;
   }
 
-  .banner-image{
+  .banner-image {
     margin-top: 34%;
   }
 
@@ -465,6 +473,16 @@ footer {
   .jumbotron-grey-square {
     /* display: none; */
     z-index: 1;
+  }
+
+  .highlight-word {
+    font-size: 7.28vw;
+    line-height: 0;
+  }
+
+  .jumbotron-message-container .display-4 {
+    line-height: 40px;
+    font-weight: 600;
   }
 
   .jumbotron-yellow {
@@ -497,6 +515,13 @@ footer {
     margin-left: 5%;
   }
 
+  .mob-mail-description {
+    display: block;
+    font-style: italic;
+    text-align: left !important;
+    padding-left: 6%;
+  }
+
   #jumbotron-get-started {
     width: 80vw;
     border-top-left-radius: 4px;
@@ -511,11 +536,36 @@ footer {
     padding-left: 30%;
   }
 
+  /* Clients */
+  .clients h2 {
+    font-size: 6.78vw;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+
   .clients {
     margin-top: inherit;
   }
 
+  .pig-heading {
+    font-size: 6.7vw;
+    font-weight: 400;
+    padding-bottom: 10vh;
+  }
+
   /* Purpose section */
+  .purpose-topic {
+    font-size: 6.78vw;
+    text-align: center;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+  }
+
+  .purpose-para {
+    text-align: center;
+    opacity: 0.7;
+  }
+
   .yellow-square {
     left: 60%;
     bottom: 65%;
@@ -531,12 +581,24 @@ footer {
     height: 35%;
   }
 
+  .p-performance {
+    top: 8%;
+  }
+
+  .round-watermark {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    width: 13.06rem;
+    height: 17.06rem;
+  }
+
   .sqare-watermark {
     position: absolute;
-    top: 4rem;
-    left: -29vw;
-    height: 32.5vw;
-    width: 29rem;
+    top: 1rem;
+    left: -22vw;
+    height: 45.5vw;
+    width: 39rem;
   }
 
   .symbol-img {
@@ -564,23 +626,38 @@ footer {
   }
 
   .PIG-title {
-    font-size: 35px;
+    font-size: 9vw;
+  }
+
+  .PIG-para {
+    font-size: 7vw;
+    text-align: center;
+    padding: 5vh 0;
+  }
+
+  .PIG-second-para{
+    text-align: center;
+    opacity: 0.7;
+    padding-bottom: 2vh;
   }
 
   .learnmore {
     font-size: 0.7rem;
     font-weight: 700;
     width: inherit;
-    width: 35vw;
-    margin-left: 24vw;
+    width: 55vw;
+    margin-left: 17%;
+    height: 6vh;
+    text-align: center;
+    padding-top: 1.5vh;
   }
 
   .sqareEdge-watermark {
     position: absolute;
     top: 0;
     left: 2vw;
-    width: 16vh;
-    height: 18.625rem;
+    width: 50vw;
+    height: 14.625rem;
   }
 
   .insight-section {
@@ -608,7 +685,7 @@ footer {
 
   .inside-img {
     order: 1;
-    margin-top: 13vh;
+    margin-top: 8vh;
   }
 
   .container-structured {
@@ -698,6 +775,7 @@ footer {
   .item p {
     padding: 0 1vw;
     font-size: 3.88vw;
+    text-align: center;
   }
 
   .testimonial-title {
@@ -706,6 +784,11 @@ footer {
     margin: auto;
     padding: 7.88vh 0;
     font-weight: 400;
+  }
+
+  /* Banner section */
+  .banner-title{
+    font-size: 8.7vw;
   }
 
   /* Address Section */
@@ -720,5 +803,12 @@ footer {
 
   .right-blank-div {
     display: none !important;
+  }
+
+  /* Footer section */
+  footer h6{
+    font-size: 2.91vw;
+    padding: 2vh 20vw;
+    line-height: 1.5;
   }
 }
