@@ -108,10 +108,18 @@ a {
 .nav-get-started {
   color: #fff;
   padding: 0.7rem 0.7rem;
-  font-size: 16px;
+  font-size: 1vw;
   text-transform: uppercase;
   border-radius: 8px;
   font-weight: 600;
+  margin-right: 5.37vw;
+  width: 6.875vw;
+  text-align: center;
+}
+
+.navbar-brand img {
+  width: 12.5vw;
+  margin-left: 5vw;
 }
 
 .nav-get-started:hover {
@@ -139,13 +147,17 @@ a {
   font-style: italic;
 }
 
+.jumbotron-message-container {
+  text-align: left !important;
+}
+
 /* Modal */
 .modal-content {
   background: #1175c9;
 }
 
-.modal-content input[type='text'],
-.modal-content input[type='email'],
+.modal-content input[type="text"],
+.modal-content input[type="email"],
 .modal-content textarea,
 .modal-content select {
   width: 80%;
@@ -549,6 +561,10 @@ footer {
     width: 35vw !important;
   }
 
+  .nav-get-started {
+    width: 26vw;
+  }
+
   .address .row > * {
     padding: 2rem 0.4rem;
   }
@@ -618,6 +634,7 @@ footer {
 
   .jumbotron-message-container {
     max-width: inherit;
+    text-align: center !important;
   }
 
   .jumbotron-message-container .display-4 {
@@ -661,6 +678,7 @@ footer {
     font-style: italic;
     text-align: left !important;
     padding-left: 6%;
+    font-size: 3.39vw;
   }
 
   #jumbotron-get-started {
