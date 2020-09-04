@@ -266,6 +266,10 @@ footer {
 }
 
 /* Banner section */
+.banner-title {
+  font-size: 8.7vw;
+}
+
 .banner {
   background: #feda31;
   min-height: 36.8vh;
@@ -545,6 +549,10 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .banner input.form-control {
+    width: 100%;
+  }
+
   .navbar-brand img {
     width: 35vw !important;
   }
@@ -935,11 +943,6 @@ footer {
     margin: auto;
     padding: 7.88vh 0;
     font-weight: 400;
-  }
-
-  /* Banner section */
-  .banner-title {
-    font-size: 8.7vw;
   }
 
   /* Address Section */
