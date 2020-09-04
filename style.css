@@ -107,13 +107,13 @@ a {
 
 .nav-get-started {
   color: #fff;
-  padding: 0.7rem 0.7rem;
+  padding: 1vh 1.25vw;
   font-size: 1vw;
   text-transform: uppercase;
   border-radius: 8px;
   font-weight: 600;
   margin-right: 5.37vw;
-  width: 6.875vw;
+  width: 8.875vw;
   text-align: center;
 }
 
@@ -322,6 +322,7 @@ footer h6 {
   color: #1175c9;
   font-weight: 600;
   padding: 3rem 1rem;
+  font-size: 3vw;
 }
 
 .banner .input-group {
@@ -1031,6 +1032,15 @@ footer h6 {
     padding: 2vh 20vw;
     line-height: 1.5;
   }
+
+  /* Power section */
+  .banner h1 {
+    color: #1175c9;
+    font-weight: 600;
+    padding: 3rem 1rem;
+    font-size: 8.73vw;
+  }
+  
 
   footer {
     margin-bottom: 6vh;
