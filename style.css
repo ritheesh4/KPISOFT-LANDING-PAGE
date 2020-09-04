@@ -123,7 +123,7 @@ a {
   width: 100%;
 }
 
-.form-control {
+.banner .form-control {
   width: 20vw !important;
   margin-left: 5vw;
   border: 1px solid #1175c9;
