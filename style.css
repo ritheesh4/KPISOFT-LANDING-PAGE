@@ -52,7 +52,6 @@ a {
 .highlight-word {
   background: #efefef;
   font-size: 3.875vw;
-
 }
 
 .jumbotron-message-container {
@@ -124,22 +123,94 @@ a {
   width: 100%;
 }
 
-
 .form-control {
   width: 20vw !important;
   margin-left: 5vw;
-  border: 1px solid #1175C9;
+  border: 1px solid #1175c9;
   border-top-left-radius: 0.8vw;
   border-bottom-left-radius: 0.8vw;
   /* height: ;
   width: ; */
 }
 
-
 .mob-mail-description {
   text-align: center;
   font-size: 0.9375vw;
   font-style: italic;
+}
+
+/* Modal */
+.modal-content {
+  background: #1175c9;
+}
+
+.modal-content input[type='text'],
+.modal-content input[type='email'],
+.modal-content textarea,
+.modal-content select {
+  width: 80%;
+  margin: auto;
+}
+
+.group-check {
+  justify-content: center;
+  color: #fff;
+}
+
+.group-check a {
+  color: #fff;
+  font-weight: 900;
+}
+
+.group-check input {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+}
+
+.modal-submit {
+  display: block;
+  width: 80%;
+  background: #feda31;
+  text-transform: uppercase;
+  color: #1175c9;
+  font-weight: 600;
+}
+
+.modal-submit:hover {
+  text-decoration: none;
+  color: #1175c9;
+}
+
+.modal-footer small {
+  text-align: center;
+  display: block;
+  width: 80%;
+  color: #feda31;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.modal-content input::placeholder,
+.modal-content textarea::placeholder {
+  font-family: normal normal medium 15px/36px Neue Haas Unica;
+  letter-spacing: 0.3px;
+  color: #40464e;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.modal-content select {
+  font-family: normal normal medium 15px/36px;
+  letter-spacing: 0.3px;
+  color: #40464e;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 /* Clients Section */
@@ -149,9 +220,9 @@ a {
   margin-top: 7.3rem;
 }
 
-.clinet-container{
+.clinet-container {
   width: 71.25vw;
-  margin:auto
+  margin: auto;
 }
 
 /* PIG Sections */
@@ -252,7 +323,7 @@ footer {
   padding-bottom: 4vh;
 }
 
-.PIG-para{
+.PIG-para {
   font-size: 2.75vw;
   text-align: left;
   letter-spacing: 0.0437vw;
@@ -260,13 +331,12 @@ footer {
   padding-bottom: 4vh;
 }
 
-.PIG-second-para{
+.PIG-second-para {
   text-align: left;
   opacity: 0.7;
   font-size: 1.25vw;
   padding-bottom: 4vh;
 }
-
 
 .yellow-square {
   background: #feda31;
@@ -304,7 +374,7 @@ footer {
 .gray-square {
   background: #ebebeb;
   border-bottom-left-radius: 6.25vw;
-    width: 9.187vw;
+  width: 9.187vw;
   height: 13.77vh;
   position: absolute;
   right: 0;
@@ -318,7 +388,7 @@ footer {
 }
 
 .learnmore {
-  background: #FFDA00;
+  background: #ffda00;
   color: #1175c9;
   text-align: center;
   display: flex;
@@ -328,8 +398,8 @@ footer {
   width: 13.7vw;
   text-decoration: none;
   font-size: 1.125vw;
-  border-radius:0.5vw;
-  height:5.33vh;
+  border-radius: 0.5vw;
+  height: 5.33vh;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -515,9 +585,9 @@ footer {
     order: 2;
     display: flex;
     align-items: center;
-    justify-content:center  ;
+    justify-content: center;
     flex-direction: column;
-  } 
+  }
 
   .banner-image {
     margin-top: 34%;
@@ -607,11 +677,11 @@ footer {
     padding-left: 30%;
   }
 
-  .jumbotron .lead {  
+  .jumbotron .lead {
     font-size: 3.64vw;
     margin-left: 10vw;
     margin-right: 10vw;
-}
+  }
   /* Clients */
   .clients h2 {
     font-size: 6.78vw;
@@ -623,11 +693,10 @@ footer {
     margin-top: inherit;
   }
 
-  .clinet-container{
+  .clinet-container {
     width: 80vw;
-    margin:auto
+    margin: auto;
   }
-  
 
   .pig-heading {
     font-size: 6.7vw;
@@ -717,7 +786,7 @@ footer {
     padding: 5vh 0;
   }
 
-  .PIG-second-para{
+  .PIG-second-para {
     text-align: center;
     opacity: 0.7;
     padding-bottom: 2vh;
@@ -869,7 +938,7 @@ footer {
   }
 
   /* Banner section */
-  .banner-title{
+  .banner-title {
     font-size: 8.7vw;
   }
 
@@ -888,13 +957,13 @@ footer {
   }
 
   /* Footer section */
-  footer h6{
+  footer h6 {
     font-size: 2.91vw;
     padding: 2vh 20vw;
     line-height: 1.5;
   }
 
-  footer{
+  footer {
     margin-bottom: 6vh;
   }
 }
