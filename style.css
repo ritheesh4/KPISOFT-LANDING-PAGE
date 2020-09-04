@@ -526,6 +526,12 @@ footer {
     border-top-right-radius: 100px;
   }
 
+  .right-yellow-square{
+    border-bottom-left-radius: 100px;
+    width: 40%;
+    height: 35%;
+  }
+
   .sqare-watermark {
     position: absolute;
     top: 4rem;
