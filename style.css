@@ -120,6 +120,10 @@ a {
   color: #fff;
 }
 
+.clients img {
+  width: 100%;
+}
+
 
 .form-control {
   width: 20vw !important;
