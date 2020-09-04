@@ -237,9 +237,20 @@ a {
   margin: auto;
 }
 
+.client-title{
+  font-size: 1.875vw;
+  text-align: center;
+}
+
+.clients{
+  padding: 0 10vw;
+}
+
+
 /* PIG Sections */
 .pig-heading {
   margin-top: 4rem;
+  font-size: 3.25vw;
 }
 
 .custom-mt {
@@ -268,6 +279,14 @@ a {
   text-decoration: none;
 }
 
+.address-title{
+  font-size: 1vw !important;
+}
+
+.address span{
+  font-size: 0.875vw;
+}
+
 /* Footer section */
 footer {
   background: #1175c9;
@@ -277,7 +296,17 @@ footer {
   font-weight: 400;
 }
 
+footer h6 {
+  font-size: 0.75vw;
+  padding: 2vh 20vw;
+
+}
+
 /* Banner section */
+.banner-title {
+  font-size: 8.7vw;
+}
+
 .banner {
   background: #feda31;
   min-height: 36.8vh;
@@ -392,6 +421,7 @@ footer {
   right: 0;
   top: 0;
   z-index: 3;
+  margin-top: 3%;
 }
 
 .performance-img {
@@ -557,6 +587,10 @@ footer {
 }
 
 @media (max-width: 576px) {
+  .banner input.form-control {
+    width: 100%;
+  }
+
   .navbar-brand img {
     width: 35vw !important;
   }
@@ -578,6 +612,11 @@ footer {
 
   .banner .input-group {
     width: 100%;
+  }
+
+  .banner .form-control{
+    width: 80vw !important;
+    border: none;
   }
 
   .navbar-brand img {
@@ -701,14 +740,20 @@ footer {
     margin-right: 10vw;
   }
   /* Clients */
-  .clients h2 {
+  .client h2 {
     font-size: 6.78vw;
     font-weight: 400;
     line-height: 1.8;
   }
 
+  .client-title{
+    font-size: inherit;
+    font-size: 6.796vw;
+  }
+
   .clients {
     margin-top: inherit;
+    overflow: hidden;
   }
 
   .clinet-container {
@@ -733,6 +778,7 @@ footer {
   .purpose-para {
     text-align: center;
     opacity: 0.7;
+    font-size: 3.88vw;
   }
 
   .yellow-square {
@@ -808,10 +854,11 @@ footer {
     text-align: center;
     opacity: 0.7;
     padding-bottom: 2vh;
+    font-size: 3.88vw;
   }
 
   .learnmore {
-    font-size: 0.7rem;
+    font-size: 3.64vw;
     font-weight: 700;
     width: inherit;
     width: 55vw;
@@ -819,6 +866,7 @@ footer {
     height: 6vh;
     text-align: center;
     padding-top: 1.5vh;
+    border-radius: 10px;
   }
 
   .sqareEdge-watermark {
@@ -953,11 +1001,6 @@ footer {
     font-weight: 400;
   }
 
-  /* Banner section */
-  .banner-title {
-    font-size: 8.7vw;
-  }
-
   /* Address Section */
   .address > div {
     border: 1px solid #e4e4e4;
@@ -970,6 +1013,14 @@ footer {
 
   .right-blank-div {
     display: none !important;
+  }
+
+  .address-title{
+    font-size: 3.883vw !important;
+  }
+  
+  .address span{
+    font-size: 3.39vw;
   }
 
   /* Footer section */
