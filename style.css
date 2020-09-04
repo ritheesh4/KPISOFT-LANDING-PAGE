@@ -901,7 +901,7 @@ height: 2.333vh;
     margin-left: 17%;
     height: 6vh;
     text-align: center;
-    padding-top: 1.5vh;
+    /* padding-top: 1.5vh; */
     border-radius: 10px;
   }
 
