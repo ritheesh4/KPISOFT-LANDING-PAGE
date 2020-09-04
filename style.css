@@ -417,6 +417,7 @@ footer h6 {
   right: 0;
   top: 0;
   z-index: 3;
+  margin-top: 3%;
 }
 
 .performance-img {
@@ -605,6 +606,11 @@ footer h6 {
     width: 100%;
   }
 
+  .banner .form-control{
+    width: 80vw !important;
+    border: none;
+  }
+
   .navbar-brand img {
     width: 200px;
   }
@@ -764,6 +770,7 @@ footer h6 {
   .purpose-para {
     text-align: center;
     opacity: 0.7;
+    font-size: 3.88vw;
   }
 
   .yellow-square {
@@ -839,10 +846,11 @@ footer h6 {
     text-align: center;
     opacity: 0.7;
     padding-bottom: 2vh;
+    font-size: 3.88vw;
   }
 
   .learnmore {
-    font-size: 0.7rem;
+    font-size: 3.64vw;
     font-weight: 700;
     width: inherit;
     width: 55vw;
@@ -850,6 +858,7 @@ footer h6 {
     height: 6vh;
     text-align: center;
     padding-top: 1.5vh;
+    border-radius: 10px;
   }
 
   .sqareEdge-watermark {
