@@ -241,7 +241,7 @@ footer {
 
 .yellow-square {
   background: #feda31;
-  border-top-right-radius: 250px;
+  border-top-right-radius: 15.62vw;
   width: 50%;
   height: 50%;
   position: absolute;
@@ -252,7 +252,7 @@ footer {
 
 .right-yellow-square {
   background: #feda31;
-  border-bottom-left-radius: 250px;
+  border-bottom-left-radius: 15.62vw;
   width: 50%;
   height: 50%;
   position: absolute;
@@ -263,7 +263,7 @@ footer {
 
 .left-gray-square {
   background: #ebebeb;
-  border-top-right-radius: 100px;
+  border-top-right-radius: 6.25vw;
   width: 9.187vw;
   height: 13.77vh;
   position: absolute;
@@ -274,7 +274,7 @@ footer {
 
 .gray-square {
   background: #ebebeb;
-  border-bottom-left-radius: 100px;
+  border-bottom-left-radius: 6.25vw;
     width: 9.187vw;
   height: 13.77vh;
   position: absolute;
