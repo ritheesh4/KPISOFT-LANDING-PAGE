@@ -421,7 +421,6 @@ footer h6 {
   right: 0;
   top: 0;
   z-index: 3;
-  margin-top: 3%;
 }
 
 .performance-img {
@@ -480,6 +479,8 @@ footer h6 {
   justify-content: center;
 }
 
+
+
 .testimonial-title {
   font-size: 3.25vw;
   width: 18.645vw;
@@ -528,10 +529,19 @@ footer h6 {
   outline: none;
   border-radius: 50%;
   cursor: pointer;
+  width: 3.5vw;
+  height: 6.22vh;
+  border: none;
+  margin-bottom: 4vh;
+}
+.img-arrow{
+width: 0.687vw;
+height: 2.333vh;
 }
 
 #leftMove {
   margin-left: 10vw;
+  margin-right: 1vw;
 }
 
 .profile-container {
