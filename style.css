@@ -548,7 +548,7 @@ footer h6 {
   border-radius: 50%;
   cursor: pointer;
   width: 3.5vw;
-  height: 6.22vh;
+  height: 3.5vw;
   border: none;
   margin-bottom: 4vh;
 }
@@ -568,7 +568,7 @@ height: 2.333vh;
 
 .profile-img-container {
   width: 5.58vw;
-  height: 11.33vh;
+  height: 5.58vw;
   border-radius: 50%;
   border: 2px solid #1175c9;
   overflow: hidden;
@@ -576,7 +576,7 @@ height: 2.333vh;
 
 .profile-img {
   width: 5.58vw;
-  height: 11.33vh;
+  height: 5.58vw;
 }
 
 .person-name {
@@ -950,11 +950,13 @@ height: 2.333vh;
     height: 55.74vh;
     width: 80.58vw;
     margin: 0 9vw !important;
+    border-radius: 1.94vw;
   }
 
   #testominals {
     scroll-behavior: smooth;
     overflow: hidden;
+    margin-bottom: 3vh;
   }
 
   #scrollContainer {
@@ -973,10 +975,20 @@ height: 2.333vh;
   }
 
   #leftMove,
-  #rightMove {
-    outline: none;
-    border-radius: 50%;
-  }
+#rightMove {
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 11.65vw;
+  height:11.65vw;
+  border: none;
+  margin-bottom: 0;
+}
+
+.img-arrow{
+width: 2.642vw;
+height: 2.06vh;
+}
 
   #leftMove {
     margin-left: 0;
@@ -993,15 +1005,15 @@ height: 2.333vh;
 
   .profile-img-container {
     width: 17.47vw;
-    height: 8.16vh;
+    height: 17.47vw;
     border-radius: 50%;
-    border: 1px solid #1175c9;
+    border: 0.485vw solid #1175c9;
     overflow: hidden;
   }
 
   .profile-img {
     width: 17.47vw;
-    height: 8.16vh;
+    height: 17.47vw;
   }
 
   .person-name {
