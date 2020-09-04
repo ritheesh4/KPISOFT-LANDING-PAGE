@@ -242,6 +242,10 @@ a {
   text-align: center;
 }
 
+.clients{
+  padding: 0 10vw;
+}
+
 
 /* PIG Sections */
 .pig-heading {
@@ -721,6 +725,7 @@ footer {
 
   .clients {
     margin-top: inherit;
+    overflow: hidden;
   }
 
   .clinet-container {
