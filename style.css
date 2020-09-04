@@ -14,10 +14,6 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
-  width: 100%;
-}
-
 a {
   text-decoration: none;
 }
@@ -237,9 +233,40 @@ footer {
   color: #fff;
 }
 
+.purpose-topic {
+  font-size: 2.75vw;
+  text-align: left;
+  letter-spacing: 0.0437vw;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+
+.purpose-para {
+  text-align: left;
+  opacity: 0.7;
+  font-size: 1.25vw;
+  padding-bottom: 4vh;
+}
+
+.PIG-para{
+  font-size: 2.75vw;
+  text-align: left;
+  letter-spacing: 0.0437vw;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+
+.PIG-second-para{
+  text-align: left;
+  opacity: 0.7;
+  font-size: 1.25vw;
+  padding-bottom: 4vh;
+}
+
+
 .yellow-square {
   background: #feda31;
-  border-top-right-radius: 250px;
+  border-top-right-radius: 15.62vw;
   width: 50%;
   height: 50%;
   position: absolute;
@@ -250,7 +277,7 @@ footer {
 
 .right-yellow-square {
   background: #feda31;
-  border-bottom-left-radius: 250px;
+  border-bottom-left-radius: 15.62vw;
   width: 50%;
   height: 50%;
   position: absolute;
@@ -261,9 +288,9 @@ footer {
 
 .left-gray-square {
   background: #ebebeb;
-  border-top-right-radius: 100px;
-  width: 20%;
-  height: 25%;
+  border-top-right-radius: 6.25vw;
+  width: 9.187vw;
+  height: 13.77vh;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -272,9 +299,9 @@ footer {
 
 .gray-square {
   background: #ebebeb;
-  border-bottom-left-radius: 100px;
-  width: 25%;
-  height: 20%;
+  border-bottom-left-radius: 6.25vw;
+    width: 9.187vw;
+  height: 13.77vh;
   position: absolute;
   right: 0;
   top: 0;
@@ -287,13 +314,18 @@ footer {
 }
 
 .learnmore {
-  background: #feda31;
+  background: #FFDA00;
   color: #1175c9;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.0537vw;
   width: 13.7vw;
   text-decoration: none;
-  font-size: 1.1vw;
-  border-radius: 8px;
+  font-size: 1.125vw;
+  border-radius:0.5vw;
+  height:5.33vh;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -302,8 +334,8 @@ footer {
   position: absolute;
   top: 8rem;
   left: 30vw;
-  height: 18.5vw;
-  width: 18rem;
+  height: 32.77vh;
+  width: 18.43vw;
 }
 
 .round-watermark {
@@ -316,10 +348,10 @@ footer {
 
 .sqareEdge-watermark {
   position: absolute;
-  top: 18rem;
-  left: 28rem;
-  width: 19.375rem;
-  height: 18.625rem;
+  top: 15rem;
+  left: 33.12vw;
+  width: 19.375vw;
+  height: 33.11vh;
 }
 
 /* section testominals */
@@ -430,6 +462,7 @@ footer {
 
 .inside-para {
   order: 1;
+  margin-top: 13vh;
 }
 
 .inside-img {
