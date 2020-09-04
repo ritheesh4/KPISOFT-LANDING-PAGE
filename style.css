@@ -279,6 +279,14 @@ a {
   text-decoration: none;
 }
 
+.address-title{
+  font-size: 1vw !important;
+}
+
+.address span{
+  font-size: 0.875vw;
+}
+
 /* Footer section */
 footer {
   background: #1175c9;
@@ -286,6 +294,12 @@ footer {
   color: #fff;
   font-size: 0.9375vw;
   font-weight: 400;
+}
+
+footer h6 {
+  font-size: 0.75vw;
+  padding: 2vh 20vw;
+
 }
 
 /* Banner section */
@@ -989,6 +1003,14 @@ footer {
 
   .right-blank-div {
     display: none !important;
+  }
+
+  .address-title{
+    font-size: 3.883vw !important;
+  }
+  
+  .address span{
+    font-size: 3.39vw;
   }
 
   /* Footer section */
