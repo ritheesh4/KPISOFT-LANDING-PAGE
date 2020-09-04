@@ -409,17 +409,13 @@ footer {
 }
 
 @media (max-width: 576px) {
-  /* .address .row {
-      padding: 0 6rem;
-    } */
-
   .address .row > * {
     padding: 2rem 0.4rem;
   }
 
   .jumbotron-grey-square {
     width: 20%;
-    height: 25%;
+    height: 30%;
     z-index: 0;
     border-bottom-left-radius: 10vw;
   }
@@ -449,6 +445,10 @@ footer {
     order: 2;
   }
 
+  .banner-image{
+    margin-top: 34%;
+  }
+
   .banner-img {
     order: 1;
   }
@@ -459,7 +459,7 @@ footer {
 
   .jumbotron .col-lg-5 {
     background-color: inherit;
-    min-height:80vh
+    min-height: 65vh;
   }
 
   .jumbotron-grey-square {
@@ -469,7 +469,7 @@ footer {
 
   .jumbotron-yellow {
     width: 50%;
-    height: 50%;
+    height: 100%;
     z-index: 0;
     background-color: #feda31;
     z-index: 0;
@@ -479,12 +479,12 @@ footer {
     border-bottom-left-radius: 20vw;
   }
 
-  .input-group{
+  .input-group {
     display: flex;
     flex-direction: column;
   }
 
-  .form-control{
+  .form-control {
     width: 80vw !important;
     text-align: center;
     margin-left: 5%;
@@ -492,27 +492,26 @@ footer {
     border-bottom-right-radius: 4px !important;
   }
 
-  .input-group-append{
+  .input-group-append {
     margin-top: 3vh;
     margin-left: 5%;
   }
 
-  #jumbotron-get-started{
-    width: 80vw;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    padding-left: 30%;
-
-  }
-
-  #banner-get-started{
+  #jumbotron-get-started {
     width: 80vw;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     padding-left: 30%;
   }
 
-  .clients{
+  #banner-get-started {
+    width: 80vw;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-left: 30%;
+  }
+
+  .clients {
     margin-top: inherit;
   }
 
@@ -526,7 +525,7 @@ footer {
     border-top-right-radius: 100px;
   }
 
-  .right-yellow-square{
+  .right-yellow-square {
     border-bottom-left-radius: 100px;
     width: 40%;
     height: 35%;
@@ -701,7 +700,7 @@ footer {
     font-size: 3.88vw;
   }
 
-  .testimonial-title{
+  .testimonial-title {
     font-size: 2rem;
     width: inherit;
     margin: auto;
@@ -710,16 +709,16 @@ footer {
   }
 
   /* Address Section */
-  .address > div{
+  .address > div {
     border: 1px solid #e4e4e4;
     padding: 0 20vw;
   }
 
-  .left-blank-div{
+  .left-blank-div {
     display: none !important;
   }
 
-  .right-blank-div{
+  .right-blank-div {
     display: none !important;
   }
 }
