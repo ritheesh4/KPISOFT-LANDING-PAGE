@@ -44,6 +44,8 @@ a {
 .jumbotron .col-lg-7 {
   padding: 2rem;
   padding-top: 12rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .jumbotron .col-lg-7 p {
@@ -53,15 +55,19 @@ a {
 
 .highlight-word {
   background: #efefef;
+  font-size: 3.875vw;
+
 }
 
 .jumbotron-message-container {
-  max-width: 610px;
+  max-width: 38.125vw;
   margin: auto;
+  font-size: 50.875vw !important;
 }
 
 .jumbotron .lead {
   color: #40464e;
+  font-size: 1.5vw;
 }
 
 .jumbotron-grey-square {
@@ -118,8 +124,22 @@ a {
   color: #fff;
 }
 
+
+.form-control {
+  width: 20vw !important;
+  margin-left: 5vw;
+  border: 1px solid #1175C9;
+  border-top-left-radius: 0.8vw;
+  border-bottom-left-radius: 0.8vw;
+  /* height: ;
+  width: ; */
+}
+
+
 .mob-mail-description {
-  display: none;
+  text-align: center;
+  font-size: 0.9375vw;
+  font-style: italic;
 }
 
 /* Clients Section */
@@ -127,6 +147,11 @@ a {
 /* Adjust the client section margintop here */
 .clients {
   margin-top: 7.3rem;
+}
+
+.clinet-container{
+  width: 71.25vw;
+  margin:auto
 }
 
 /* PIG Sections */
@@ -451,7 +476,11 @@ footer {
 
   .banner-para {
     order: 2;
-  }
+    display: flex;
+    align-items: center;
+    justify-content:center  ;
+    flex-direction: column;
+  } 
 
   .banner-image {
     margin-top: 34%;
@@ -480,6 +509,10 @@ footer {
     line-height: 0;
   }
 
+  .jumbotron-message-container {
+    max-width: inherit;
+  }
+
   .jumbotron-message-container .display-4 {
     line-height: 40px;
     font-weight: 600;
@@ -505,6 +538,7 @@ footer {
   .form-control {
     width: 80vw !important;
     text-align: center;
+    margin-left: inherit;
     margin-left: 5%;
     border-top-right-radius: 4px !important;
     border-bottom-right-radius: 4px !important;
@@ -536,6 +570,11 @@ footer {
     padding-left: 30%;
   }
 
+  .jumbotron .lead {  
+    font-size: 3.64vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
   /* Clients */
   .clients h2 {
     font-size: 6.78vw;
@@ -546,6 +585,12 @@ footer {
   .clients {
     margin-top: inherit;
   }
+
+  .clinet-container{
+    width: 80vw;
+    margin:auto
+  }
+  
 
   .pig-heading {
     font-size: 6.7vw;
@@ -810,5 +855,9 @@ footer {
     font-size: 2.91vw;
     padding: 2vh 20vw;
     line-height: 1.5;
+  }
+
+  footer{
+    margin-bottom: 6vh;
   }
 }
