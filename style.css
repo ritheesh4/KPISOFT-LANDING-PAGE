@@ -135,10 +135,25 @@ a {
   width: 20vw !important;
   margin-left: 5vw;
   border: 1px solid #1175c9;
-  border-top-left-radius: 0.8vw;
-  border-bottom-left-radius: 0.8vw;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  border-radius: 20%;
   /* height: ;
   width: ; */
+}
+
+.input-group .form-control {
+  font-size: 1.15vw;
+  height: inherit;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+
+.jumbotron .input-group .btn {
+  font-size: 1.15vw;
+  padding: 1vw;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 
 .mob-mail-description {
@@ -237,15 +252,14 @@ a {
   margin: auto;
 }
 
-.client-title{
+.client-title {
   font-size: 1.875vw;
   text-align: center;
 }
 
-.clients{
+.clients {
   padding: 0 10vw;
 }
-
 
 /* PIG Sections */
 .pig-heading {
@@ -279,11 +293,11 @@ a {
   text-decoration: none;
 }
 
-.address-title{
+.address-title {
   font-size: 1vw !important;
 }
 
-.address span{
+.address span {
   font-size: 0.875vw;
 }
 
@@ -299,7 +313,6 @@ footer {
 footer h6 {
   font-size: 0.75vw;
   padding: 2vh 20vw;
-
 }
 
 /* Banner section */
@@ -336,6 +349,10 @@ footer h6 {
   text-transform: uppercase;
   font-weight: 600;
   border: none;
+  font-size: 1.15vw;
+  padding: 1vw;
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
 
 /* Blue bg section PIG */
@@ -615,7 +632,7 @@ footer h6 {
     width: 100%;
   }
 
-  .banner .form-control{
+  .banner .form-control {
     width: 80vw !important;
     border: none;
   }
@@ -735,6 +752,14 @@ footer h6 {
     padding-left: 30%;
   }
 
+  .banner .input-group .btn {
+    font-size: 4.15vw;
+  }
+
+  .jumbotron .input-group .btn {
+    font-size: 4.15vw;
+  }
+
   .jumbotron .lead {
     font-size: 3.64vw;
     margin-left: 10vw;
@@ -747,7 +772,7 @@ footer h6 {
     line-height: 1.8;
   }
 
-  .client-title{
+  .client-title {
     font-size: inherit;
     font-size: 6.796vw;
   }
@@ -1018,11 +1043,18 @@ footer h6 {
     display: none !important;
   }
 
-  .address-title{
+  .input-group .form-control {
+    font-size: 4.15vw;
+    height: inherit;
+    padding: 1vw;
+    border-radius: 1vw;
+  }
+
+  .address-title {
     font-size: 3.883vw !important;
   }
-  
-  .address span{
+
+  .address span {
     font-size: 3.39vw;
   }
 
@@ -1040,7 +1072,6 @@ footer h6 {
     padding: 3rem 1rem;
     font-size: 8.73vw;
   }
-  
 
   footer {
     margin-bottom: 6vh;
