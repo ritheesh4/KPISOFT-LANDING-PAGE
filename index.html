@@ -9,9 +9,6 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
   <link rel="stylesheet" href="./style.css" />
 
   <!-- Local CSS -->
@@ -275,8 +272,12 @@
   <!-- Testominal scroll -->
   <section id="scrollContainer" class="container-structured">
     <div class="button-container carosel-buttons">
-      <span id="leftMove" class="bg-light fa fa-chevron-left p-3 my-3"></span>
-      <span id="rightMove" class="bg-light fa fa-chevron-right p-3 my-3"></span>
+      <button id="leftMove"  class="btn-navigate bg-light">
+        <img class="img-arrow" src="img/left-arrow.svg">
+      </button>
+      <button id="rightMove"  class="btn-navigate bg-light">
+        <img class="img-arrow" src="img/right-arrow.svg">
+      </button>
     </div>
     <div id="testominals">
       <div class="item p-4">
