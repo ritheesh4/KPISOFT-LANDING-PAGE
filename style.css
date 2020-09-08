@@ -287,6 +287,18 @@ footer a:hover {
   margin-top: 2.7rem;
 }
 
+.purpose-section{
+  height: 100vh;
+}
+
+.insight-section {
+  height: 100vh;
+}
+
+.growth-section {
+  height: 100vh;
+}
+
 /* Address section */
 .address .row > * {
   border: 1px solid #e4e4e4;
@@ -460,6 +472,8 @@ footer h6 {
 .performance-img {
   position: relative;
   z-index: 1;
+  max-width: 29.31vw;
+  max-height: 52.44vh;
 }
 
 .learnmore {
@@ -927,17 +941,11 @@ footer h6 {
     height: 14.625rem;
   }
 
-  .purpose-section{
-    height: 100vh;
-  }
-
   .insight-section {
     display: flex;
-    height: 100vh;
   }
 
   .growth-section {
-    height: 100vh;
     padding-bottom: 7.5vh;
     margin-top: 5vh;
   }
