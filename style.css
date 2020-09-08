@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,8 @@ body {
   color: #283037;
   margin: 0;
   padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+  webkit-font-smoothing: auto;
 }
 
 html {
@@ -93,6 +97,10 @@ a {
   border-bottom: 0.063em solid #e3e3e3;
 }
 
+.navbar-brand img {
+  height: 4.8vh;
+}
+
 .jumbotron nav {
   position: fixed;
   top: 0;
@@ -171,8 +179,8 @@ a {
   background: #1175c9;
 }
 
-.modal-content input[type="text"],
-.modal-content input[type="email"],
+.modal-content input[type='text'],
+.modal-content input[type='email'],
 .modal-content textarea,
 .modal-content select {
   width: 80%;
@@ -215,6 +223,14 @@ a {
   display: block;
   width: 80%;
   color: #feda31;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
 }
 
 .modal-footer {
@@ -274,7 +290,7 @@ a {
 /* Address section */
 .address .row > * {
   border: 1px solid #e4e4e4;
-}
+ }
 
 .address p {
   padding: 0.8rem;
@@ -497,8 +513,6 @@ footer h6 {
   justify-content: center;
 }
 
-
-
 .testimonial-title {
   font-size: 3.25vw;
   width: 18.645vw;
@@ -552,9 +566,9 @@ footer h6 {
   border: none;
   margin-bottom: 4vh;
 }
-.img-arrow{
-width: 0.687vw;
-height: 2.333vh;
+.img-arrow {
+  width: 0.687vw;
+  height: 2.333vh;
 }
 
 #leftMove {
@@ -981,20 +995,20 @@ height: 2.333vh;
   }
 
   #leftMove,
-#rightMove {
-  outline: none;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 11.65vw;
-  height:11.65vw;
-  border: none;
-  margin-bottom: 0;
-}
+  #rightMove {
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 11.65vw;
+    height: 11.65vw;
+    border: none;
+    margin-bottom: 0;
+  }
 
-.img-arrow{
-width: 2.642vw;
-height: 2.06vh;
-}
+  .img-arrow {
+    width: 2.642vw;
+    height: 2.06vh;
+  }
 
   #leftMove {
     margin-left: 0;
