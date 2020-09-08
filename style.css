@@ -7,17 +7,11 @@
 }
 
 body {
-<<<<<<< HEAD
-    color: #283037;
-    margin: 0;
-    padding: 0;
-=======
   color: #283037;
   margin: 0;
   padding: 0;
   font-family: 'Nunito Sans', sans-serif;
-  webkit-font-smoothing: auto;
->>>>>>> 0e61f4a9d08d9ff38d9500d7d2fb832299b5ceee
+  /* webkit-font-smoothing: auto; */
 }
 
 html {
@@ -311,13 +305,8 @@ footer a:hover {
 
 /* Address section */
 .address .row > * {
-<<<<<<< HEAD
-    border: 1px solid #e4e4e4;
-}
-=======
   border: 1px solid #e4e4e4;
  }
->>>>>>> 0e61f4a9d08d9ff38d9500d7d2fb832299b5ceee
 
 .address p {
     padding: 0.8rem;
@@ -487,8 +476,8 @@ footer h6 {
 .performance-img {
   position: relative;
   z-index: 1;
-  max-width: 29.31vw;
-  max-height: 52.44vh;
+  width: 29.31vw;
+  height: 68.77vh !important;
 }
 
 .learnmore {
@@ -556,12 +545,13 @@ footer h6 {
 }
 
 .item {
-    height: 40.33vh;
+    height: 44.33vh;
     width: 35.05vw;
     border-radius: 0.5vw;
     background: #ffffff;
     display: inline-block;
     margin: 0 5vh;
+    overflow: hidden;
 }
 
 .item:nth-child(1) {
@@ -610,8 +600,8 @@ footer h6 {
 }
 
 .profile-img-container {
-    width: 5.58vw;
-    height: 5.58vw;
+    width: 5.58vw !important;
+    height: 5.58vw !important;
     border-radius: 50%;
     border: 2px solid #1175c9;
     overflow: hidden;
@@ -624,10 +614,15 @@ footer h6 {
 
 .person-name {
     font-size: 1.5vw !important;
+    letter-spacing: 0.0237vw;
 }
 
 .designation {
     font-size: 1vw !important;
+    letter-spacing: 0.0162vw;
+    word-wrap: normal;
+    white-space: normal;
+    max-width: 21.56vw;
 }
 
 .quotes-container {
@@ -639,6 +634,10 @@ footer h6 {
 .blockQuate-img {
     width: 4.685vw;
     height: 4.37vh;
+}
+
+.quotes-container p{
+letter-spacing: 0.045vw;
 }
 
 .item p {
