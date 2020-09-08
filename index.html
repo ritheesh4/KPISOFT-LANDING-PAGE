@@ -40,7 +40,8 @@
               <input type="text" class="form-control" placeholder="Your e-mail address" aria-label="Your e-mail address"
                 aria-describedby="basic-addon2">
               <div class="input-group-append">
-                <span class="btn input-group-text" id="jumbotron-get-started">Get Started</span>
+                <span class="btn input-group-text" id="jumbotron-get-started" data-toggle="modal"
+      data-target="#myModal">Get Started</span>
               </div>
             </div>  
             <div class="mob-mail-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>        
@@ -189,7 +190,7 @@
   <section class="col-md-12 pig m-0 p-0" id="pig">
     <div class="col-md-12">
       <!-- Purpose section -->
-      <div class="row h-100">
+      <div class="row purpose-section">
         <div class="col-md-6 ">
           <div class="yellow-square"></div>
           <img class="performance-img img-fluid" src="./img/purpose/img_Performance@2x.png" alt="" />
@@ -197,7 +198,7 @@
         </div>
         <div class="col-md-6 d-flex flex-column ">
           <div class="gray-square"></div>
-          <div class="col-md-8 mx-md-auto custom-mt ">
+          <div class="col-md-8 m-md-auto">
             <div class=" d-flex  mt-4 mr-4">
               <img src="./img/purpose/Group 2736a.svg" class="symbol-img img-fluid mr-4" alt="" />
               <span class="text-white PIG-title">Purpose</span>
@@ -213,12 +214,12 @@
       </div>
 
       <!-- Insights section -->
-      <div class="row h-100 insight-section">
-        <div class="col-md-6 inside-para">
+      <div class="row insight-section">
+        <div class="col-md-6  d-flex flex-column inside-para">
           <div class="left-gray-square insight-gray-square">
           </div>
-          <div class="col-md-8 mx-md-auto custom-mt ">
-            <div class=" d-flex mt-4 mr-4">
+          <div class="col-md-8 m-md-auto">
+            <div class=" d-flex  mt-4 mr-4">
               <img src="./img/insights/Group 2753.svg" class="symbol-img img-fluid mr-4" alt="" />
               <span class="text-white  PIG-title">Insights</span>
             </div>
@@ -227,7 +228,7 @@
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod invidunt ut labore.
             </p>
-            <a class="learnmore btn mt-3" id="i-learnmore" href="">Learn More</a>
+            <a class="learnmore btn mt-2" id="i-learnmore" href="">Learn More</a>
           </div>
         </div>
         <div class="col-md-6 d-flex flex-column inside-img">
@@ -238,7 +239,7 @@
       </div>
 
       <!-- Growth section -->
-      <div class="row h-100 growth-section">
+      <div class="row growth-section">
         <div class="col-md-6">
           <div class="yellow-square"></div>
           <img class="performance-img img-fluid" src="./img/growth/Image_Insights@2x.png" alt="" />
@@ -247,7 +248,7 @@
         <div class="col-md-6 d-flex flex-column">
           <div class="gray-square"></div>
           <!-- <div class="hero-square text-left"></div> -->
-          <div class="col-md-8 mx-md-auto  custom-mt">
+          <div class="col-md-8 m-md-auto">
             <div class=" d-flex mt-4 mr-4">
               <img src="./img/growth/Group 2755.svg" alt="" class="symbol-img img-fluid mr-4" />
               <span class="text-white PIG-title">Growth</span>
@@ -269,7 +270,7 @@
     <h1 class="text-center testimonial-title">Testimonials</h1>
   </section>
 
-  <!-- Testominal scroll -->
+  <!-- Testimonials scroll -->
   <section id="scrollContainer" class="container-structured">
     <div class="button-container carosel-buttons">
       <button id="leftMove"  class="btn-navigate bg-light">
@@ -279,7 +280,7 @@
         <img class="img-arrow" src="img/right-arrow.svg">
       </button>
     </div>
-    <div id="testominals">
+    <div id="testimonials">
       <div class="item p-4">
         <div class="profile-container mt-1 ml-5">
           <div class="profile-img-container"><img src="img/margo.jpeg" class="profile-img" /></div>
@@ -438,11 +439,12 @@
   <!-- Banner section -->
   <div class="banner">
     <h1 class="text-center banner-title">Power your team’s performance today</h1>
-    <div class="input-group mb-3">
+    <div class="input-group mb-5">
       <input type="text" class="form-control" placeholder="Your e-mail address" aria-label="Your e-mail address"
         aria-describedby="basic-addon2">
       <div class="input-group-append">
-        <span class="btn input-group-text" id="banner-get-started">Get Started</span>
+        <span class="btn input-group-text" id="banner-get-started" data-toggle="modal"
+      data-target="#myModal">Get Started</span>
       </div>
       
     </div>
@@ -512,7 +514,7 @@
   <!-- Footer -->
   <footer>
     <h6 class="text-center my-auto">
-      2020 &copy; Copyright KPISOFT. All Rights Reserved Privacy Statement
+      2020 &copy; Copyright KPISOFT. All Rights Reserved <a href="#">Privacy Statement</a> 
     </h6>
   </footer>
 
