@@ -550,7 +550,7 @@ footer h6 {
     border-radius: 0.5vw;
     background: #ffffff;
     display: inline-block;
-    margin: 0 5vh;
+    margin: 0 3vh;
     overflow: hidden;
 }
 
@@ -600,8 +600,8 @@ footer h6 {
 }
 
 .profile-img-container {
-    width: 5.58vw !important;
-    height: 5.58vw !important;
+    width: 5.58vw ;
+    height: 5.58vw ;
     border-radius: 50%;
     border: 2px solid #1175c9;
     overflow: hidden;
@@ -1064,6 +1064,7 @@ letter-spacing: 0.045vw;
 
   .designation {
     font-size: 2.91vw !important;
+    max-width: 80vw;
   }
 
   .quotes-container {
