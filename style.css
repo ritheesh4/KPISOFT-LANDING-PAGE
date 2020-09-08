@@ -474,10 +474,12 @@ footer h6 {
 }
 
 .performance-img {
-  position: relative;
+  position: absolute;
   z-index: 1;
   width: 29.31vw;
-  height: 68.77vh !important;
+  height: 79.77vh !important;
+  top: 76px;
+  left: 162px;
 }
 
 .learnmore {
