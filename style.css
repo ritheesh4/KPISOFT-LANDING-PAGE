@@ -487,9 +487,9 @@ footer h6 {
   height: 33.11vh;
 }
 
-/* section testominals */
+/* section testimonials */
 
-.testominals-container {
+.testimonials-container {
   min-height: 20vh;
   background: #fdfdfd;
   display: flex;
@@ -525,7 +525,7 @@ footer h6 {
   margin-left: 10vw !important;
 }
 
-#testominals {
+#testimonials {
   scroll-behavior: smooth;
   border-spacing: 30px 0;
   width: 100%;
@@ -926,8 +926,8 @@ height: 2.333vh;
     bottom: -5vh !important ;
   }
 
-  /* section testominals */
-  .testominals-container {
+  /* section testimonials */
+  .testimonials-container {
     min-height: 20vh;
     background: #fdfdfd;
   }
@@ -953,7 +953,7 @@ height: 2.333vh;
     border-radius: 1.94vw;
   }
 
-  #testominals {
+  #testimonials {
     scroll-behavior: smooth;
     overflow: hidden;
     margin-bottom: 3vh;
