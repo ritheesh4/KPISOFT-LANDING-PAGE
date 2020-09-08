@@ -606,12 +606,12 @@ height: 2.333vh;
 
 .inside-para {
   order: 1;
-  margin-top: 13vh;
+  /* margin-top: 13vh; */
 }
 
 .inside-img {
   order: 2;
-  margin-top: 13vh;
+  /* margin-top: 13vh; */
 }
 
 @media (max-width: 576px) {
@@ -913,11 +913,17 @@ height: 2.333vh;
     height: 14.625rem;
   }
 
+  .purpose-section{
+    height: 100vh;
+  }
+
   .insight-section {
     display: flex;
+    height: 100vh;
   }
 
   .growth-section {
+    height: 100vh;
     padding-bottom: 7.5vh;
     margin-top: 5vh;
   }
