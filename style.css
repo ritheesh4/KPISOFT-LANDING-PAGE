@@ -56,9 +56,14 @@ a {
 }
 
 .highlight-word {
+  font: normal normal medium 62px/89px Neue Haas Unica !important;
   background: #efefef;
   font-size: 3.875vw;
   line-height: 1.5;
+  padding: 0 1vw !important;
+  border-radius: 0.4vw;
+  letter-spacing: 0.093vw;
+  font-weight: 600 !important;
 }
 
 .jumbotron-message-container {
