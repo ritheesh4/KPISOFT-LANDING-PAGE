@@ -187,6 +187,7 @@ a {
 .modal form input[type='email'],
 .modal form input[type='number'],
 .modal form input[type='date'],
+.modal form input[type='file'],
 .modal form textarea,
 .modal form select {
   width: 80%;
