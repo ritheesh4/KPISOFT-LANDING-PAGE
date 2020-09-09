@@ -163,6 +163,7 @@ a {
     height: inherit;
     padding: 1vw;
     border-radius: 1vw;
+    letter-spacing: 0.8px;
 }
 
 .jumbotron .input-group .btn {
@@ -170,6 +171,7 @@ a {
     padding: 1vw;
     border-top-right-radius: 1vw;
     border-bottom-right-radius: 1vw;
+    letter-spacing: 0.22px;
 }
 
 .mob-mail-description {
@@ -1201,6 +1203,4 @@ footer h6 {
         padding: 3rem 1rem;
         font-size: 8.73vw;
     }
-
-    
 }
