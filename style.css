@@ -539,9 +539,13 @@ footer h6 {
   font-weight: 600;
 }
 
+.custom-pl{
+  padding-left: 4.125vw;
+}
+
 .sqare-watermark {
   position: absolute;
-  top: 8rem;
+  top: 27.77vh;
   left: 30vw;
   height: 32.77vh;
   width: 18.43vw;
@@ -549,16 +553,16 @@ footer h6 {
 
 .round-watermark {
   position: absolute;
-  top: 6rem;
-  left: 0rem;
-  width: 17.06rem;
-  height: 17.06rem;
+  top: 21.22vh;
+  left: 4vw;
+  width: 17.06vw;
+  height: 30.32vh;
 }
 
 .sqareEdge-watermark {
   position: absolute;
-  top: 15rem;
-  left: 33.12vw;
+  top: 37.66vh;
+  left: 30.12vw;
   width: 19.375vw;
   height: 33.11vh;
 }
