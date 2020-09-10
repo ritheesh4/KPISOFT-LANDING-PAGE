@@ -450,6 +450,7 @@ footer h6 {
 
 .pig {
     background: #1175c9;
+    overflow: hidden;
 }
 
 .PIG-title {
@@ -945,8 +946,18 @@ footer h6 {
     }
 
     .performance-img {
-        top: 8%;
+        position: relative;
+        z-index: 1;
+        width: 64.31vw;
+        height: 38.77vh !important;
+        top: 0;
+        left: 16.125vw;
     }
+
+     .purpose-section,.insight-section,.growth-section{
+         height: unset;
+         margin: auto -15px;
+     }
 
     .round-watermark {
         position: absolute;
@@ -973,8 +984,8 @@ footer h6 {
         background: #ebebeb;
         border-top-right-radius: 10vw;
         border-bottom-left-radius: 0;
-        width: 15%;
-        height: 12%;
+        width: 18.44vw;
+        height: 7.35vh;
         position: absolute;
         left: 0;
         bottom: 0;
@@ -984,8 +995,8 @@ footer h6 {
 
     .left-gray-square {
         border-top-right-radius: 10vw;
-        width: 15%;
-        height: 12%;
+        width: 18.44vw;
+        height: 7.35vh;
     }
 
     .PIG-title {
@@ -1034,8 +1045,12 @@ footer h6 {
     }
 
     .growth-section {
-        padding-bottom: 7.5vh;
+        padding-bottom: 7.0vh;
         margin-top: 5vh;
+    }
+    .custom-padding {
+        padding-left: 10.125vw;
+        padding-top: 0;
     }
 
     .insight-gray-square {
@@ -1050,6 +1065,7 @@ footer h6 {
 
     .inside-para {
         order: 2;
+        margin: auto;
     }
 
     .inside-img {
