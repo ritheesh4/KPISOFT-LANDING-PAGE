@@ -190,6 +190,7 @@ a {
 
 .jumbotron-message-container {
   text-align: left !important;
+  padding-top: 25vh;
 }
 
 /* Modal */
@@ -438,6 +439,7 @@ footer h6 {
 .banner .input-group {
   width: 40%;
   margin: auto;
+  padding-bottom: 3rem;
 }
 
 .banner .input-group .btn {
@@ -1329,6 +1331,10 @@ footer .mob-view{
 
     .jumbotron-message-container h1{
       line-height: 1 !important;
+    }
+
+    .jumbotron-message-container{
+      padding-top: 0;
     }
 
     .address .row > * {
