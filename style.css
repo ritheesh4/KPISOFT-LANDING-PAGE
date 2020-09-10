@@ -696,13 +696,19 @@ footer h6 {
   width: 5.58vw;
   height: 5.58vw;
   border-radius: 50%;
-  border: 2px solid #1175c9;
+  border: 0.125vw solid #1175c9;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-img {
-  width: 5.58vw;
-  height: 5.58vw;
+  width: 5.22vw;
+  height: 5.22vw;
+  border-radius: 50%;
+  border: 0.125vw solid #fff;
+  align-self: center;
 }
 
 .person-name {
@@ -1215,19 +1221,6 @@ footer .mob-view {
     align-items: center;
     padding: 0 !important;
     margin: auto 0 !important;
-  }
-
-  .profile-img-container {
-    width: 17.47vw;
-    height: 17.47vw;
-    border-radius: 50%;
-    border: 0.485vw solid #1175c9;
-    overflow: hidden;
-  }
-
-  .profile-img {
-    width: 17.47vw;
-    height: 17.47vw;
   }
 
   .person-name {
@@ -1789,8 +1782,9 @@ footer .mob-view {
   }
 
   .profile-img {
-    width: 17.47vw;
-    height: 17.47vw;
+    width: 17vw;
+    height: 17vw;
+    border: 0.485vw solid #fff;
   }
 
   .person-name {
