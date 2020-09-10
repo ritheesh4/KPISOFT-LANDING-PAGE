@@ -359,6 +359,10 @@ footer a:hover {
   height: 100vh;
 }
 
+.growth-title{
+  margin-top: 0;
+}
+
 /* Address section */
 .address ul {
   list-style-type: none;
@@ -1045,7 +1049,7 @@ footer .mob-view {
   .left-gray-square {
     border-top-right-radius: 10vw;
     width: 15%;
-    height: 12%;
+    height: 2.8rem;
   }
 
   .PIG-title {
@@ -1098,11 +1102,15 @@ footer .mob-view {
   }
 
   .growth-title{
-    display: none;
+    margin-top: 19rem;
   }
 
   .insight-gray-square {
     bottom: -5vh !important ;
+  }
+
+  .insight-title{
+    padding-top: 12rem;
   }
 
   /* section testimonials */
