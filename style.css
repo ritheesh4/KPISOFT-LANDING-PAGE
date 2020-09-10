@@ -1874,10 +1874,10 @@ footer .mob-view {
   footer .mob-view {
     display: block;
   }
-  /* 
-    footer{
-      margin-bottom: 2.5rem;
-    } */
+
+  footer {
+    margin-bottom: 2.5rem;
+  }
 
   /* Power section */
   .banner h1 {
