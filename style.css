@@ -44,8 +44,9 @@ a {
 }
 
 .jumbotron .col-lg-7 {
-    padding: 2rem;
-    padding-top: 12rem;
+    padding:0rem 2rem;
+    padding-bottom: 2rem;
+    padding-top: 0rem !important;
     display: flex;
     flex-direction: column;
 }
@@ -726,9 +727,19 @@ footer h6 {
     /* margin-top: 13vh; */
 }
 
+footer .mob-view{
+  display: none;
+}
+
+
 @media (max-width: 576px) {
     .banner input.form-control {
         width: 100%;
+    }
+
+    .highlight-word{
+      padding: 0 2vw !important;
+      border-radius: 0.8vw;
     }
 
     .navbar-brand img {
@@ -737,6 +748,10 @@ footer h6 {
 
     .nav-get-started {
         width: 26vw;
+    }
+
+    .jumbotron-message-container h1{
+      line-height: 1 !important;
     }
 
     .address .row > * {
@@ -750,8 +765,16 @@ footer h6 {
         border-bottom-left-radius: 10vw;
     }
 
+    .jumbotron .col-lg-7 p{
+      margin-top: 1.5rem;
+      margin-bottom: 2rem;
+      line-height: 2;
+    }
+
     .banner .input-group {
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 
     .banner .form-control {
@@ -785,7 +808,7 @@ footer h6 {
     }
 
     .banner-image {
-        margin-top: 34%;
+        margin-top: 18%;
     }
 
     .banner-img {
@@ -798,12 +821,13 @@ footer h6 {
 
     .jumbotron .col-lg-5 {
         background-color: inherit;
-        min-height: 65vh;
+        min-height: 54vh;
     }
 
     .jumbotron-grey-square {
         /* display: none; */
         z-index: 1;
+        width: 17%;
     }
 
     .highlight-word {
@@ -823,7 +847,7 @@ footer h6 {
 
     .jumbotron-yellow {
         width: 50%;
-        height: 100%;
+        height: 82%;
         z-index: 0;
         background-color: #feda31;
         z-index: 0;
@@ -847,9 +871,13 @@ footer h6 {
         border-bottom-right-radius: 4px !important;
     }
 
+    .input-group .form-control{
+      border-color: #B7BABC !important;
+    }
+
     .input-group-append {
-        margin-top: 3vh;
-        margin-left: 5%;
+        margin-top: 1rem;
+        height: 2.5rem;
     }
 
     .mob-mail-description {
@@ -874,8 +902,24 @@ footer h6 {
         padding-left: 30%;
     }
 
+    .jumbotron{
+      margin-bottom: 0;
+    }
+
+    .jumbotron .input-group{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .banner .input-group .btn {
         font-size: 4.15vw;
+    }
+
+    .banner .input-group{
+      padding-bottom: 3rem;
+      margin-bottom: 0;
     }
 
     .jumbotron .input-group .btn {
@@ -897,6 +941,8 @@ footer h6 {
     .client-title {
         font-size: inherit;
         font-size: 6.796vw;
+        padding-bottom: 2rem;
+        padding-top: 0.5rem;
     }
 
     .clients {
@@ -914,6 +960,10 @@ footer h6 {
         font-weight: 400;
         padding-bottom: 10vh;
         letter-spacing: 1.25px;
+        padding: 0 !important;
+        margin: 5px !important;
+        margin-top: 1.8rem !important;
+        margin-bottom: 2.5rem !important;
     }
 
     /* Purpose section */
@@ -1202,6 +1252,8 @@ footer h6 {
         height: inherit;
         padding: 1vw;
         border-radius: 1vw;
+        margin-left: 0 !important;
+        height: 2.5rem;
     }
 
     .address ul li:first-child {
@@ -1221,11 +1273,24 @@ footer h6 {
         line-height: 1.5;
     }
 
+    footer .web-view{
+      display: none;
+    }
+
+    footer .mob-view{
+      display: block;
+    }
+
+    footer{
+      margin-bottom: 2.5rem;
+    }
+
     /* Power section */
     .banner h1 {
         color: #1175c9;
         font-weight: 600;
         padding: 3rem 1rem;
         font-size: 8.73vw;
+        line-height: 1.5;
     }
 }
