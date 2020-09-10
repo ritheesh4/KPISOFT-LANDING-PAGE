@@ -79,7 +79,7 @@ a {
 
 .jumbotron-grey-square {
   position: absolute;
-  width: 50%;
+  width: 52%;
   height: 50%;
   background: #ebebeb;
   top: 0;
@@ -167,6 +167,7 @@ a {
   height: inherit;
   padding: 1vw;
   border-radius: 1vw;
+  border: 0.155vw solid #1175C9 !important;
 }
 
 .jumbotron .input-group .btn {
@@ -411,6 +412,9 @@ footer h6 {
 
 .banner-image {
   z-index: 1;
+  margin-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 10vw;
 }
 
 .banner h1 {
