@@ -156,7 +156,7 @@ a {
 .banner .form-control {
   width: 20vw !important;
   margin-left: 5vw;
-  border: 1px solid #1175c9;
+  /* border: 1px solid #1175c9; */
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
   border-radius: 20%;
@@ -164,12 +164,16 @@ a {
   width: ; */
 }
 
+.add-border{
+  border: 0.15vw solid #1175c9;
+}
+
 .input-group .form-control {
   font-size: 1.15vw;
   height: inherit;
-  padding: 1vw;
+  /* padding: 1vw; */
   border-radius: 1vw;
-  border: 0.155vw solid #1175c9 !important;
+  /* border: 0.155vw solid #1175c9 !important; */
   letter-spacing: 0.05vw;
 }
 
@@ -441,7 +445,7 @@ footer h6 {
   z-index: 1;
   margin-left: 3vw;
   padding-right: 3vw;
-  padding-top: 10vw;
+  padding-top: 8.5vw;
 }
 
 .banner h1 {
@@ -468,6 +472,10 @@ footer h6 {
   border-top-right-radius: 1vw;
   border-bottom-right-radius: 1vw;
 }
+
+/* .input-group .form-control .email-power-section{
+  border: 5px solid black;
+} */
 
 /* Blue bg section PIG */
 
@@ -1277,7 +1285,7 @@ footer .mob-view {
   .input-group .form-control {
     font-size: 4.15vw;
     height: inherit;
-    padding: 1vw;
+    /* padding: 1vw; */
     border-radius: 1vw;
     margin-left: 0 !important;
     height: 2.5rem;
