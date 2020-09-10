@@ -617,15 +617,6 @@ footer h6 {
 }
 
 .item {
-<<<<<<< HEAD
-  height: 44.33vh;
-  width: 35.05vw;
-  border-radius: 0.5vw;
-  background: #ffffff;
-  display: inline-block;
-  margin: 0 3vh;
-  overflow: hidden;
-=======
     height: 44.33vh;
     width: 35.05vw;
     border-radius: 0.5vw;
@@ -634,7 +625,6 @@ footer h6 {
     margin: 0 3vh;
     padding: 4.66vh;
     overflow: hidden;
->>>>>>> 021bb0e2d2a0d9570af8109b2e058914523be7a0
 }
 
 .item:nth-child(1) {
@@ -716,14 +706,9 @@ footer h6 {
 }
 
 .blockQuate-img {
-<<<<<<< HEAD
-  width: 4.685vw;
-  height: 4.37vh;
-=======
     width: 4.685vw;
     height: 4.37vh;
     padding-top: 1vh;
->>>>>>> 021bb0e2d2a0d9570af8109b2e058914523be7a0
 }
 
 .quotes-container p {
