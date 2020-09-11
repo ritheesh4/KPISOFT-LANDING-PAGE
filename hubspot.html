@@ -14,6 +14,9 @@
             integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
          <style>
             @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap");
+            * li  {
+            list-style-type: none;
+            }
             * {
             margin: 0;
             padding: 0;
@@ -185,6 +188,7 @@
             .modal form input[type="date"],
             .modal form input[type="file"],
             .modal form input[type="url"],
+            .modal form input[type="tel"],
             .modal form textarea,
             .modal form select{
             width: 80%;
@@ -200,6 +204,12 @@
             border: 1px solid #ced4da;
             border-radius: 0.25rem;
             margin-bottom: 1rem;
+            }
+            .modal form input[type="submit"]{
+            margin-left:40%;
+            margin-right:40%;
+            padding:4px;
+            cursor:pointer;           
             }
             .modal form label {
             text-align: left !important;
@@ -674,8 +684,8 @@
             }
             @media (max-width: 576px) {
             .custom-padding{
-              padding-left:0 !important;
-             }
+            padding-left:0 !important;
+            }
             .banner input.form-control {
             width: 100%;
             }
@@ -803,16 +813,18 @@
             font-size: 3.39vw;
             }
             #jumbotron-get-started {
+            display: flex;
             width: 80vw;
             border-top-left-radius: 4px;
-            border-bottom-left-radius: 4px;
-            padding-left: 30%;
+            border-bottom-left-radius: 4px;        
+            justify-content: center;
             }
             #banner-get-started {
             width: 80vw;
             border-top-left-radius: 4px;
             border-bottom-left-radius: 4px;
-            padding-left: 30%;
+            display:flex;
+            justify-content:center;
             }
             .jumbotron {
             margin-bottom: 0;
@@ -894,14 +906,14 @@
             width: 34%;
             height: 6rem;
             }
-          .performance-img {
+            .performance-img {
             position: relative;
             z-index: 1;
             width: 77.31vw;
             height: 44.77vh !important;
             top: 0;
             left: 9.125vw;
-           }
+            }
             .round-watermark {
             position: absolute;
             top: -3rem;
@@ -1193,7 +1205,7 @@
                   <div class="col-lg-5 align-items-center d-flex banner-img">
                      <div class="jumbotron-grey-square"></div>
                      <div class="jumbotron-yellow"></div>
-                   <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/banner%201%20image%20(1)@2x.png" class="img-fluid banner-image"/>
+                     <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/banner%201%20image%20(1)@2x.png" class="img-fluid banner-image"/>
                   </div>
                </div>
             </div>
@@ -1468,7 +1480,7 @@
             </div>
             <div class="item">
                <div class="profile-container">
-                  <div class="profile-img-container"><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/margo.jpeg" class="profile-img" /></div>
+                  <div class="profile-img-container"><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/testimonials/mukesh.png" class="profile-img" /></div>
                   <div class="d-flex flex-column  pt-md-3">
                      <p class="person-name mb-0">Mukesh Dhawan</p>
                      <p class="designation">CEO, Zurich Malaysia</p>
@@ -1479,91 +1491,6 @@
                   <p class="ml-2 mt-3 ">
                      “We’re beating the market quarter on quarter. KPISOFT has taken us to the next level
                      of engagement with a substantial increase in the number of active agents and revenue.”
-                  </p>
-               </div>
-            </div>
-            <div class="item">
-               <div class="profile-container">
-                  <div class="profile-img-container"><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/margo.jpeg" class="profile-img" /></div>
-                  <div class="d-flex flex-column  pt-md-3">
-                     <p class="person-name mb-0">Rachel Margo</p>
-                     <p class="designation">Team Lead at Merck</p>
-                  </div>
-               </div>
-               <div class="quotes-container">
-                  <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/blockQuate-1.png" class="blockQuate-img" />
-                  <p class="ml-2 mt-3 ">
-                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                     erat, sed diam voluptua.
-                  </p>
-               </div>
-            </div>
-            <div class="item">
-               <div class="profile-container">
-                  <div class="profile-img-container"><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/margo.jpeg" class="profile-img" /></div>
-                  <div class="d-flex flex-column  pt-md-3">
-                     <p class="person-name mb-0">Rachel Margo</p>
-                     <p class="designation">Team Lead at Merck</p>
-                  </div>
-               </div>
-               <div class="quotes-container">
-                  <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/blockQuate-1.png" class="blockQuate-img" />
-                  <p class="ml-2 mt-3 ">
-                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                     erat, sed diam voluptua.
-                  </p>
-               </div>
-            </div>
-            <div class="item">
-               <div class="profile-container">
-                  <div class="profile-img-container"><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/margo.jpeg" class="profile-img" /></div>
-                  <div class="d-flex flex-column  pt-md-3">
-                     <p class="person-name mb-0">Rachel Margo</p>
-                     <p class="designation">Team Lead at Merck</p>
-                  </div>
-               </div>
-               <div class="quotes-container">
-                  <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/blockQuate-1.png" class="blockQuate-img" />
-                  <p class="ml-2 mt-3 ">
-                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                     erat, sed diam voluptua.
-                  </p>
-               </div>
-            </div>
-            <div class="item">
-               <div class="profile-container">
-                  <div class="profile-img-container"><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/margo.jpeg" class="profile-img" /></div>
-                  <div class="d-flex flex-column  pt-md-3">
-                     <p class="person-name mb-0">Rachel Margo</p>
-                     <p class="designation">Team Lead at Merck</p>
-                  </div>
-               </div>
-               <div class="quotes-container">
-                  <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/blockQuate-1.png" class="blockQuate-img" />
-                  <p class="ml-2 mt-3 ">
-                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                     erat, sed diam voluptua.
-                  </p>
-               </div>
-            </div>
-            <div class="item">
-               <div class="profile-container">
-                  <div class="profile-img-container"><img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/margo.jpeg" class="profile-img" /></div>
-                  <div class="d-flex flex-column  pt-md-3">
-                     <p class="person-name mb-0">Rachel Margo</p>
-                     <p class="designation">Team Lead at Merck</p>
-                  </div>
-               </div>
-               <div class="quotes-container">
-                  <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/blockQuate-1.png" class="blockQuate-img" />
-                  <p class="ml-2 mt-3 ">
-                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                     nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-                     erat, sed diam voluptua.
                   </p>
                </div>
             </div>
@@ -1584,6 +1511,17 @@
          <section class="address" id="address">
             <div class="row mx-auto">
             <div class="col-md col-12 d-flex justify-content-center left-blank-div"></div>
+            <div class="col-md col-12 d-flex justify-content-center">
+               <ul>
+                  <li class="address-title">Innovation and <span class = "address-next-line">R&D Center</span></li>
+                  <li>Unit 27-13, Level 27, <span class = "address-next-line">Q Sentral, </span></li>
+                  <li>Jalan Stesen Sentral 2, <span class = "address-next-line">50470, </span></li>
+                  <li> Kuala Lumpur, Malaysia</li>
+                  <li><a href="tel:+603 2276 0055">
+                     Tel: +603 2276 0055</a>
+                  </li>
+               </ul>
+            </div>
             <div class="col-md col-12 d-flex justify-content-center">
                <ul>
                   <li class="address-title">US HQ</li>
@@ -1628,32 +1566,21 @@
                   </li>
                </ul>
             </div>
-            <div class="col-md col-12 d-flex justify-content-center">
-               <ul>
-                  <li class="address-title">Innovation and <span class = "address-next-line">R&D Center</span></li>
-                  <li>Unit 27-13, Level 27, <span class = "address-next-line">Q Sentral, </span></li>
-                  <li>Jalan Stesen Sentral 2, <span class = "address-next-line">50470, </span></li>
-                  <li> Kuala Lumpur, Malaysia</li>
-                  <li><a href="tel:+603 2276 0055">
-                     Tel: +603 2276 0055</a>
-                  </li>
-               </ul>
-            </div>
             <div class="col-md col-12 d-flex justify-content-center right-blank-div">
             </div>
          </section>
          <!-- Footer -->
          <footer>
             <h6 class="text-center my-auto web-view">
-               2020 &copy; Copyright KPISOFT. All Rights Reserved <a href="#">Privacy Statement</a> 
+               2020 &copy; Copyright KPISOFT. All Rights Reserved <a href="https:/www.kpisoft.com/privacy-statement/">Privacy Statement</a> 
             </h6>
             <h6 class="text-center my-auto mob-view">
-               2020 &copy; Copyright KPISOFT.</br> All Rights Reserved <a href="#">Privacy Statement</a> 
+               2020 &copy; Copyright KPISOFT.</br> All Rights Reserved <a href="https:/www.kpisoft.com/privacy-statement/">Privacy Statement</a> 
             </h6>
          </footer>
-         <script>
-            const navBar = document.getElementById("main-nav");            
-            window.onscroll = function() {
+         <script>         
+            const navBar = document.getElementById("main-nav");
+            window.onscroll = function () {
             var top = window.scrollY;
             
             if (top >= 100) {
@@ -1680,7 +1607,7 @@
             } else {
             element.scrollLeft += width;
             }
-            };
+            };       
          </script>
          <script src="./app.js"></script>
          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
