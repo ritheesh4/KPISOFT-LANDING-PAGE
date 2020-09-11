@@ -23,8 +23,8 @@ html {
 a {
   text-decoration: none;
 }
-/* Jumbotron */
 
+/* Jumbotron */
 .jumbotron {
   background: #fff;
   padding: 0;
@@ -156,12 +156,9 @@ a {
 .banner .form-control {
   width: 20vw !important;
   margin-left: 5vw;
-  /* border: 1px solid #1175c9; */
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
   border-radius: 20%;
-  /* height: ;
-  width: ; */
 }
 
 .add-border {
@@ -171,9 +168,7 @@ a {
 .input-group .form-control {
   font-size: 1.15vw;
   height: inherit;
-  /* padding: 1vw; */
   border-radius: 1vw;
-  /* border: 0.155vw solid #1175c9 !important; */
   letter-spacing: 0.05vw;
 }
 
@@ -474,12 +469,7 @@ footer h6 {
   border-bottom-right-radius: 1vw;
 }
 
-/* .input-group .form-control .email-power-section{
-  border: 5px solid black;
-} */
-
 /* Blue bg section PIG */
-
 .pig {
   background: #1175c9;
   overflow: hidden;
@@ -624,7 +614,6 @@ footer h6 {
 }
 
 /* section testimonials */
-
 .testimonials-container {
   min-height: 20vh;
   background: #fdfdfd;
@@ -762,12 +751,10 @@ footer h6 {
 
 .inside-para {
   order: 1;
-  /* margin-top: 13vh; */
 }
 
 .inside-img {
   order: 2;
-  /* margin-top: 13vh; */
 }
 
 .address-title {
@@ -871,7 +858,6 @@ footer .mob-view {
   }
 
   .jumbotron-grey-square {
-    /* display: none; */
     z-index: 1;
     width: 17%;
   }
@@ -978,6 +964,7 @@ footer .mob-view {
     margin-left: 10vw;
     margin-right: 10vw;
   }
+  
   /* Clients */
   .client h2 {
     font-size: 6.78vw;
@@ -1021,10 +1008,6 @@ footer .mob-view {
     padding-bottom: 4vh;
   }
 
-  /* .purpose-mob-view{
-    margin-top: 40vh;
-  } */
-
   .purpose-para {
     text-align: center;
     opacity: 0.7;
@@ -1039,33 +1022,15 @@ footer .mob-view {
     height: 4rem;
     transform: rotate(180deg);
     border-top-right-radius: 100px;
-    /* 
-    left: 60%;
-    bottom: 65%;
-    width: 40%;
-    height: 35%;
-    transform: rotate(180deg);
-    border-top-right-radius: 100px; */
   }
 
   .right-yellow-square {
     border-bottom-left-radius: 100px;
     width: 25%;
     height: 4rem;
-
-    /* border-bottom-left-radius: 100px;
-    width: 40%;
-    height: 35%; */
   }
 
   .performance-img {
-    /* position: absolute;
-    z-index: 1;
-    width: 90vw;
-    height: inherit !important;
-    top: 0.44vh;
-    left: 6.125vw; */
-
     position: relative;
     z-index: 1;
     width: 64.31vw;
@@ -1081,12 +1046,6 @@ footer .mob-view {
     width: 9.06rem;
     height: 17.06rem;
     bottom: 2rem;
-
-    /* position: absolute;
-    top: 0rem;
-    left: 0rem;
-    width: 13.06rem;
-    height: 17.06rem; */
   }
 
   .sqare-watermark {
@@ -1104,17 +1063,6 @@ footer .mob-view {
   }
 
   .gray-square {
-    /* background: #ebebeb;
-    border-top-right-radius: 10vw;
-    border-bottom-left-radius: 0;
-    width: 15%;
-    height: 2.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 3;
-    top: 94%; */
-
     background: #ebebeb;
     border-top-right-radius: 10vw;
     border-bottom-left-radius: 0;
@@ -1131,10 +1079,6 @@ footer .mob-view {
     border-top-right-radius: 10vw;
     width: 15%;
     height: 2.8rem;
-    /* 
-    border-top-right-radius: 10vw;
-    width: 18.44vw;
-    height: 7.35vh; */
   }
 
   .PIG-title {
@@ -1167,16 +1111,6 @@ footer .mob-view {
     text-align: center;
     border-radius: 6px;
     letter-spacing: 0.86px;
-
-    /* font-size: 3.64vw;
-    font-weight: 700;
-    width: inherit;
-    width: 55vw;
-    margin-left: 17%;
-    height: 6vh;
-    text-align: center;
-    border-radius: 10px;
-    letter-spacing: 0.053vw; */
   }
 
   .sqareEdge-watermark {
@@ -1196,17 +1130,9 @@ footer .mob-view {
     margin-top: 5vh !important;
   }
 
-  /* .growth-title{
-    margin-top: 19rem;
-  } */
-
   .insight-gray-square {
     bottom: -5vh !important ;
   }
-
-  /* .insight-title{
-    padding-top: 12rem;
-  } */
 
   /* section testimonials */
   .testimonials-container {
@@ -1221,7 +1147,6 @@ footer .mob-view {
 
   .inside-img {
     order: 1;
-    /* margin-top: 10px; */
     margin-top: 8vh;
   }
 
@@ -1356,9 +1281,11 @@ footer .mob-view {
     font-size: 3.39vw !important;
     letter-spacing: 0.34px !important;
   }
+
   .address-next-line {
     display: block;
   }
+
   /* Footer section */
   footer h6 {
     font-size: 2.91vw;
