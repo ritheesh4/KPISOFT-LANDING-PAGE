@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +8,12 @@
 
 body {
   color: #283037;
+  -webkit-font-smoothing: antialiased; /* Chrome, Safari */
+  -moz-osx-font-smoothing: grayscale; /* Firefox */
   margin: 0;
   padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+  /* webkit-font-smoothing: auto; */
 }
 
 html {
@@ -17,8 +23,8 @@ html {
 a {
   text-decoration: none;
 }
-/* Jumbotron */
 
+/* Jumbotron */
 .jumbotron {
   background: #fff;
   padding: 0;
@@ -38,8 +44,9 @@ a {
 }
 
 .jumbotron .col-lg-7 {
-  padding: 2rem;
-  padding-top: 12rem;
+  padding: 0rem 2rem;
+  padding-bottom: 2rem;
+  padding-top: 0rem !important;
   display: flex;
   flex-direction: column;
 }
@@ -50,8 +57,14 @@ a {
 }
 
 .highlight-word {
+  font: normal normal medium 62px/89px Neue Haas Unica !important;
   background: #efefef;
   font-size: 3.875vw;
+  line-height: 1.5;
+  padding: 0 1vw !important;
+  border-radius: 0.4vw;
+  letter-spacing: 0.093vw;
+  font-weight: 600 !important;
 }
 
 .jumbotron-message-container {
@@ -63,11 +76,12 @@ a {
 .jumbotron .lead {
   color: #40464e;
   font-size: 1.5vw;
+  letter-spacing: 0.036vw;
 }
 
 .jumbotron-grey-square {
   position: absolute;
-  width: 50%;
+  width: 52%;
   height: 50%;
   background: #ebebeb;
   top: 0;
@@ -91,6 +105,10 @@ a {
   background: #fff;
   z-index: 1000;
   border-bottom: 0.063em solid #e3e3e3;
+}
+
+.navbar-brand img {
+  height: 4.8vh;
 }
 
 .jumbotron nav {
@@ -127,6 +145,10 @@ a {
   color: #fff;
 }
 
+#nav-bar-get-started {
+  background-color: #1175c9;
+}
+
 .clients img {
   width: 100%;
 }
@@ -134,19 +156,20 @@ a {
 .banner .form-control {
   width: 20vw !important;
   margin-left: 5vw;
-  border: 1px solid #1175c9;
   border-top-left-radius: 2vw;
   border-bottom-left-radius: 2vw;
   border-radius: 20%;
-  /* height: ;
-  width: ; */
+}
+
+.add-border {
+  border: 0.15vw solid #1175c9;
 }
 
 .input-group .form-control {
   font-size: 1.15vw;
   height: inherit;
-  padding: 1vw;
   border-radius: 1vw;
+  letter-spacing: 0.05vw;
 }
 
 .jumbotron .input-group .btn {
@@ -154,16 +177,19 @@ a {
   padding: 1vw;
   border-top-right-radius: 1vw;
   border-bottom-right-radius: 1vw;
+  letter-spacing: 0.013vw;
 }
 
 .mob-mail-description {
   text-align: center;
   font-size: 0.9375vw;
   font-style: italic;
+  letter-spacing: 0.056vw;
 }
 
 .jumbotron-message-container {
   text-align: left !important;
+  padding-top: 25vh;
 }
 
 /* Modal */
@@ -171,12 +197,68 @@ a {
   background: #1175c9;
 }
 
-.modal-content input[type="text"],
-.modal-content input[type="email"],
-.modal-content textarea,
-.modal-content select {
+.modal form input[type="text"],
+.modal form input[type="email"],
+.modal form input[type="number"],
+.modal form input[type="date"],
+.modal form input[type="file"],
+.modal form input[type="url"],
+.modal form textarea,
+.modal form select {
   width: 80%;
   margin: auto;
+  display: block;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.modal form label {
+  text-align: left !important;
+  display: block;
+  width: 80%;
+  margin: auto;
+  color: white;
+  font-weight: 600;
+}
+
+.modal form textarea:hover,
+.modal form input[type="text"]:hover,
+.modal form input[type="email"]:hover,
+.modal form input[type="number"]:hover,
+.modal form input[type="date"]:hover,
+.modal form input[type="file"]:hover,
+.modal form input[type="url"]:hover,
+.modal form textarea:active,
+.modal form input[type="text"]:active,
+.modal form input[type="email"]:active,
+.modal form input[type="number"]:active,
+.modal form input[type="date"]:active,
+.modal form input[type="file"]:active,
+.modal form input[type="url"]:active,
+.modal form textarea:focus,
+.modal form input[type="text"]:focus,
+.modal form input[type="email"]:focus,
+.modal form input[type="number"]:focus,
+.modal form input[type="date"]:focus,
+.modal form input[type="file"]:focus,
+.modal form input[type="url"]:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+.modal form a {
+  text-decoration: none;
+  color: white;
 }
 
 .group-check {
@@ -217,14 +299,22 @@ a {
   color: #feda31;
 }
 
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
 .modal-footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
 }
 
-.modal-content input::placeholder,
-.modal-content textarea::placeholder {
+.modal form input::placeholder,
+.modal form textarea::placeholder {
   font-family: normal normal medium 15px/36px Neue Haas Unica;
   letter-spacing: 0.3px;
   color: #40464e;
@@ -232,7 +322,7 @@ a {
   font-size: 15px;
 }
 
-.modal-content select {
+.modal form select {
   font-family: normal normal medium 15px/36px;
   letter-spacing: 0.3px;
   color: #40464e;
@@ -241,8 +331,6 @@ a {
 }
 
 /* Clients Section */
-
-/* Adjust the client section margintop here */
 .clients {
   margin-top: 7.3rem;
 }
@@ -255,6 +343,7 @@ a {
 .client-title {
   font-size: 1.875vw;
   text-align: center;
+  letter-spacing: 0.3px;
 }
 
 .clients {
@@ -265,40 +354,55 @@ a {
 .pig-heading {
   margin-top: 4rem;
   font-size: 3.25vw;
+  letter-spacing: 0.078vw;
+  margin-bottom: 4.8vw !important;
 }
-
 .custom-mt {
   margin-top: 2.7rem;
 }
 
+.purpose-section {
+  height: 100vh;
+}
+
+.insight-section {
+  height: 100vh;
+}
+
+.growth-section {
+  height: 100vh;
+}
+
+.growth-title {
+  margin-top: 0;
+}
+
 /* Address section */
+.address ul {
+  list-style-type: none;
+  padding: 0.8rem;
+  padding-top: 2rem;
+}
+
 .address .row > * {
   border: 1px solid #e4e4e4;
 }
 
-.address p {
-  padding: 0.8rem;
-}
-
-.address p span:first-child {
-  font-weight: bold;
-}
-
-.address p span:last-child {
-  color: #40464e;
-}
-
-.address a {
+.address ul a {
   color: #40464e;
   text-decoration: none;
 }
 
-.address-title {
+.address ul li:first-child {
   font-size: 1vw !important;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-.address span {
-  font-size: 0.875vw;
+.address ul li {
+  font-size: 0.875vw !important;
+  line-height: 1.8;
+  white-space: nowrap;
 }
 
 /* Footer section */
@@ -318,6 +422,7 @@ footer h6 {
 /* Banner section */
 .banner-title {
   font-size: 8.7vw;
+  letter-spacing: 0.071vw;
 }
 
 .banner {
@@ -329,6 +434,9 @@ footer h6 {
 
 .banner-image {
   z-index: 1;
+  margin-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 8.5vw;
 }
 
 .banner h1 {
@@ -341,6 +449,7 @@ footer h6 {
 .banner .input-group {
   width: 40%;
   margin: auto;
+  padding-bottom: 3rem;
 }
 
 .banner .input-group .btn {
@@ -356,14 +465,15 @@ footer h6 {
 }
 
 /* Blue bg section PIG */
-
 .pig {
   background: #1175c9;
+  overflow: hidden;
 }
 
 .PIG-title {
   font-size: 3.3vw;
   font-weight: bolder;
+  letter-spacing: 0.078vw;
   color: #fff;
 }
 
@@ -380,6 +490,7 @@ footer h6 {
   opacity: 0.7;
   font-size: 1.25vw;
   padding-bottom: 4vh;
+  letter-spacing: 0.045vw;
 }
 
 .PIG-para {
@@ -395,6 +506,7 @@ footer h6 {
   opacity: 0.7;
   font-size: 1.25vw;
   padding-bottom: 4vh;
+  letter-spacing: 0.045vw;
 }
 
 .yellow-square {
@@ -442,8 +554,12 @@ footer h6 {
 }
 
 .performance-img {
-  position: relative;
+  position: absolute;
   z-index: 1;
+  width: 39.31vw;
+  height: 79.77vh !important;
+  top: 12.44vh;
+  left: 7.125vw;
 }
 
 .learnmore {
@@ -463,9 +579,14 @@ footer h6 {
   font-weight: 600;
 }
 
+.custom-padding {
+  padding-left: 10vw;
+  padding-top: 10.125vh;
+}
+
 .sqare-watermark {
   position: absolute;
-  top: 8rem;
+  top: 27.77vh;
   left: 30vw;
   height: 32.77vh;
   width: 18.43vw;
@@ -473,23 +594,22 @@ footer h6 {
 
 .round-watermark {
   position: absolute;
-  top: 6rem;
-  left: 0rem;
-  width: 17.06rem;
-  height: 17.06rem;
+  top: 21.22vh;
+  left: 4vw;
+  width: 17.06vw;
+  height: 30.32vh;
 }
 
 .sqareEdge-watermark {
   position: absolute;
-  top: 15rem;
-  left: 33.12vw;
+  top: 37.66vh;
+  left: 30.12vw;
   width: 19.375vw;
   height: 33.11vh;
 }
 
-/* section testominals */
-
-.testominals-container {
+/* section testimonials */
+.testimonials-container {
   min-height: 20vh;
   background: #fdfdfd;
   display: flex;
@@ -497,13 +617,12 @@ footer h6 {
   justify-content: center;
 }
 
-
-
 .testimonial-title {
   font-size: 3.25vw;
   width: 18.645vw;
   margin: auto;
   padding: 7.88vh 0;
+  letter-spacing: 0.078vw;
   font-weight: 400;
 }
 
@@ -513,19 +632,21 @@ footer h6 {
 }
 
 .item {
-  height: 40.33vh;
+  height: 44.33vh;
   width: 35.05vw;
   border-radius: 0.5vw;
   background: #ffffff;
   display: inline-block;
-  margin: 0 5vh;
+  margin: 0 3vh;
+  padding: 4.66vh;
+  overflow: hidden;
 }
 
 .item:nth-child(1) {
   margin-left: 10vw !important;
 }
 
-#testominals {
+#testimonials {
   scroll-behavior: smooth;
   border-spacing: 30px 0;
   width: 100%;
@@ -552,9 +673,9 @@ footer h6 {
   border: none;
   margin-bottom: 4vh;
 }
-.img-arrow{
-width: 0.687vw;
-height: 2.333vh;
+.img-arrow {
+  width: 0.687vw;
+  height: 2.333vh;
 }
 
 #leftMove {
@@ -570,21 +691,33 @@ height: 2.333vh;
   width: 5.58vw;
   height: 5.58vw;
   border-radius: 50%;
-  border: 2px solid #1175c9;
+  border: 0.125vw solid #1175c9;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .profile-img {
-  width: 5.58vw;
-  height: 5.58vw;
+  width: 5.22vw;
+  height: 5.22vw;
+  border-radius: 50%;
+  border: 0.125vw solid #fff;
+  align-self: center;
 }
 
 .person-name {
   font-size: 1.5vw !important;
+  letter-spacing: 0.023vw !important;
+  font-weight: 600;
 }
 
 .designation {
   font-size: 1vw !important;
+  letter-spacing: 0.016vw !important;
+  word-wrap: normal;
+  white-space: normal;
+  max-width: 21.56vw;
 }
 
 .quotes-container {
@@ -596,27 +729,47 @@ height: 2.333vh;
 .blockQuate-img {
   width: 4.685vw;
   height: 4.37vh;
+  padding-top: 1vh;
+}
+
+.quotes-container p {
+  letter-spacing: 0.045vw;
 }
 
 .item p {
   padding: 0 1vw;
   font-size: 1.25vw;
   white-space: normal;
+  letter-spacing: 0.045vw;
+  color: #40464e;
 }
 
 .inside-para {
   order: 1;
-  margin-top: 13vh;
 }
 
 .inside-img {
   order: 2;
-  margin-top: 13vh;
+}
+
+.address-title {
+  letter-spacing: 0.023vw;
+}
+
+footer .mob-view {
+  display: none;
 }
 
 @media (max-width: 576px) {
   .banner input.form-control {
     width: 100%;
+  }
+
+  .highlight-word {
+    padding: 0 2vw !important;
+    border-radius: 0.8vw;
+    font-size: 7.28vw;
+    line-height: 0;
   }
 
   .navbar-brand img {
@@ -625,6 +778,10 @@ height: 2.333vh;
 
   .nav-get-started {
     width: 26vw;
+  }
+
+  .jumbotron-message-container h1 {
+    line-height: 1 !important;
   }
 
   .address .row > * {
@@ -638,8 +795,16 @@ height: 2.333vh;
     border-bottom-left-radius: 10vw;
   }
 
+  .jumbotron .col-lg-7 p {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    line-height: 2;
+  }
+
   .banner .input-group {
     width: 100%;
+    align-items: center;
+    justify-content: center;
   }
 
   .banner .form-control {
@@ -673,7 +838,7 @@ height: 2.333vh;
   }
 
   .banner-image {
-    margin-top: 34%;
+    margin-top: 18%;
   }
 
   .banner-img {
@@ -686,22 +851,18 @@ height: 2.333vh;
 
   .jumbotron .col-lg-5 {
     background-color: inherit;
-    min-height: 65vh;
+    min-height: 54vh;
   }
 
   .jumbotron-grey-square {
-    /* display: none; */
     z-index: 1;
-  }
-
-  .highlight-word {
-    font-size: 7.28vw;
-    line-height: 0;
+    width: 17%;
   }
 
   .jumbotron-message-container {
     max-width: inherit;
     text-align: center !important;
+    padding-top: 0;
   }
 
   .jumbotron-message-container .display-4 {
@@ -711,7 +872,7 @@ height: 2.333vh;
 
   .jumbotron-yellow {
     width: 50%;
-    height: 100%;
+    height: 82%;
     z-index: 0;
     background-color: #feda31;
     z-index: 0;
@@ -735,9 +896,13 @@ height: 2.333vh;
     border-bottom-right-radius: 4px !important;
   }
 
+  .input-group .form-control {
+    border-color: #b7babc !important;
+  }
+
   .input-group-append {
-    margin-top: 3vh;
-    margin-left: 5%;
+    margin-top: 1rem;
+    height: 2.5rem;
   }
 
   .mob-mail-description {
@@ -762,8 +927,24 @@ height: 2.333vh;
     padding-left: 30%;
   }
 
+  .jumbotron {
+    margin-bottom: 0;
+  }
+
+  .jumbotron .input-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .banner .input-group .btn {
     font-size: 4.15vw;
+  }
+
+  .banner .input-group {
+    padding-bottom: 3rem;
+    margin-bottom: 0;
   }
 
   .jumbotron .input-group .btn {
@@ -775,6 +956,7 @@ height: 2.333vh;
     margin-left: 10vw;
     margin-right: 10vw;
   }
+
   /* Clients */
   .client h2 {
     font-size: 6.78vw;
@@ -785,6 +967,8 @@ height: 2.333vh;
   .client-title {
     font-size: inherit;
     font-size: 6.796vw;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
   }
 
   .clients {
@@ -798,9 +982,14 @@ height: 2.333vh;
   }
 
   .pig-heading {
-    font-size: 6.7vw;
+    font-size: 5.7vw;
     font-weight: 400;
     padding-bottom: 10vh;
+    letter-spacing: 1.25px;
+    padding: 0 !important;
+    margin: 5px !important;
+    margin-top: 1.8rem !important;
+    margin-bottom: 2.5rem !important;
   }
 
   /* Purpose section */
@@ -818,30 +1007,37 @@ height: 2.333vh;
   }
 
   .yellow-square {
-    left: 60%;
+    top: 0;
+    left: 75%;
     bottom: 65%;
-    width: 40%;
-    height: 35%;
+    width: 25%;
+    height: 4rem;
     transform: rotate(180deg);
     border-top-right-radius: 100px;
   }
 
   .right-yellow-square {
     border-bottom-left-radius: 100px;
-    width: 40%;
-    height: 35%;
+    width: 25%;
+    height: 4rem;
   }
 
   .performance-img {
-    top: 8%;
+    position: relative;
+    z-index: 1;
+    width: 64.31vw;
+    height: 38.77vh !important;
+    top: 0;
+    left: 16.125vw;
   }
 
   .round-watermark {
     position: absolute;
-    top: 0rem;
-    left: 0rem;
-    width: 13.06rem;
+    top: -3rem;
+    left: 1.2rem;
+    width: 9.06rem;
     height: 17.06rem;
+    bottom: 2rem;
   }
 
   .sqare-watermark {
@@ -855,14 +1051,15 @@ height: 2.333vh;
   .symbol-img {
     width: 15vw;
     margin-left: 15%;
+    margin-right: 2.31vw;
   }
 
   .gray-square {
     background: #ebebeb;
     border-top-right-radius: 10vw;
     border-bottom-left-radius: 0;
-    width: 15%;
-    height: 12%;
+    width: 18.44vw;
+    height: 7.35vh;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -873,17 +1070,19 @@ height: 2.333vh;
   .left-gray-square {
     border-top-right-radius: 10vw;
     width: 15%;
-    height: 12%;
+    height: 2.8rem;
   }
 
   .PIG-title {
     font-size: 9vw;
+    letter-spacing: 1.25px;
   }
 
   .PIG-para {
     font-size: 7vw;
     text-align: center;
     padding: 5vh 0;
+    letter-spacing: 0.043vw;
   }
 
   .PIG-second-para {
@@ -891,6 +1090,7 @@ height: 2.333vh;
     opacity: 0.7;
     padding-bottom: 2vh;
     font-size: 3.88vw;
+    letter-spacing: 0.045vw;
   }
 
   .learnmore {
@@ -898,11 +1098,11 @@ height: 2.333vh;
     font-weight: 700;
     width: inherit;
     width: 55vw;
-    margin-left: 17%;
+    margin: auto;
     height: 6vh;
     text-align: center;
-    /* padding-top: 1.5vh; */
-    border-radius: 10px;
+    border-radius: 6px;
+    letter-spacing: 0.86px;
   }
 
   .sqareEdge-watermark {
@@ -918,22 +1118,23 @@ height: 2.333vh;
   }
 
   .growth-section {
-    padding-bottom: 7.5vh;
-    margin-top: 5vh;
+    padding-bottom: 7vh;
+    margin-top: 5vh !important;
   }
 
   .insight-gray-square {
     bottom: -5vh !important ;
   }
 
-  /* section testominals */
-  .testominals-container {
+  /* section testimonials */
+  .testimonials-container {
     min-height: 20vh;
     background: #fdfdfd;
   }
 
   .inside-para {
     order: 2;
+    margin: auto;
   }
 
   .inside-img {
@@ -950,10 +1151,12 @@ height: 2.333vh;
     height: 55.74vh;
     width: 80.58vw;
     margin: 0 9vw !important;
+    padding-top: 5.28vh !important;
     border-radius: 1.94vw;
+    overflow: hidden;
   }
 
-  #testominals {
+  #testimonials {
     scroll-behavior: smooth;
     overflow: hidden;
     margin-bottom: 3vh;
@@ -975,20 +1178,20 @@ height: 2.333vh;
   }
 
   #leftMove,
-#rightMove {
-  outline: none;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 11.65vw;
-  height:11.65vw;
-  border: none;
-  margin-bottom: 0;
-}
+  #rightMove {
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 11.65vw;
+    height: 11.65vw;
+    border: none;
+    margin-bottom: 0;
+  }
 
-.img-arrow{
-width: 2.642vw;
-height: 2.06vh;
-}
+  .img-arrow {
+    width: 2.642vw;
+    height: 2.06vh;
+  }
 
   #leftMove {
     margin-left: 0;
@@ -1003,25 +1206,13 @@ height: 2.06vh;
     margin: auto 0 !important;
   }
 
-  .profile-img-container {
-    width: 17.47vw;
-    height: 17.47vw;
-    border-radius: 50%;
-    border: 0.485vw solid #1175c9;
-    overflow: hidden;
-  }
-
-  .profile-img {
-    width: 17.47vw;
-    height: 17.47vw;
-  }
-
   .person-name {
     font-size: 4.12vw !important;
   }
 
   .designation {
     font-size: 2.91vw !important;
+    max-width: 80vw;
   }
 
   .quotes-container {
@@ -1047,6 +1238,7 @@ height: 2.06vh;
     margin: auto;
     padding: 7.88vh 0;
     font-weight: 400;
+    letter-spacing: 1.25px;
   }
 
   /* Address Section */
@@ -1068,14 +1260,22 @@ height: 2.06vh;
     height: inherit;
     padding: 1vw;
     border-radius: 1vw;
+    margin-left: 0 !important;
+    height: 2.5rem;
   }
 
-  .address-title {
+  .address ul li:first-child {
     font-size: 3.883vw !important;
+    letter-spacing: 0.38px !important;
   }
 
-  .address span {
-    font-size: 3.39vw;
+  .address ul li {
+    font-size: 3.39vw !important;
+    letter-spacing: 0.34px !important;
+  }
+
+  .address-next-line {
+    display: block;
   }
 
   /* Footer section */
@@ -1085,15 +1285,51 @@ height: 2.06vh;
     line-height: 1.5;
   }
 
+  footer .web-view {
+    display: none;
+  }
+
+  footer .mob-view {
+    display: block;
+  }
+
+  footer {
+    margin-bottom: 2.5rem;
+  }
+
   /* Power section */
   .banner h1 {
     color: #1175c9;
     font-weight: 600;
     padding: 3rem 1rem;
     font-size: 8.73vw;
+    line-height: 1.5;
   }
 
-  footer {
-    margin-bottom: 6vh;
+  .purpose-section,
+  .insight-section,
+  .growth-section {
+    height: unset;
+    margin: auto -15px;
+  }
+
+  .custom-padding {
+    padding-left: 10.125vw;
+    padding-top: 0;
+  }
+
+  /* section testimonials */
+  .profile-img-container {
+    width: 17.47vw;
+    height: 17.47vw;
+    border-radius: 50%;
+    border: 0.485vw solid #1175c9;
+    overflow: hidden;
+  }
+
+  .profile-img {
+    width: 17vw;
+    height: 17vw;
+    border: 0.485vw solid #fff;
   }
 }

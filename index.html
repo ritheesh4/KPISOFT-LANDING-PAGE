@@ -22,7 +22,7 @@
   <div class="jumbotron">
     <nav id="main-nav" class="navbar">
       <a class="navbar-brand" href="#"><img src="./img/nav-logo.svg" alt="" /></a>
-      <a href="#" class="btn btn-primary nav-get-started" data-toggle="modal"
+      <a href="#" class="btn nav-get-started" data-toggle="modal" id= "nav-bar-get-started"
       data-target="#myModal">Get Started</a>
     </nav>
     <div class="container-fluid  text-lg-left">
@@ -30,20 +30,20 @@
         <div class="col-lg-7 banner-para">
           <div class="jumbotron-message-container text-center">
             <h1>
-              <span class="highlight-word">Lorem ipsum dolor sit amet, elitr, sed</span>
+              <span class="highlight-word">Lorem ipsum dolor</span></br><span class="highlight-word"> sit amet, elitr, sed</span>
             </h1>
-            <p class="lead">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+            <p class="lead">                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
               diam nonumy eirmod tempor invidunt ut labore.
             </p>
             <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Your e-mail address" aria-label="Your e-mail address"
+              <input type="text" class="form-control hero-input add-border" placeholder="Your e-mail address" aria-label="Your e-mail address"
                 aria-describedby="basic-addon2">
               <div class="input-group-append">
-                <span class="btn input-group-text" id="jumbotron-get-started">Get Started</span>
+                <span class="btn input-group-text" id="jumbotron-get-started" data-toggle="modal"
+      data-target="#myModal">Get Started</span>
               </div>
             </div>  
-            <div class="mob-mail-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>        
+            <div class="text-left mob-mail-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>        
           </div>
          
         </div>
@@ -189,7 +189,7 @@
   <section class="col-md-12 pig m-0 p-0" id="pig">
     <div class="col-md-12">
       <!-- Purpose section -->
-      <div class="row h-100">
+      <div class="row purpose-section">
         <div class="col-md-6 ">
           <div class="yellow-square"></div>
           <img class="performance-img img-fluid" src="./img/purpose/img_Performance@2x.png" alt="" />
@@ -197,7 +197,7 @@
         </div>
         <div class="col-md-6 d-flex flex-column ">
           <div class="gray-square"></div>
-          <div class="col-md-8 mx-md-auto custom-mt ">
+          <div class="col-md-8 m-md-auto purpose-mob-view">
             <div class=" d-flex  mt-4 mr-4">
               <img src="./img/purpose/Group 2736a.svg" class="symbol-img img-fluid mr-4" alt="" />
               <span class="text-white PIG-title">Purpose</span>
@@ -213,21 +213,21 @@
       </div>
 
       <!-- Insights section -->
-      <div class="row h-100 insight-section">
-        <div class="col-md-6 inside-para">
+      <div class="row insight-section">
+        <div class="col-md-6  d-flex flex-column inside-para">
           <div class="left-gray-square insight-gray-square">
           </div>
-          <div class="col-md-8 mx-md-auto custom-mt ">
-            <div class=" d-flex mt-4 mr-4">
-              <img src="./img/insights/Group 2753.svg" class="symbol-img img-fluid mr-4" alt="" />
-              <span class="text-white  PIG-title">Insights</span>
+          <div class="col-md-10 m-md-auto custom-padding">
+            <div class=" d-flex  mt-4 mr-4">
+              <img src="./img/insights/Group 2753.svg" class="symbol-img img-fluid mr-4 insight-title" alt="" />
+              <span class="text-white  PIG-title insight-title">Insights</span>
             </div>
             <p class="h1 text-white mt-md-2 h1 PIG-para">Lorem ipsum dolor sit amet, consetetur elitr.</p>
             <p class="text-white mt-md-2 PIG-second-para">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod invidunt ut labore.
             </p>
-            <a class="learnmore btn mt-3" id="i-learnmore" href="">Learn More</a>
+            <a class="learnmore btn mt-2" id="i-learnmore" href="">Learn More</a>
           </div>
         </div>
         <div class="col-md-6 d-flex flex-column inside-img">
@@ -238,7 +238,7 @@
       </div>
 
       <!-- Growth section -->
-      <div class="row h-100 growth-section">
+      <div class="row growth-section">
         <div class="col-md-6">
           <div class="yellow-square"></div>
           <img class="performance-img img-fluid" src="./img/growth/Image_Insights@2x.png" alt="" />
@@ -247,10 +247,10 @@
         <div class="col-md-6 d-flex flex-column">
           <div class="gray-square"></div>
           <!-- <div class="hero-square text-left"></div> -->
-          <div class="col-md-8 mx-md-auto  custom-mt">
+          <div class="col-md-8 m-md-auto">
             <div class=" d-flex mt-4 mr-4">
-              <img src="./img/growth/Group 2755.svg" alt="" class="symbol-img img-fluid mr-4" />
-              <span class="text-white PIG-title">Growth</span>
+              <img src="./img/growth/Group 2755.svg" alt="" class="symbol-img img-fluid mr-4 growth-title" />
+              <span class="text-white PIG-title growth-title">Growth</span>
             </div>
             <p class="text-white mt-md-3 h1 PIG-para">Lorem ipsum dolor sit amet, consetetur elitr.</p>
             <p class="text-white mt-md-3 PIG-second-para ">
@@ -269,7 +269,7 @@
     <h1 class="text-center testimonial-title">Testimonials</h1>
   </section>
 
-  <!-- Testominal scroll -->
+  <!-- Testimonials scroll -->
   <section id="scrollContainer" class="container-structured">
     <div class="button-container carosel-buttons">
       <button id="leftMove"  class="btn-navigate bg-light">
@@ -279,154 +279,150 @@
         <img class="img-arrow" src="img/right-arrow.svg">
       </button>
     </div>
-    <div id="testominals">
-      <div class="item p-4">
-        <div class="profile-container mt-1 ml-5">
+    <div id="testimonials">
+      <div class="item">
+        <div class="profile-container">
+          <div class="profile-img-container"><img src="img/testimonials/dumansi.png" class="profile-img" /></div>
+          <div class="d-flex flex-column pt-md-3">
+            <p class="person-name mb-0">Dumasi M M Samosir</p>
+            <p class="designation">Director at PT. Asuransi Sinarmas</p>
+          </div>
+        </div>
+        <div class="quotes-container">
+          <img src="img/blockQuate.png" class="blockQuate-img" />
+          <p class="ml-2 mt-3 ">
+            “Data is now accessible to every person across the organization – even to the lowest level. This is the beauty of
+            ‘democratization of data.’ Our agency team achieved 31% growth in terms of gross return premium with KPISOFT.”
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="profile-container">
+          <div class="profile-img-container"><img src="img/testimonials/mochtar.png" class="profile-img" /></div>
+          <div class="d-flex flex-column  pt-md-3">
+            <p class="person-name mb-0">Mochtar Suhadi</p>
+            <p class="designation">Chief Organization & Development Officer,Sinarmas Mining</p>
+          </div>
+        </div>
+        <div class="quotes-container">
+          <img src="img/blockQuate.png" class="blockQuate-img" />
+          <p class="ml-2 mt-3 ">
+            “The daily feed of key insights and intuitive dashboards at our fingertips has 
+            greatly improved our decision making process, our performance and made us more efficient.”
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="profile-container">
+          <div class="profile-img-container"><img src="img/testimonials/Nasri.png" class="profile-img" /></div>
+          <div class="d-flex flex-column  pt-md-3">
+            <p class="person-name mb-0">Nasri Mohamed</p>
+            <p class="designation">Ex Vice President, Telekom Malaysia</p>
+          </div>
+        </div>
+        <div class="quotes-container">
+          <img src="img/blockQuate.png" class="blockQuate-img" />
+          <p class="ml-2 mt-3 ">
+            “KPISOFT enabled a 31% productivity increase for our 7000 plus front-liners with a cost
+             reduction of 14%, placing TM in the top quartile of telcos globally.”
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="profile-container">
+          <div class="profile-img-container"><img src="img/testimonials/mukesh.png" class="profile-img" /></div>
+          <div class="d-flex flex-column  pt-md-3">
+            <p class="person-name mb-0">Mukesh Dhawan</p>
+            <p class="designation">CEO, Zurich Malaysia</p>
+          </div>
+        </div>
+        <div class="quotes-container">
+          <img src="img/blockQuate.png" class="blockQuate-img" />
+          <p class="ml-2 mt-3 ">
+            “We’re beating the market quarter on quarter. KPISOFT has taken us to the next level
+             of engagement with a substantial increase in the number of active agents and revenue.”
+          </p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="profile-container">
           <div class="profile-img-container"><img src="img/margo.jpeg" class="profile-img" /></div>
-          <div class="d-flex flex-column mt-2 ">
+          <div class="d-flex flex-column  pt-md-3">
             <p class="person-name mb-0">Rachel Margo</p>
             <p class="designation">Team Lead at Merck</p>
           </div>
         </div>
-        <div class="quotes-container ml-2">
+        <div class="quotes-container">
           <img src="img/blockQuate.png" class="blockQuate-img" />
-          <p class="ml-2 mt-3">
+          <p class="ml-2 mt-3 ">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua.
           </p>
         </div>
       </div>
-      <div class="item p-4">
-        <div class="profile-container mt-1 ml-5">
+      <div class="item">
+        <div class="profile-container">
           <div class="profile-img-container"><img src="img/margo.jpeg" class="profile-img" /></div>
-          <div class="d-flex flex-column mt-2 ">
+          <div class="d-flex flex-column  pt-md-3">
             <p class="person-name mb-0">Rachel Margo</p>
             <p class="designation">Team Lead at Merck</p>
           </div>
         </div>
-        <div class="quotes-container ml-2">
+        <div class="quotes-container">
           <img src="img/blockQuate.png" class="blockQuate-img" />
-          <p class="ml-2 mt-3">
+          <p class="ml-2 mt-3 ">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua.
           </p>
         </div>
       </div>
-      <div class="item p-4">
-        <div class="profile-container mt-1 ml-5">
+      <div class="item">
+        <div class="profile-container">
           <div class="profile-img-container"><img src="img/margo.jpeg" class="profile-img" /></div>
-          <div class="d-flex flex-column mt-2 ">
+          <div class="d-flex flex-column  pt-md-3">
             <p class="person-name mb-0">Rachel Margo</p>
             <p class="designation">Team Lead at Merck</p>
           </div>
         </div>
-        <div class="quotes-container ml-2">
+        <div class="quotes-container">
           <img src="img/blockQuate.png" class="blockQuate-img" />
-          <p class="ml-2 mt-3">
+          <p class="ml-2 mt-3 ">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua.
           </p>
         </div>
       </div>
-      <div class="item p-4">
-        <div class="profile-container mt-1 ml-5">
+      <div class="item">
+        <div class="profile-container">
           <div class="profile-img-container"><img src="img/margo.jpeg" class="profile-img" /></div>
-          <div class="d-flex flex-column mt-2 ">
+          <div class="d-flex flex-column  pt-md-3">
             <p class="person-name mb-0">Rachel Margo</p>
             <p class="designation">Team Lead at Merck</p>
           </div>
         </div>
-        <div class="quotes-container ml-2">
+        <div class="quotes-container">
           <img src="img/blockQuate.png" class="blockQuate-img" />
-          <p class="ml-2 mt-3">
+          <p class="ml-2 mt-3 ">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua.
           </p>
         </div>
       </div>
-      <div class="item p-4">
-        <div class="profile-container mt-1 ml-5">
+      <div class="item">
+        <div class="profile-container">
           <div class="profile-img-container"><img src="img/margo.jpeg" class="profile-img" /></div>
-          <div class="d-flex flex-column mt-2 ">
+          <div class="d-flex flex-column  pt-md-3">
             <p class="person-name mb-0">Rachel Margo</p>
             <p class="designation">Team Lead at Merck</p>
           </div>
         </div>
-        <div class="quotes-container ml-2">
+        <div class="quotes-container">
           <img src="img/blockQuate.png" class="blockQuate-img" />
-          <p class="ml-2 mt-3">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
-          </p>
-        </div>
-      </div>
-      <div class="item p-4">
-        <div class="profile-container mt-1 ml-5">
-          <div class="profile-img-container"><img src="img/margo.jpeg" class="profile-img" /></div>
-          <div class="d-flex flex-column mt-2 ">
-            <p class="person-name mb-0">Rachel Margo</p>
-            <p class="designation">Team Lead at Merck</p>
-          </div>
-        </div>
-        <div class="quotes-container ml-2">
-          <img src="img/blockQuate.png" class="blockQuate-img" />
-          <p class="ml-2 mt-3">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
-          </p>
-        </div>
-      </div>
-      <div class="item p-4">
-        <div class="profile-container mt-1 ml-5">
-          <div class="profile-img-container"><img src="img/margo.jpeg" class="profile-img" /></div>
-          <div class="d-flex flex-column mt-2 ">
-            <p class="person-name mb-0">Rachel Margo</p>
-            <p class="designation">Team Lead at Merck</p>
-          </div>
-        </div>
-        <div class="quotes-container ml-2">
-          <img src="img/blockQuate.png" class="blockQuate-img" />
-          <p class="ml-2 mt-3">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
-          </p>
-        </div>
-      </div>
-      <div class="item p-4">
-        <div class="profile-container mt-1 ml-5">
-          <div class="profile-img-container"><img src="img/margo.jpeg" class="profile-img" /></div>
-          <div class="d-flex flex-column mt-2 ">
-            <p class="person-name mb-0">Rachel Margo</p>
-            <p class="designation">Team Lead at Merck</p>
-          </div>
-        </div>
-        <div class="quotes-container ml-2">
-          <img src="img/blockQuate.png" class="blockQuate-img" />
-          <p class="ml-2 mt-3">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua.
-          </p>
-        </div>
-      </div>
-      <div class="item p-4">
-        <div class="profile-container mt-1 ml-5">
-          <div class="profile-img-container"><img src="img/margo.jpeg" class="profile-img" /></div>
-          <div class="d-flex flex-column mt-2 ">
-            <p class="person-name mb-0">Rachel Margo</p>
-            <p class="designation">Team Lead at Merck</p>
-          </div>
-        </div>
-        <div class="quotes-container ml-2">
-          <img src="img/blockQuate.png" class="blockQuate-img" />
-          <p class="ml-2 mt-3">
+          <p class="ml-2 mt-3 ">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua.
@@ -438,11 +434,12 @@
   <!-- Banner section -->
   <div class="banner">
     <h1 class="text-center banner-title">Power your team’s performance today</h1>
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Your e-mail address" aria-label="Your e-mail address"
+    <div class="input-group mb-4">
+      <input type="text" class="form-control email-power-section" placeholder="Your e-mail address" aria-label="Your e-mail address"
         aria-describedby="basic-addon2">
       <div class="input-group-append">
-        <span class="btn input-group-text" id="banner-get-started">Get Started</span>
+        <span class="btn input-group-text" id="banner-get-started" data-toggle="modal"
+      data-target="#myModal">Get Started</span>
       </div>
       
     </div>
@@ -453,57 +450,54 @@
     <div class="row mx-auto">
       <div class="col-md col-12 d-flex justify-content-center left-blank-div"></div>
       <div class="col-md col-12 d-flex justify-content-center">
-        <p>
-          <span class="address-title">US HQ</span><br />
-          <span>2700 Post Oak Blvd
-            21st Floor,<br />
-            Houston, TX 77056 <br />
-            <a href="tel:+1(800)9478211">Tel: +1 (800) 947 8211</a></span>
-        </p>
+        <ul>
+          <li class="address-title">US HQ</li>
+          <li>2700 Post Oak Blvd,</li>
+           <li>21st Floor,</li>
+          <li>Houston, TX 77056</li>
+          <li><a href="tel:+1(800)9478211">Tel: +1 (800) 947 8211</a></li>
+        </ul>
       </div>
       <div class="col-md col-12 d-flex justify-content-center">
-        <p>
-          <span class="address-title">Middle East HQ</span><br />
-          <span>
-            Office 910, 9th Floor<br />
-            The Onyx Tower 1 Hessa Street,<br />
-            Al Thaniyah Third, P.O. Box<br />
-            41052 Dubai, UAE <br />
-            <a href="tel:+971 4399 52 53">
-              Tel: +971 4399 52 53</a></span>
-        </p>
+         <ul>
+          <li class="address-title">Middle East HQ</li>
+          <li>Office 910, 9th Floor,</li>
+          <li>The Onyx Tower 1 <span class = "address-next-line">Hessa Street</span><li> 
+          <li>Al Thaniyah Third, </li>
+          <li><span class = "address-next-line">P.O. Box 41052</span> Dubai, UAE </li>
+          <li><a href="tel:+971 4399 52 53">
+              Tel: +971 4399 52 53</a></li>
+          </ul>
       </div>
       <div class="col-md col-12 d-flex justify-content-center">
-        <p>
-          <span class="address-title">Europe HQ</span><br />
-          <span>
-            Taubstummengasse,
-            7 A-1040 <br>Vienna<br />
-            <a href="tel:+43 1 78 66 318">
-              Tel: +43 1 78 66 318</a></span>
-        </p>
+         <ul>
+          <li class="address-title">Europe HQ</li>
+          <li>Taubstummengasse,</li>
+          <li>7 A-1040, Vienna</li>
+          <li> <a href="tel:+ 43 1 78 66 318">
+              Tel: +43 1 78 66 318</a></li>
+          </ul>
       </div>
       <div class="col-md col-12 d-flex justify-content-center">
-        <p>
-          <span class="address-title">Asia HQ</span><br />
-          <span>
-            1 Raffles Place,<br />
-            #02-01 One Raffles Place Mall,<br />
-            Singapore 048616 <br />
-            <a href="tel:+65 3138 1767">
-              Tel: +65 3138 1767</a></span>
-        </p>
+        <ul>
+          <li class="address-title">Asia HQ</li>
+          <li>1 Raffles Place,</li>
+          <li>#02-01 One Raffles</li>
+          <li>Place Mall,</li>
+          <li>Singapore 048616</li>
+          <li>  <a href="tel:+65 3138 1767">
+              Tel: +65 3138 1767</a></li>
+        </ul>
       </div>
       <div class="col-md col-12 d-flex justify-content-center">
-        <p>
-          <span class="address-title">Innovation and R&D Center</span><br />
-          <span>
-            Unit 27-13, Level 27, Q Sentral,<br />
-            Jalan Stesen Sentral 2, 50470,<br />
-            Kuala Lumpur, Malaysia<br />
-            <a href="tel:+603 2276 0055">
-              Tel: +603 2276 0055</a></span>
-        </p>
+        <ul>
+          <li class="address-title">Innovation and <span class = "address-next-line">R&D Center</span></li>
+          <li>Unit 27-13, Level 27, <span class = "address-next-line">Q Sentral, </span></li>
+          <li>Jalan Stesen Sentral 2, <span class = "address-next-line">50470, </span></li>
+          <li> Kuala Lumpur, Malaysia</li>
+          <li><a href="tel:+603 2276 0055">
+              Tel: +603 2276 0055</a></li>
+        </ul>
       </div>
       <div class="col-md col-12 d-flex justify-content-center right-blank-div">
       </div>
@@ -511,8 +505,11 @@
 
   <!-- Footer -->
   <footer>
-    <h6 class="text-center my-auto">
-      2020 &copy; Copyright KPISOFT. All Rights Reserved Privacy Statement
+    <h6 class="text-center my-auto web-view">
+      2020 &copy; Copyright KPISOFT. All Rights Reserved <a href="#">Privacy Statement</a> 
+    </h6>
+    <h6 class="text-center my-auto mob-view">
+      2020 &copy; Copyright KPISOFT.</br> All Rights Reserved <a href="#">Privacy Statement</a> 
     </h6>
   </footer>
 

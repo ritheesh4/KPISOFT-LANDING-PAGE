@@ -19,7 +19,7 @@ document.getElementById("rightMove").addEventListener("click", () => {
 });
 
 const scrollItems = direction => {
-  let element = document.getElementById("testominals");
+  let element = document.getElementById("testimonials");
   let width = element.clientWidth
   if (direction === "left") {
     element.scrollLeft -= width;
