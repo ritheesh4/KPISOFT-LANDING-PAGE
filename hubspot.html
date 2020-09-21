@@ -1193,10 +1193,10 @@
                         </p>
                         <div class="input-group mb-3">
                            <input type="text" class="form-control hero-input add-border" placeholder="Your e-mail address" aria-label="Your e-mail address"
-                              aria-describedby="basic-addon2">
+                              aria-describedby="basic-addon2" id="emailInput">
                            <div class="input-group-append">
                               <span class="btn input-group-text" id="jumbotron-get-started" data-toggle="modal"
-                                 data-target="#myModal">Get Started</span>
+                                 data-target="#myModal" onclick="insertEmail()">Get Started</span>
                            </div>
                         </div>
                         <div class="text-left mob-mail-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
@@ -1232,7 +1232,7 @@
                   </div>
                   <div class="modal-body border-0">
                      <form>
-                        <!-- <div class="form-group">
+                        <div class="form-group">
                            <input
                               type="text"
                               class="form-control"
@@ -1286,7 +1286,7 @@
                            <div class="form-group group-check text-center">
                            <input type="checkbox" name="" id="" /> I've read and accepted the
                            <a href="#" class="checkbox-label-a-tag">Privacy Statement</a>
-                           </div> -->
+                           </div>
                         {% module "form" path="@hubspot/form" overrideable=True %}
                      </form>
                   </div>
@@ -1617,6 +1617,13 @@
             XHR.open("POST", `${postPath}`);
             // The data sent is what the user provided in the form
             XHR.send(FD);       
+            }
+
+            // Insert the typed email on the get started into the modal email field
+            const insertEmail = () => {
+               const emailData = document.getElementById('emailInput');             
+               const emailFields = document.querySelectorAll('input[type=email]');
+               emailFields[0].value = emailData.value;            
             }
             
          </script>
