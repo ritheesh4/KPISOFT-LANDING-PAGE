@@ -1196,7 +1196,7 @@
                               aria-describedby="basic-addon2" id="emailInput">
                            <div class="input-group-append">
                               <span class="btn input-group-text" id="jumbotron-get-started" data-toggle="modal"
-                                 data-target="#myModal" onclick="insertEmail()">Get Started</span>
+                                 data-target="#myModal" onclick="insertEmail(1)">Get Started</span>
                            </div>
                         </div>
                         <div class="text-left mob-mail-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
@@ -1500,10 +1500,10 @@
             <h1 class="text-center banner-title">Power your team’s performance today</h1>
             <div class="input-group mb-4">
                <input type="text" class="form-control email-power-section" placeholder="Your e-mail address" aria-label="Your e-mail address"
-                  aria-describedby="basic-addon2">
+                  aria-describedby="basic-addon2" id="emailInput2">
                <div class="input-group-append">
                   <span class="btn input-group-text" id="banner-get-started" data-toggle="modal"
-                     data-target="#myModal">Get Started</span>
+                     data-target="#myModal" onclick="insertEmail(2)">Get Started</span>
                </div>
             </div>
          </div>
@@ -1620,8 +1620,13 @@
             }
 
             // Insert the typed email on the get started into the modal email field
-            const insertEmail = () => {
-               const emailData = document.getElementById('emailInput');             
+            const insertEmail = (emailField) => {
+               let emailData;
+               if(emailField === 1){
+                  emailData = document.getElementById('emailInput');
+               } else {
+                  emailData = document.getElementById('emailInput2'); 
+               }                           
                const emailFields = document.querySelectorAll('input[type=email]');
                emailFields[0].value = emailData.value;            
             }
