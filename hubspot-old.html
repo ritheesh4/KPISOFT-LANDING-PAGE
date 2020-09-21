@@ -409,9 +409,6 @@
             padding: 3rem 1rem;
             font-size: 3vw;
             }
-            .power-title{
-               color: black !important; 
-            }
             .banner .input-group {
             width: 35.375vw;
             margin: auto;
@@ -577,7 +574,7 @@
             padding: 5.33vh 0;
             }
             .item {
-            height: 48.33vh;
+            height: 44.33vh;
             width: 35.05vw;
             border-radius: 0.5vw;
             background: #ffffff;
@@ -601,7 +598,7 @@
             }
             #scrollContainer {
             background: #1175c9;
-            height: 72vh;
+            height: 67vh;
             }
             #leftMove,
             #rightMove {
@@ -1196,10 +1193,10 @@
                         </p>
                         <div class="input-group mb-3">
                            <input type="text" class="form-control hero-input add-border" placeholder="Your e-mail address" aria-label="Your e-mail address"
-                              aria-describedby="basic-addon2" id="emailInput" required>
+                              aria-describedby="basic-addon2">
                            <div class="input-group-append">
                               <span class="btn input-group-text" id="jumbotron-get-started" data-toggle="modal"
-                                 data-target="#myModal" onclick="insertEmail(1)">Get Started</span>
+                                 data-target="#myModal">Get Started</span>
                            </div>
                         </div>
                         <div class="text-left mob-mail-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</div>
@@ -1235,8 +1232,69 @@
                   </div>
                   <div class="modal-body border-0">
                      <form>
+                        <!-- <div class="form-group">
+                           <input
+                              type="text"
+                              class="form-control"
+                              id="recipient-name"
+                              placeholder="Full name*" required
+                              />
+                           </div>
+                           <div class="form-group">
+                           <input
+                              type="email"
+                              class="form-control"
+                              id="recipient-name"
+                              placeholder="Company email*" required
+                              />
+                           </div>
+                           <div class="form-group">
+                           <input
+                              type="text"
+                              class="form-control"
+                              id="recipient-name"
+                              placeholder="Phone number*" required
+                              />
+                           </div>
+                           <div class="form-group">
+                           <input
+                              type="text"
+                              class="form-control"
+                              id="recipient-name"
+                              placeholder="Company name"
+                              />
+                           </div>
+                           <div class="form-group">
+                           <select class="form-control" id="exampleFormControlSelect1">
+                              <option value="" disabled selected>
+                                 Team or company size
+                              </option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                              <option>5</option>
+                           </select>
+                           </div>
+                           <div class="form-group">
+                           <textarea
+                              class="form-control"
+                              id="message-text"
+                              placeholder="How can we help you?"
+                              ></textarea>
+                           </div>
+                           <div class="form-group group-check text-center">
+                           <input type="checkbox" name="" id="" /> I've read and accepted the
+                           <a href="#" class="checkbox-label-a-tag">Privacy Statement</a>
+                           </div> -->
                         {% module "form" path="@hubspot/form" overrideable=True %}
                      </form>
+                  </div>
+                  <div class="modal-footer border-0">
+                     <button type="button" class="btn modal-submit">Contact Us</button>
+                     <small
+                        >Thank you for reaching us! We will get back to you ASAP</small
+                        >
                   </div>
                </div>
             </div>
@@ -1439,13 +1497,13 @@
          </section>
          <!-- Banner section -->
          <div class="banner">
-            <h1 class="text-center banner-title power-title">Power your team’s performance today</h1>
+            <h1 class="text-center banner-title">Power your team’s performance today</h1>
             <div class="input-group mb-4">
                <input type="text" class="form-control email-power-section" placeholder="Your e-mail address" aria-label="Your e-mail address"
-                  aria-describedby="basic-addon2" id="emailInput2" required>
+                  aria-describedby="basic-addon2">
                <div class="input-group-append">
                   <span class="btn input-group-text" id="banner-get-started" data-toggle="modal"
-                     data-target="#myModal" onclick="insertEmail(2)">Get Started</span>
+                     data-target="#myModal">Get Started</span>
                </div>
             </div>
          </div>
@@ -1550,29 +1608,6 @@
             element.scrollLeft += width;
             }
             };       
-
-            const sendEmailData = (emailForm, postPath) => {
-            const XHR = new XMLHttpRequest();
-            // Bind the FormData object and the form element
-            const FD = new FormData(emailForm);
-            // Set up our request
-            XHR.open("POST", `${postPath}`);
-            // The data sent is what the user provided in the form
-            XHR.send(FD);       
-            }
-
-            // Insert the typed email on the get started into the modal email field
-            const insertEmail = (emailField) => {
-               let emailData;
-               if(emailField === 1){
-                  emailData = document.getElementById('emailInput');
-               } else {
-                  emailData = document.getElementById('emailInput2'); 
-               }                           
-               const emailFields = document.querySelectorAll('input[type=email]');
-               emailFields[0].value = emailData.value;            
-            }
-            
          </script>
          <script src="./app.js"></script>
          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
