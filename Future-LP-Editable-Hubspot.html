@@ -1,0 +1,1660 @@
+<!--
+   templateType: page
+   isAvailableForNewContent: true
+   -->
+   <!doctype html>
+   <html>
+      <head>
+         <meta charset="utf-8">
+         <title>{{ content.html_title }}</title>
+         <meta name="description" content="{{ content.meta_description }}">
+         {{ standard_header_includes }}
+         <!-- Bootstrap CSS -->
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+         <style>
+            @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap");
+            * li {
+            list-style-type: none;
+            }
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            }
+            body {
+            color: #283037;
+            -webkit-font-smoothing: antialiased;
+            /* Chrome, Safari */
+            -moz-osx-font-smoothing: grayscale;
+            /* Firefox */
+            margin: 0;
+            padding: 0;
+            font-family: "Nunito Sans", sans-serif;
+            /* webkit-font-smoothing: auto; */
+            }
+            html {
+            scroll-behavior: smooth;
+            }
+            a {
+            text-decoration: none;
+            }
+            /* Jumbotron */
+            .jumbotron {
+            background: #fff;
+            padding: 0;
+            overflow: hidden;
+            color: #0f1921;
+            }
+            .jumbotron .container-fluid {
+            padding: 0;
+            }
+            .jumbotron .col-lg-5 {
+            background: #feda31;
+            min-height: 80vh;
+            border-bottom-left-radius: 150px;
+            position: relative;
+            }
+            .jumbotron .col-lg-7 {
+            padding: 0rem 2rem;
+            padding-bottom: 2rem;
+            padding-top: 0rem !important;
+            display: flex;
+            flex-direction: column;
+            }
+            .jumbotron .col-lg-7 p {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            }
+            .highlight-word {
+            font: normal normal medium 62px/89px Neue Haas Unica !important;
+            background: #efefef;
+            font-size: 3.875vw;
+            line-height: 1.5;
+            padding: 0 1vw !important;
+            border-radius: 0.4vw;
+            letter-spacing: 0.093vw;
+            font-weight: 600 !important;
+            }
+            .jumbotron-message-container {
+            max-width: 39.125vw;
+            margin: auto;
+            font-size: 50.875vw !important;
+            }
+            .jumbotron .lead {
+            color: #40464e;
+            font-size: 1.5vw;
+            letter-spacing: 0.036vw;
+            }
+            .jumbotron-grey-square {
+            position: absolute;
+            width: 52%;
+            height: 50%;
+            background: #ebebeb;
+            top: 0;
+            right: 0;
+            }
+            .jumbotron .input-group {
+            width: 92%;
+            }
+            .jumbotron .input-group .btn {
+            color: #fff;
+            background: #1175c9;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: none;
+            }
+            /* Navbar */
+            .active {
+            background: #fff;
+            z-index: 1000;
+            border-bottom: 0.063em solid #e3e3e3;
+            }
+            .navbar-brand img {
+            height: 4.8vh;
+            }
+            .jumbotron nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            }
+            .navbar .navbar-brand {
+            cursor: pointer;
+            }
+            .nav-get-started {
+            color: #fff;
+            padding: 1vh 1.25vw;
+            font-size: 1vw;
+            text-transform: uppercase;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-right: 5.37vw;
+            width: 8.875vw;
+            text-align: center;
+            }
+            .navbar-brand img {
+            width: 12.5vw;
+            margin-left: 5vw;
+            }
+            .nav-get-started:hover {
+            text-decoration: none;
+            color: #fff;
+            }
+            #nav-bar-get-started {
+            background-color: #1175c9;
+            }
+            .clients img {
+            width: 100%;
+            }
+            .banner .form-control {
+            width: 20vw !important;
+            border-top-left-radius: 2vw;
+            border-bottom-left-radius: 2vw;
+            border-radius: 20%;
+            }
+            .add-border {
+            border: 0.15vw solid #1175c9;
+            }
+            .input-group .form-control {
+            font-size: 1.15vw;
+            height: inherit;
+            border-radius: 0.5vw;
+            letter-spacing: 0.05vw;
+            }
+            .jumbotron .input-group .btn {
+            font-size: 1.15vw;
+            padding: 0.5vw 3vw;
+            border-top-right-radius: 0.5vw;
+            border-bottom-right-radius: 0.5vw;
+            letter-spacing: 0.013vw;
+            }
+            .mob-mail-description {
+            text-align: center;
+            font-size: 0.9375vw;
+            font-style: italic;
+            letter-spacing: 0.056vw;
+            }
+            .jumbotron-message-container {
+            text-align: left !important;
+            padding-top: 25vh;
+            }
+            /* Modal */
+            .modal-content {
+            background: #1175c9;
+            }
+            .modal form input[type="text"],
+            .modal form input[type="email"],
+            .modal form input[type="number"],
+            .modal form input[type="date"],
+            .modal form input[type="file"],
+            .modal form input[type="url"],
+            .modal form input[type="tel"],
+            .modal form textarea,
+            .modal form select {
+            width: 80%;
+            margin: auto;
+            display: block;
+            height: calc(2.25rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+            }
+            .modal form input[type="submit"] {
+            margin-left: 40%;
+            margin-right: 40%;
+            padding: 4px;
+            cursor: pointer;
+            }
+            .modal form label {
+            text-align: left !important;
+            display: block;
+            width: 80%;
+            margin: auto;
+            color: white;
+            font-weight: 600;
+            }
+            .modal form textarea:hover,
+            .modal form input[type="text"]:hover,
+            .modal form input[type="email"]:hover,
+            .modal form input[type="number"]:hover,
+            .modal form input[type="date"]:hover,
+            .modal form input[type="file"]:hover,
+            .modal form input[type="url"]:hover,
+            .modal form textarea:active,
+            .modal form input[type="text"]:active,
+            .modal form input[type="email"]:active,
+            .modal form input[type="number"]:active,
+            .modal form input[type="date"]:active,
+            .modal form input[type="file"]:active,
+            .modal form input[type="url"]:active,
+            .modal form textarea:focus,
+            .modal form input[type="text"]:focus,
+            .modal form input[type="email"]:focus,
+            .modal form input[type="number"]:focus,
+            .modal form input[type="date"]:focus,
+            .modal form input[type="file"]:focus,
+            .modal form input[type="url"]:focus {
+            outline: 0px !important;
+            -webkit-appearance: none;
+            box-shadow: none !important;
+            border-color: transparent !important;
+            }
+            .modal form a {
+            text-decoration: none;
+            color: white;
+            width: 80%;
+            margin: auto;
+            display: block;
+            font-size: 1rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+            }
+            .group-check {
+            justify-content: center;
+            color: #fff;
+            }
+            .group-check a {
+            color: #fff;
+            font-weight: 900;
+            }
+            .group-check input {
+            width: 16px;
+            height: 16px;
+            position: relative;
+            top: 2px;
+            }
+            .modal-submit {
+            display: block;
+            width: 80%;
+            background: #feda31;
+            text-transform: uppercase;
+            color: #1175c9;
+            font-weight: 600;
+            }
+            .modal-submit:hover {
+            text-decoration: none;
+            color: #1175c9;
+            }
+            .modal-footer small {
+            text-align: center;
+            display: block;
+            width: 80%;
+            color: #feda31;
+            }
+            footer a {
+            color: #fff;
+            }
+            footer a:hover {
+            color: #fff;
+            }
+            .modal-footer {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            }
+            .modal form input::placeholder,
+            .modal form textarea::placeholder {
+            font-family: normal normal medium 15px/36px Neue Haas Unica;
+            letter-spacing: 0.3px;
+            color: #40464e;
+            font-weight: 700;
+            font-size: 15px;
+            }
+            .modal form select {
+            font-family: normal normal medium 15px/36px;
+            letter-spacing: 0.3px;
+            color: #40464e;
+            font-weight: 700;
+            font-size: 15px;
+            }
+            /* Clients Section */
+            .clients {
+            margin-top: 7.3rem;
+            }
+            .clinet-container {
+            width: 71.25vw;
+            margin: auto;
+            }
+            .client-title {
+            font-size: 1.875vw;
+            text-align: center;
+            letter-spacing: 0.3px;
+            }
+            .clients {
+            padding: 0 10vw;
+            }
+            /* PIG Sections of Features section */
+            .pig-heading {
+            margin-top: 4rem;
+            font-size: 3.25vw;
+            letter-spacing: 0.078vw;
+            margin-bottom: 4.8vw !important;
+            }
+            .custom-mt {
+            margin-top: 2.7rem;
+            }
+            .purpose-section {
+            height: 100vh;
+            }
+            .insight-section {
+            height: 100vh;
+            }
+            .growth-section {
+            height: 100vh;
+            }
+            .growth-title {
+            margin-top: 0;
+            }
+            /* Address section */
+            .address ul {
+            list-style-type: none;
+            padding: 0.8rem;
+            padding-top: 2rem;
+            }
+            .address .row>* {
+            border: 1px solid #e4e4e4;
+            }
+            .address ul a {
+            color: #40464e;
+            text-decoration: none;
+            }
+            .address ul li:first-child {
+            font-size: 1vw !important;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            }
+            .address ul li {
+            font-size: 0.875vw !important;
+            line-height: 1.8;
+            white-space: nowrap;
+            }
+            /* Footer section */
+            footer {
+            background: #1175c9;
+            padding: 1.66vh 0;
+            color: #fff;
+            font-size: 0.9375vw;
+            font-weight: 400;
+            }
+            footer h6 {
+            font-size: 0.75vw;
+            padding: 2vh 20vw;
+            }
+            /* Banner section */
+            .banner-title {
+            font-size: 8.7vw;
+            letter-spacing: 0.071vw;
+            }
+            .banner {
+            background: #feda31;
+            min-height: 36.8vh;
+            text-align: center;
+            padding: 1rem;
+            }
+            .banner-image {
+            z-index: 1;
+            margin-left: 3vw;
+            padding-right: 3vw;
+            padding-top: 8.5vw;
+            }
+            .banner h1 {
+            color: #1175c9;
+            font-weight: 600;
+            padding: 3rem 1rem;
+            font-size: 3vw;
+            }
+            .power-title {
+            color: black !important;
+            }
+            .banner .input-group {
+            width: 35.375vw;
+            margin: auto;
+            padding-bottom: 3rem;
+            }
+            .banner .input-group .btn {
+            color: #fff;
+            background: #1175c9;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: none;
+            font-size: 1.15vw;
+            padding: 0.5vw 3vw;
+            border-top-right-radius: 0.5vw;
+            border-bottom-right-radius: 0.5vw;
+            }
+            /* Blue bg section PIG */
+            .pig {
+            background: #1175c9;
+            overflow: hidden;
+            }
+            .PIG-title {
+            font-size: 3.3vw;
+            font-weight: bolder;
+            letter-spacing: 0.078vw;
+            color: #fff;
+            }
+            .purpose-topic {
+            font-size: 2.75vw;
+            text-align: left;
+            letter-spacing: 0.0437vw;
+            padding-top: 4vh;
+            padding-bottom: 4vh;
+            }
+            .purpose-para {
+            text-align: left;
+            opacity: 0.7;
+            font-size: 1.2vw;      
+            letter-spacing: 0.045vw;
+            }
+            .PIG-para {
+            font-size: 2.75vw;
+            text-align: left;
+            letter-spacing: 0.0437vw;
+            padding-top: 4vh;
+            padding-bottom: 4vh;
+            }
+            .PIG-second-para {
+            text-align: left;
+            opacity: 0.7;
+            font-size: 1.2vw;
+            letter-spacing: 0.045vw;
+            }
+            .yellow-square {
+            background: #feda31;
+            border-top-right-radius: 15.62vw;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            }
+            .right-yellow-square {
+            background: #feda31;
+            border-bottom-left-radius: 15.62vw;
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            }
+            .left-gray-square {
+            background: #ebebeb;
+            border-top-right-radius: 6.25vw;
+            width: 9.187vw;
+            height: 13.77vh;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 3;
+            }
+            .gray-square {
+            background: #ebebeb;
+            border-bottom-left-radius: 6.25vw;
+            width: 9.187vw;
+            height: 13.77vh;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 3;
+            }
+            .performance-img {
+            position: absolute;
+            z-index: 1;
+            width: 39.31vw;
+            height: 79.77vh !important;
+            top: 12.44vh;
+            left: 7.125vw;
+            }
+            .learnmore {
+            background: #ffda00;
+            color: #1175c9;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.0537vw;
+            width: 13.7vw;
+            text-decoration: none;
+            font-size: 1.125vw;
+            border-radius: 0.5vw;
+            height: 5.33vh;
+            text-transform: uppercase;
+            font-weight: 600;
+            }
+            .custom-padding {
+            padding-left: 10vw;
+            padding-top: 10.125vh;
+            }
+            .sqare-watermark {
+            position: absolute;
+            top: 27.77vh;
+            left: 30vw;
+            height: 32.77vh;
+            width: 18.43vw;
+            }
+            .round-watermark {
+            position: absolute;
+            top: 21.22vh;
+            left: 4vw;
+            width: 17.06vw;
+            height: 30.32vh;
+            }
+            .sqareEdge-watermark {
+            position: absolute;
+            top: 37.66vh;
+            left: 30.12vw;
+            width: 19.375vw;
+            height: 33.11vh;
+            }
+            /* section testimonials */
+            .testimonials-container {
+            min-height: 20vh;
+            background: #fdfdfd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+            .testimonial-title {
+            font-size: 3.25vw;
+            width: 18.645vw;
+            margin: auto;
+            padding: 7.88vh 0;
+            letter-spacing: 0.078vw;
+            font-weight: 400;
+            }
+            .container-structured {
+            width: 100%;
+            padding: 5.33vh 0;
+            }
+            .item {
+            height: 48.33vh;
+            width: 35.05vw;
+            border-radius: 0.5vw;
+            background: #ffffff;
+            display: inline-block;
+            margin: 0 3vh;
+            padding: 4.66vh;
+            overflow: hidden;
+            }
+            .item:nth-child(1) {
+            margin-left: 10vw !important;
+            }
+            #testimonials {
+            scroll-behavior: smooth;
+            border-spacing: 30px 0;
+            width: 100%;
+            white-space: nowrap;
+            overflow-x: hidden;
+            }
+            ::-webkit-scrollbar {
+            display: none;
+            }
+            #scrollContainer {
+            background: #1175c9;
+            height: 72vh;
+            }
+            #leftMove,
+            #rightMove {
+            outline: none;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 3.5vw;
+            height: 3.5vw;
+            border: none;
+            margin-bottom: 4vh;
+            }
+            .img-arrow {
+            width: 0.687vw;
+            height: 2.333vh;
+            }
+            #leftMove {
+            margin-left: 10vw;
+            margin-right: 1vw;
+            }
+            .profile-container {
+            display: flex;
+            }
+            .profile-img-container {
+            width: 5.58vw;
+            height: 5.58vw;
+            border-radius: 50%;
+            border: 0.125vw solid #1175c9;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            .profile-img {
+            width: 5.22vw;
+            height: 5.22vw;
+            border-radius: 50%;
+            border: 0.125vw solid #fff;
+            align-self: center;
+            }
+            .person-name {
+            font-size: 1.5vw !important;
+            letter-spacing: 0.023vw !important;
+            font-weight: 600;
+            }
+            .designation {
+            font-size: 1vw !important;
+            letter-spacing: 0.016vw !important;
+            word-wrap: normal;
+            white-space: normal;
+            max-width: 21.56vw;
+            }
+            .quotes-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            }
+            .blockQuate-img {
+            width: 4.685vw;
+            height: 4.37vh;
+            padding-top: 1vh;
+            }
+            .quotes-container p {
+            letter-spacing: 0.045vw;
+            }
+            .item p {
+            padding: 0 1vw;
+            font-size: 1.25vw;
+            white-space: normal;
+            letter-spacing: 0.045vw;
+            color: #40464e;
+            }
+            .inside-para {
+            order: 1;
+            }
+            .inside-img {
+            order: 2;
+            }
+            .address-title {
+            letter-spacing: 0.023vw;
+            }
+            footer .mob-view {
+            display: none;
+            }
+            @media (max-width: 576px) {
+            .custom-padding {
+            padding-left: 0 !important;
+            }
+            .banner input.form-control {
+            width: 100%;
+            }
+            .highlight-word {
+            padding: 0 2vw !important;
+            border-radius: 0.8vw;
+            font-size: 7.28vw;
+            line-height: 0;
+            }
+            .navbar-brand img {
+            width: 35vw !important;
+            }
+            .nav-get-started {
+            width: 26vw;
+            padding: 1vh 1.25vw !important;
+            }
+            .jumbotron-message-container h1 {
+            line-height: 1 !important;
+            }
+            .address .row>* {
+            padding: 2rem 0.4rem;
+            }
+            .jumbotron-grey-square {
+            width: 20%;
+            height: 30%;
+            z-index: 0;
+            border-bottom-left-radius: 10vw;
+            }
+            .jumbotron .col-lg-7 p {
+            margin-top: 1.5rem;
+            margin-bottom: 2rem;
+            line-height: 2;
+            }
+            .banner .input-group {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            }
+            .banner .form-control {
+            width: 80vw !important;
+            border: none;
+            }
+            .navbar-brand img {
+            width: 200px;
+            }
+            .nav-get-started {
+            color: #fff;
+            padding: 0.7rem 0.7rem;
+            font-size: 3vw;
+            text-transform: uppercase;
+            border-radius: 8px;
+            font-weight: 600;
+            }
+            .top-banner-section {
+            display: flex;
+            }
+            .banner-para {
+            order: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            }
+            .banner-image {
+            margin-top: 18%;
+            }
+            .banner-img {
+            order: 1;
+            }
+            .jumbotron .col-lg-7 {
+            padding-top: 2rem;
+            }
+            .jumbotron .col-lg-5 {
+            background-color: inherit;
+            min-height: 54vh;
+            }
+            .jumbotron-grey-square {
+            z-index: 1;
+            width: 17%;
+            }
+            .jumbotron-message-container {
+            max-width: inherit;
+            text-align: center !important;
+            padding-top: 0;
+            }
+            .jumbotron-message-container .display-4 {
+            line-height: 40px;
+            font-weight: 600;
+            }
+            .jumbotron-yellow {
+            width: 50%;
+            height: 82%;
+            z-index: 0;
+            background-color: #feda31;
+            z-index: 0;
+            margin-left: 50%;
+            margin-bottom: 70%;
+            position: absolute;
+            border-bottom-left-radius: 20vw;
+            }
+            .input-group {
+            display: flex;
+            flex-direction: column;
+            }
+            .form-control {
+            width: 80vw !important;
+            text-align: center;
+            margin-left: inherit;
+            margin-left: 5%;
+            border-top-right-radius: 4px !important;
+            border-bottom-right-radius: 4px !important;
+            }
+            .input-group .form-control {
+            border-color: #b7babc !important;
+            }
+            .input-group-append {
+            margin-top: 1rem;
+            height: 2.5rem;
+            }
+            .mob-mail-description {
+            display: block;
+            font-style: italic;
+            text-align: left !important;
+            padding-left: 6%;
+            font-size: 3.39vw;
+            }
+            #jumbotron-get-started {
+            display: flex;
+            width: 80vw;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            justify-content: center;
+            }
+            #banner-get-started {
+            width: 80vw;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            display: flex;
+            justify-content: center;
+            }
+            .jumbotron {
+            margin-bottom: 0;
+            }
+            .jumbotron .input-group {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            }
+            .banner .input-group .btn {
+            font-size: 4.15vw;
+            }
+            .banner .input-group {
+            padding-bottom: 3rem;
+            margin-bottom: 0;
+            }
+            .jumbotron .input-group .btn {
+            font-size: 4.15vw;
+            }
+            .jumbotron .lead {
+            font-size: 3.64vw;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            }
+            /* Clients */
+            .client h2 {
+            font-size: 6.78vw;
+            font-weight: 400;
+            line-height: 1.8;
+            }
+            .client-title {
+            font-size: inherit;
+            font-size: 6.796vw;
+            padding-bottom: 2rem;
+            padding-top: 0.5rem;
+            }
+            .clients {
+            margin-top: inherit;
+            overflow: hidden;
+            }
+            .clinet-container {
+            width: 80vw;
+            margin: auto;
+            }
+            .pig-heading {
+            font-size: 5.7vw;
+            font-weight: 400;
+            padding-bottom: 10vh;
+            letter-spacing: 1.25px;
+            padding: 0 !important;
+            margin: 5px !important;
+            margin-top: 1.8rem !important;
+            margin-bottom: 2.5rem !important;
+            }
+            /* Purpose section or Feature 1 section */
+            .purpose-topic {
+            font-size: 6.78vw;
+            text-align: center;
+            padding-top: 4vh;
+            padding-bottom: 4vh;
+            }
+            .purpose-para {
+            text-align: center;
+            opacity: 0.7;
+            font-size: 3.88vw;
+            }
+            .yellow-square {
+            top: 0;
+            left: 66%;
+            bottom: 65%;
+            width: 34%;
+            height: 6rem;
+            transform: rotate(180deg);
+            border-top-right-radius: 100px;
+            }
+            .right-yellow-square {
+            border-bottom-left-radius: 100px;
+            width: 34%;
+            height: 6rem;
+            }
+            .performance-img {
+            position: relative;
+            z-index: 1;
+            width: 77.31vw;
+            height: 44.77vh !important;
+            top: 0;
+            left: 9.125vw;
+            }
+            .round-watermark {
+            position: absolute;
+            top: -3rem;
+            left: 1.2rem;
+            width: 9.06rem;
+            height: 17.06rem;
+            bottom: 2rem;
+            }
+            .sqare-watermark {
+            position: absolute;
+            top: 1rem;
+            left: -22vw;
+            height: 45.5vw;
+            width: 39rem;
+            }
+            .symbol-img {
+            width: 15vw;
+            margin-left: 15%;
+            margin-right: 2.31vw;
+            }
+            .gray-square {
+            background: #ebebeb;
+            border-top-right-radius: 10vw;
+            border-bottom-left-radius: 0;
+            width: 18.44vw;
+            height: 7.35vh;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 3;
+            top: 100%;
+            }
+            .left-gray-square {
+            border-top-right-radius: 10vw;
+            width: 15%;
+            height: 2.8rem;
+            }
+            .PIG-title {
+            font-size: 9vw;
+            letter-spacing: 1.25px;
+            }
+            .PIG-para {
+            font-size: 7vw;
+            text-align: center;
+            padding: 5vh 0;
+            letter-spacing: 0.043vw;
+            }
+            .PIG-second-para {
+            text-align: center;
+            opacity: 0.7;
+            padding-bottom: 2vh;
+            font-size: 3.88vw;
+            letter-spacing: 0.045vw;
+            }
+            .learnmore {
+            font-size: 3.64vw;
+            font-weight: 700;
+            width: inherit;
+            width: 55vw;
+            margin: auto;
+            height: 6vh;
+            text-align: center;
+            border-radius: 6px;
+            letter-spacing: 0.86px;
+            }
+            .sqareEdge-watermark {
+            position: absolute;
+            top: 0;
+            left: 2vw;
+            width: 50vw;
+            height: 14.625rem;
+            }
+            .insight-section {
+            display: flex;
+            }
+            .growth-section {
+            padding-bottom: 7vh;
+            margin-top: 5vh !important;
+            }
+            .insight-gray-square {
+            bottom: -5vh !important;
+            }
+            /* section testimonials */
+            .testimonials-container {
+            min-height: 20vh;
+            background: #fdfdfd;
+            }
+            .inside-para {
+            order: 2;
+            margin: auto;
+            }
+            .inside-img {
+            order: 1;
+            margin-top: 8vh;
+            }
+            .container-structured {
+            width: 100%;
+            padding: 5.33vh 0;
+            }
+            .item {
+            height: 55.74vh;
+            width: 80.58vw;
+            margin: 0 9vw !important;
+            padding-top: 5.28vh !important;
+            border-radius: 1.94vw;
+            overflow: hidden;
+            }
+            #testimonials {
+            scroll-behavior: smooth;
+            overflow: hidden;
+            margin-bottom: 3vh;
+            }
+            #scrollContainer {
+            background: #1175c9;
+            height: 79.08vh;
+            display: flex;
+            flex-direction: column-reverse;
+            }
+            .button-container {
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            }
+            #leftMove,
+            #rightMove {
+            outline: none;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 11.65vw;
+            height: 11.65vw;
+            border: none;
+            margin-bottom: 0;
+            }
+            .img-arrow {
+            width: 2.642vw;
+            height: 2.06vh;
+            }
+            #leftMove {
+            margin-left: 0;
+            margin-right: 10px;
+            }
+            .profile-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 !important;
+            margin: auto 0 !important;
+            }
+            .person-name {
+            font-size: 4.12vw !important;
+            }
+            .designation {
+            font-size: 2.91vw !important;
+            max-width: 80vw;
+            }
+            .quotes-container {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            }
+            .blockQuate-img {
+            width: 7.76vw;
+            height: 3.67vh;
+            }
+            .item p {
+            padding: 0 1vw;
+            font-size: 3.88vw;
+            text-align: center;
+            }
+            .testimonial-title {
+            font-size: 2rem;
+            width: inherit;
+            margin: auto;
+            padding: 7.88vh 0;
+            font-weight: 400;
+            letter-spacing: 1.25px;
+            }
+            /* Address Section */
+            .address>div {
+            border: 1px solid #e4e4e4;
+            padding: 0 20vw;
+            }
+            .left-blank-div {
+            display: none !important;
+            }
+            .right-blank-div {
+            display: none !important;
+            }
+            .input-group .form-control {
+            font-size: 4.15vw;
+            padding: 1vw;
+            border-radius: 1vw;
+            margin-left: 0 !important;
+            height: 2.5rem;
+            }
+            .address ul li:first-child {
+            font-size: 3.883vw !important;
+            letter-spacing: 0.38px !important;
+            }
+            .address ul li {
+            font-size: 3.39vw !important;
+            letter-spacing: 0.34px !important;
+            }
+            .address-next-line {
+            display: block;
+            }
+            /* Footer section */
+            footer h6 {
+            font-size: 2.91vw;
+            padding: 2vh 20vw;
+            line-height: 1.5;
+            }
+            footer .web-view {
+            display: none;
+            }
+            footer .mob-view {
+            display: block;
+            }
+            footer {
+            margin-bottom: 2.5rem;
+            }
+            /* Power section */
+            .banner h1 {
+            color: #1175c9;
+            font-weight: 600;
+            padding: 3rem 1rem;
+            font-size: 8.73vw;
+            line-height: 1.5;
+            }
+            .purpose-section,
+            .insight-section,
+            .growth-section {
+            height: unset;
+            margin: auto -15px;
+            }
+            .custom-padding {
+            padding-left: 10.125vw;
+            padding-top: 0;
+            }
+            /* section testimonials */
+            .profile-img-container {
+            width: 17.47vw;
+            height: 17.47vw;
+            border-radius: 50%;
+            border: 0.485vw solid #1175c9;
+            overflow: hidden;
+            }
+            .profile-img {
+            width: 17vw;
+            height: 17vw;
+            border: 0.485vw solid #fff;
+            }
+            }
+         </style>
+         <!-- Local CSS -->
+         <link rel="stylesheet" href="/Templates/Custom/Page/LandingPageVonnue/styles.css" />
+      </head>
+      <body>
+         <!-- Jumbotron -->
+         <div class="jumbotron">
+            <nav id="main-nav" class="navbar">
+               <a class="navbar-brand" href="#">
+               {% image "nav_logo" label='Navigation logo', alt='Logo', src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/nav-logo-1.svg' %}
+               </a>
+               <a href="#" class="btn nav-get-started" data-toggle="modal" id="nav-bar-get-started"
+                  data-target="#myModal">Get Started</a>
+            </nav>
+            <div class="container-fluid  text-lg-left">
+               <div class="row top-banner-section ">
+                  <div class="col-lg-7 banner-para">
+                     <div class="jumbotron-message-container text-center">
+                        <h1>
+                           <span
+                              class="highlight-word">{% text "main_title1" label="Main title heading 1", value="Lorem ipsum dolor", overrideable=True %}</span></br>
+                           <span
+                              class="highlight-word">{% text "main_title2" label="Main title heading 2", value="sit amet, elitr, sed", overrideable=True %}
+                           </span>
+                        </h1>
+                        <p class="lead">
+                           {% text "mail-title" label="Mail-title", value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                           diam nonumy eirmod tempor invidunt ut labore.", no_wrapper=True %} <!--The text field here is being replaced by hubspot content editor-->
+                        </p>
+                        <div class="input-group mb-3">
+                           <input type="text" class="form-control hero-input add-border"
+                              placeholder="Your e-mail address" aria-label="Your e-mail address"
+                              aria-describedby="basic-addon2" id="emailInput" required>
+                           <div class="input-group-append">
+                              <span class="btn input-group-text" id="jumbotron-get-started" data-toggle="modal"
+                                 data-target="#myModal" onclick="insertEmail(1)">Get Started</span>
+                           </div>
+                        </div>
+                        <div class="text-left mob-mail-description">
+                           {% text "mail-description" label="Mail description", value=" Lorem ipsum dolor sit amet, consetetur sadipscing
+                           elitr.", c %}                          
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-5 align-items-center d-flex banner-img">
+                     <div class="jumbotron-grey-square"></div>
+                     <div class="jumbotron-yellow"></div>
+                     <img src={% image_src "banner_image" label='Banner image' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/banner%201%20image%20(1)@2x.png', no_wrapper=True %}
+                     class="img-fluid banner-image" />
+                  </div>
+               </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header border-0">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span style="color: #fff" aria-hidden="true">&times;</span>
+                        </button>
+                     </div>
+                     <div class="modal-body border-0">
+                        <form>
+                           {% module "form" path="@hubspot/form" overrideable=True %}
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- Client Section -->
+            <section class="clients" id="clients">
+               <div class="clinet-container">
+                  <div class="client-title">
+                     {% text "text" %}
+                     {% text "companies_list" label="Companies list title", value="Top companies power their team performance with KPISOFT" %}
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-3 col-6 col-sm-6">
+                     <img
+                     src={% image_src "company_image_1" label='Company 1' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/clients/Group%20279.svg', no_wrapper=True %} />
+                  </div>
+                  <div class="col-md-3 col-6 col-sm-6">
+                     <img
+                     src={% image_src "company_2" label='Company 2' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/clients/Group%20278.svg', no_wrapper=True %} />
+                  </div>
+                  <div class="col-md-3 col-6 col-sm-6">
+                     <img
+                     src={% image_src "company_3" label='Company 3' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/clients/Group%20277.svg', no_wrapper=True %} />
+                  </div>
+                  <div class="col-md-3 col-6 col-sm-6">
+                     <img
+                     src={% image_src "company_4" label='Company 4' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/clients/Group%20276.svg', no_wrapper=True %} />
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-3 col-6 col-sm-6">
+                     <img
+                     src={% image_src "company_5" label='Company 5' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/clients/Group%20280.svg', no_wrapper=True %} />
+                  </div>
+                  <div class="col-md-3 col-6 col-sm-6">
+                     <img
+                     src={% image_src "company_6" label='Company 6' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/clients/Group%20281.svg', no_wrapper=True %} />
+                  </div>
+                  <div class="col-md-3 col-6 col-sm-6">
+                     <img
+                     src={% image_src "company_7" label='Company 7' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/clients/Group%20282.png', no_wrapper=True %} />
+                  </div>
+                  <div class="col-md-3 col-6 col-sm-6">
+                     <img
+                     src={% image_src "company_8" label='Company 8' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/clients/Group%20283.svg', no_wrapper=True %} />
+                  </div>
+               </div>
+               <h1 class="pig-heading text-center pig-heading m-4 p-4">
+                  {% text "purpose_insight_growth" label="Purpose insight growth title", value=" Purpose. Insights. Growth" %}
+               </h1>
+         </div>
+         </section>
+         <!-- Purpose,Insights & Growth Section of Features section-->
+         <section class="col-md-12 pig m-0 p-0" id="pig">
+            <div class="col-md-12">
+               <!-- Purpose of Freature 1 section -->
+               <div class="row purpose-section">
+                  <div class="col-md-6 ">
+                     <div class="yellow-square"></div>
+                     <img class="performance-img img-fluid"
+                     src={% image_src "feature1_img" label='Feature_1 image' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/purpose/img_Performance@2x.png', no_wrapper=True %} />
+                     <img  class="sqare-watermark img-fluid"
+                     src={% image_src "feature1_water_mark" label='Feature_1 water mark' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/purpose/Union%208.svg', no_wrapper=True %} />                  
+                  </div>
+                  <div class="col-md-6 d-flex flex-column ">
+                     <div class="gray-square"></div>
+                     <div class="col-md-8 m-md-auto purpose-mob-view">
+                        <div class=" d-flex  mt-4 mr-4">
+                           <img class="symbol-img img-fluid mr-4"
+                           src={% image_src "feature1_icon" label='Feature_1 icon' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/purpose/purpose-icon.svg', no_wrapper=True %} />
+                           <span class="text-white PIG-title">
+                           {% text "feature1_title" label="Feature_1 title", value=" Purpose" %}</span>
+                        </div>
+                        <p class="text-white mt-md-2 h1 purpose-topic">
+                           {% text "feature1_heading" label="Feature_1 heading", value="Lorem ipsum dolor sit amet, consetetur elitr.", no_wrapper=True  %}
+                        </p>
+                        <p class="text-white mt-md-2 purpose-para">
+                           {% text "feature1_content" label="Feature_1 content1", value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod invidunt ut labore.", no_wrapper=True  %}
+                        </p>
+                        <p class="text-white mt-md-2 purpose-para">
+                           {% text "feature2_content" label="Feature_1 content2", value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod invidunt ut labore.", no_wrapper=True  %}
+                        </p>
+                        <p class="text-white mt-md-2 purpose-para">
+                           {% text "feature3_content" label="Feature_1 content3", value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod invidunt ut labore.", no_wrapper=True  %}
+                        </p>
+                        <a class="learnmore btn mt-md-2 " id="p-learnmore" href="">Learn More</a>
+                     </div>
+                  </div>
+               </div>
+               <!-- Insights or Feature 2 section -->
+               <div class="row insight-section">
+                  <div class="col-md-6  d-flex flex-column inside-para">
+                     <div class="left-gray-square insight-gray-square">
+                     </div>
+                     <div class="col-md-10 m-md-auto custom-padding">
+                        <div class=" d-flex  mt-4 mr-4">
+                           <img class="symbol-img img-fluid mr-4"  src={% image_src "feature2 icon" label='Feature_2 icon' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/insights/insights-icon.svg', no_wrapper=True %} 
+                           alt="" />
+                           <span
+                              class="text-white  PIG-title insight-title">{% text "feature2 title" label="Feature_2 title", value="Insights" %}</span>
+                        </div>
+                        <p class="h1 text-white mt-md-2 h1 PIG-para">
+                           {% text "feature2_heading" label="Feature_2 heading", value="Lorem ipsum dolor sit amet, consetetur elitr.", no_wrapper=True  %}
+                        </p>
+                        <p class="text-white mt-md-2 PIG-second-para">
+                           {% text "feature2_content1" label="Feature_2 content_1", value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                           nonumy eirmod invidunt ut labore.", no_wrapper=True  %} 
+                        </p>
+                        <p class="text-white mt-md-2 PIG-second-para">
+                           {% text "feature2_content2" label="Feature_2 content_2", value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                           nonumy eirmod invidunt ut labore.", no_wrapper=True  %} 
+                        </p>
+                        <p class="text-white mt-md-2 PIG-second-para">
+                           {% text "feature2_content3" label="Feature_2 content_3", value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                           nonumy eirmod invidunt ut labore.", no_wrapper=True  %}  
+                        </p>
+                        <a class="learnmore btn mt-2" id="i-learnmore" href="">Learn More</a>
+                     </div>
+                  </div>
+                  <div class="col-md-6 d-flex flex-column inside-img">
+                     <div class="right-yellow-square"></div>
+                     <img class="round-watermark img-fluid" src={% image_src "insights_img" label='Insights image' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/Group%203815-1.svg', no_wrapper=True %}                                         
+                     />               
+                     <img class="performance-img img-fluid"  src={% image_src "insights_water_mark" label='Insights water mark' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/insights/Img_Engagement@2x.png', no_wrapper=True %}                    
+                     alt="" />
+                  </div>
+               </div>
+               <!-- Growth or Feature 3 section -->
+               <div class="row growth-section">
+                  <div class="col-md-6">
+                     <div class="yellow-square"></div>
+                     <img class="performance-img img-fluid"  src={% image_src "feature3_img" label='Feature_3 image' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/growth/Image_Insights@2x.png', no_wrapper=True %}                    
+                     alt="" />  
+                     <img class="sqareEdge-watermark img-fluid"  src={% image_src "feature3_water_mark" label='Feature_3 water mark' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/Union%207.svg', no_wrapper=True %}                    
+                     alt="" />                    
+                  </div>
+                  <div class="col-md-6 d-flex flex-column">
+                     <div class="gray-square"></div>
+                     <!-- <div class="hero-square text-left"></div> -->
+                     <div class="col-md-8 m-md-auto">
+                        <div class=" d-flex mt-4 mr-4">                          
+                           <img class="symbol-img img-fluid mr-4"  src={% image_src "feature3_icon" label='Feature_3 icon' src='https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/growth/growth-icon.svg', no_wrapper=True %}                    
+                           alt="" />     
+                           <span class="text-white PIG-title growth-title">
+                           {% text "feature3_title" label="Feature_3 title", value="Growth"%}</span>
+                        </div>
+                        <p class="text-white mt-md-3 h1 PIG-para">
+                           {% text "feature3_heading" label="Feature_3 heading", value="Lorem ipsum dolor sit amet, consetetur elitr.", no_wrapper=True  %}
+                        </p>
+                        <p class="text-white mt-md-3 PIG-second-para ">
+                           {% text "feature3_content_1" label="Feature_3 content_1", value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                           nonumy eirmod invidunt ut labore.",  no_wrapper=True  %}
+                        </p>
+                        <p class="text-white mt-md-3 PIG-second-para ">
+                           {% text "feature3_content_2" label="Feature_3 content_2", value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                           nonumy eirmod invidunt ut labore.",  no_wrapper=True  %}
+                        </p>
+                        <p class="text-white mt-md-3 PIG-second-para ">
+                           {% text "feature3_content_3" label="Feature_3 content_3", value="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                           nonumy eirmod invidunt ut labore.",  no_wrapper=True  %}
+                        </p>
+                        <a class="learnmore btn mt-3" id="p-learnmore" href="">Learn More</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Testimonials Section -->
+         <section>
+            <h1 class="text-center testimonial-title">
+               {% text "testimonials_title" label="Testimonials title", value="Testimonials" %}
+            </h1>
+         </section>
+         <!-- Testimonials scroll -->
+         <section id="scrollContainer" class="container-structured">
+            <div class="button-container carosel-buttons">
+               <button id="leftMove" class="btn-navigate bg-light">
+               <img class="img-arrow"
+                  src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/left-arrow-1.svg">
+               </button>
+               <button id="rightMove" class="btn-navigate bg-light">
+               <img class="img-arrow"
+                  src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/right-arrow-1.svg">
+               </button>
+            </div>
+            <div id="testimonials">
+            <div class="item">
+               <div class="profile-container">
+                  <div class="profile-img-container"><img
+                     src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/testimonials/dumansi.png"
+                     class="profile-img" /></div>
+                  <div class="d-flex flex-column pt-md-3">
+                     <p class="person-name mb-0">Dumasi M M Samosir</p>
+                     <p class="designation">Director at PT. Asuransi Sinarmas</p>
+                  </div>
+               </div>
+               <div class="quotes-container">
+                  <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/blockQuate-1.png"
+                     class="blockQuate-img" />
+                  <p class="ml-2 mt-3 ">
+                     “Data is now accessible to every person across the organization – even to the lowest level. This
+                     is the beauty of
+                     ‘democratization of data.’ Our agency team achieved 31% growth in terms of gross return premium
+                     with KPISOFT.”
+                  </p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="profile-container">
+                  <div class="profile-img-container"><img
+                     src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/testimonials/mochtar.png"
+                     class="profile-img" /></div>
+                  <div class="d-flex flex-column  pt-md-3">
+                     <p class="person-name mb-0">Mochtar Suhadi</p>
+                     <p class="designation">Chief Organization & Development Officer,Sinarmas Mining</p>
+                  </div>
+               </div>
+               <div class="quotes-container">
+                  <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/blockQuate-1.png"
+                     class="blockQuate-img" />
+                  <p class="ml-2 mt-3 ">
+                     “The daily feed of key insights and intuitive dashboards at our fingertips has
+                     greatly improved our decision making process, our performance and made us more efficient.”
+                  </p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="profile-container">
+                  <div class="profile-img-container"><img
+                     src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/testimonials/Nasri.png"
+                     class="profile-img" /></div>
+                  <div class="d-flex flex-column  pt-md-3">
+                     <p class="person-name mb-0">Nasri Mohamed</p>
+                     <p class="designation">Ex Vice President, Telekom Malaysia</p>
+                  </div>
+               </div>
+               <div class="quotes-container">
+                  <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/blockQuate-1.png"
+                     class="blockQuate-img" />
+                  <p class="ml-2 mt-3 ">
+                     “KPISOFT enabled a 31% productivity increase for our 7000 plus front-liners with a cost
+                     reduction of 14%, placing TM in the top quartile of telcos globally.”
+                  </p>
+               </div>
+            </div>
+            <div class="item">
+               <div class="profile-container">
+                  <div class="profile-img-container"><img
+                     src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/testimonials/mukesh.png"
+                     class="profile-img" /></div>
+                  <div class="d-flex flex-column  pt-md-3">
+                     <p class="person-name mb-0">Mukesh Dhawan</p>
+                     <p class="designation">CEO, Zurich Malaysia</p>
+                  </div>
+               </div>
+               <div class="quotes-container">
+                  <img src="https://cdn.shortpixel.ai/client/q_glossy,ret_img/https://www.go.kpisoft.com/hubfs/LP_Future/blockQuate-1.png"
+                     class="blockQuate-img" />
+                  <p class="ml-2 mt-3 ">
+                     “We’re beating the market quarter on quarter. KPISOFT has taken us to the next level
+                     of engagement with a substantial increase in the number of active agents and revenue.”
+                  </p>
+               </div>
+            </div>
+         </section>
+         <!-- Banner section -->
+         <div class="banner">
+            <h1 class="text-center banner-title power-title">
+               {% text "power_title" label="Power section title", value="Power your team’s performance today" %}
+            </h1>
+            <div class="input-group mb-4">
+               <input type="text" class="form-control email-power-section" placeholder="Your e-mail address"
+                  aria-label="Your e-mail address" aria-describedby="basic-addon2" id="emailInput2" required>
+               <div class="input-group-append">
+                  <span class="btn input-group-text" id="banner-get-started" data-toggle="modal" data-target="#myModal"
+                     onclick="insertEmail(2)">Get Started</span>
+               </div>
+            </div>
+         </div>
+         <!-- Address section -->
+         <section class="address" id="address">
+            <div class="row mx-auto">
+            <div class="col-md col-12 d-flex justify-content-center left-blank-div"></div>
+            <div class="col-md col-12 d-flex justify-content-center">
+               <ul>
+                  <li class="address-title">Innovation and <span class="address-next-line">R&D Center</span></li>
+                  <li>Unit 27-13, Level 27, <span class="address-next-line">Q Sentral, </span></li>
+                  <li>Jalan Stesen Sentral 2, <span class="address-next-line">50470, </span></li>
+                  <li> Kuala Lumpur, Malaysia</li>
+                  <li><a href="tel:+603 2276 0055">
+                     Tel: +603 2276 0055</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md col-12 d-flex justify-content-center">
+               <ul>
+                  <li class="address-title">US HQ</li>
+                  <li>2700 Post Oak Blvd,</li>
+                  <li>21st Floor,</li>
+                  <li>Houston, TX 77056</li>
+                  <li><a href="tel:+1(800)9478211">Tel: +1 (800) 947 8211</a></li>
+               </ul>
+            </div>
+            <div class="col-md col-12 d-flex justify-content-center">
+               <ul>
+                  <li class="address-title">Middle East HQ</li>
+                  <li>Office 910, 9th Floor,</li>
+                  <li>The Onyx Tower 1 <span class="address-next-line">Hessa Street</span>
+                  <li>
+                  <li>Al Thaniyah Third, </li>
+                  <li><span class="address-next-line">P.O. Box 41052</span> Dubai, UAE </li>
+                  <li><a href="tel:+971 4399 52 53">
+                     Tel: +971 4399 52 53</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md col-12 d-flex justify-content-center">
+               <ul>
+                  <li class="address-title">Europe HQ</li>
+                  <li>Taubstummengasse,</li>
+                  <li>7 A-1040, Vienna</li>
+                  <li> <a href="tel:+ 43 1 78 66 318">
+                     Tel: +43 1 78 66 318</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md col-12 d-flex justify-content-center">
+               <ul>
+                  <li class="address-title">Asia HQ</li>
+                  <li>1 Raffles Place,</li>
+                  <li>#02-01 One Raffles</li>
+                  <li>Place Mall,</li>
+                  <li>Singapore 048616</li>
+                  <li> <a href="tel:+65 3138 1767">
+                     Tel: +65 3138 1767</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-md col-12 d-flex justify-content-center right-blank-div">
+            </div>
+         </section>
+         <!-- Footer -->
+         <footer>
+            <h6 class="text-center my-auto web-view">
+               2020 &copy; Copyright KPISOFT. All Rights Reserved <a
+                  href="https:/www.kpisoft.com/privacy-statement/">Privacy Statement</a>
+            </h6>
+            <h6 class="text-center my-auto mob-view">
+               2020 &copy; Copyright KPISOFT.</br> All Rights Reserved <a
+                  href="https:/www.kpisoft.com/privacy-statement/">Privacy Statement</a>
+            </h6>
+         </footer>
+         <script>
+            const navBar = document.getElementById("main-nav");
+            window.onscroll = function () {
+                var top = window.scrollY;
+            
+                if (top >= 100) {
+                    navBar.classList.add("active");
+                } else {
+                    navBar.classList.remove("active");
+                }
+            };
+            
+            document.getElementById("leftMove").addEventListener("click", () => {
+                scrollItems("left");
+            });
+            
+            document.getElementById("rightMove").addEventListener("click", () => {
+                scrollItems("right");
+            });
+            
+            const scrollItems = direction => {
+                let element = document.getElementById("testimonials");
+                let width = element.clientWidth
+                if (direction === "left") {
+                    element.scrollLeft -= width;
+            
+                } else {
+                    element.scrollLeft += width;
+                }
+            };
+            
+            const sendEmailData = (emailForm, postPath) => {
+                const XHR = new XMLHttpRequest();
+                // Bind the FormData object and the form element
+                const FD = new FormData(emailForm);
+                // Set up our request
+                XHR.open("POST", `${postPath}`);
+                // The data sent is what the user provided in the form
+                XHR.send(FD);
+            }
+            
+            // Insert the typed email in the get started into the modal email field
+            const insertEmail = (emailField) => {
+                let emailData;
+                if (emailField === 1) {
+                    emailData = document.getElementById('emailInput');
+                } else {
+                    emailData = document.getElementById('emailInput2');
+                }
+                const emailFields = document.querySelectorAll('input[type=email]');
+                emailFields[0].value = emailData.value;
+            }
+            
+         </script>
+         <script src="./app.js"></script>
+         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+         {{ standard_footer_includes }}
+      </body>
+   </html>
